@@ -1,0 +1,42 @@
+[
+  {
+    "model": "sq4_direction_00", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_01", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_02", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_03", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_04", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_05", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_06", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }, 
+  {
+    "model": "sq4_direction_07", 
+    "removed": true, 
+    "message": "DeleteModel: successfully deleted model"
+  }
+]

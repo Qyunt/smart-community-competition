@@ -1,0 +1,40 @@
+<launch>
+  <!-- ============================================================
+       第二步：建图（Gmapping）
+       用法（另开一个终端，先 source 过 devel/setup.bash）:
+         roslaunch sq_community sq_gmapping.launch
+       然后在第三个终端用键盘遥控机器人跑遍全场:
+         rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+       建好图后保存:
+         rosrun map_server map_saver -f $(find sq_community)/maps/sq_community
+       ============================================================ -->
+
+  <arg name="model" default="$(optenv TURTLEBOT3_MODEL waffle)"/>
+  <arg name="open_rviz" default="false"/>
+
+  <node pkg="gmapping" type="slam_gmapping" name="turtlebot3_slam_gmapping"
+        output="screen">
+    <param name="base_frame" value="base_footprint"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="map_frame"  value="map"/>
+    <rosparam command="load" file="$(find turtlebot3_slam)/config/gmapping_params.yaml"/>
+    <!-- 场地是 10m×7.2m，激光最大只有 3.5m，适当放大地图尺寸 -->
+    <param name="delta"        value="0.05"/>
+    <param name="xmin"         value="-6.0"/>
+    <param name="ymin"         value="-4.5"/>
+    <param name="xmax"         value="6.0"/>
+    <param name="ymax"         value="4.5"/>
+    <param name="particles"    value="60"/>
+    <param name="linearUpdate" value="0.10"/>
+    <param name="angularUpdate" value="0.10"/>
+    <param name="temporalUpdate" value="-1.0"/>
+    <param name="resampleThreshold" value="0.5"/>
+  </node>
+
+  <!-- ⚠ 同 sq_navigation.launch：用本包的 sq_slam.rviz（Angle=0 / Scale=58），
+       原版 turtlebot3_gmapping.rviz 是 -90° + Scale=100，本场地会被裁掉两头。 -->
+  <group if="$(arg open_rviz)">
+    <node pkg="rviz" type="rviz" name="rviz_slam" required="true"
+          args="-d $(find sq_community)/rviz/sq_slam.rviz"/>
+  </group>
+</launch>

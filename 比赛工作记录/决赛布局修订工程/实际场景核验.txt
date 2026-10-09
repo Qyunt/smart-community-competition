@@ -1,0 +1,29 @@
+{
+  "models": 101, 
+  "robot_start_odom": [
+    1.8000000000005068, 
+    1.7999998915751236
+  ], 
+  "task_contract_count": 30, 
+  "scene_anchor_mismatches": [], 
+  "camera_frames": {
+    "/task_camera/image_raw": {
+      "std": 72.02229131170928, 
+      "shape": [
+        1280, 
+        720
+      ], 
+      "age_sim_s": 0.253, 
+      "mean": 160.82650752314814
+    }, 
+    "/camera/rgb/image_raw": {
+      "std": 64.8760983334664, 
+      "shape": [
+        1280, 
+        720
+      ], 
+      "age_sim_s": 0.206, 
+      "mean": 113.71250036168982
+    }
+  }
+}

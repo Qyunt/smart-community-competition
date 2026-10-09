@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>smart_community_sim</name>
+  <version>0.1.0</version>
+  <description>ROS Melodic Gazebo starter scene for smart community SLAM practice.</description>
+  <maintainer email="team@example.com">Competition Team</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <exec_depend>turtlebot3_slam</exec_depend>
+  <exec_depend>turtlebot3_teleop</exec_depend>
+  <exec_depend>map_server</exec_depend>
+</package>

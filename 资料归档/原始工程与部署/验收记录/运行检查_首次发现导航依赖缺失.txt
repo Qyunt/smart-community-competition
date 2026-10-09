@@ -1,0 +1,165 @@
+DISPLAY=:0
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+=== NODES ===
+/amcl
+/gazebo
+/gazebo_gui
+/map_server
+/move_base
+/robot_state_publisher
+/rosout
+/spawn_sq4_robot
+/sq_signal_vision_4p2
+/sq_traffic_light_4p2
+=== TOPICS ===
+/amcl_pose
+/camera/depth/camera_info
+/camera/depth/image_raw
+/camera/depth/points
+/camera/parameter_descriptions
+/camera/parameter_updates
+/camera/rgb/camera_info
+/camera/rgb/image_raw
+/camera/rgb/image_raw/compressed
+/camera/rgb/image_raw/compressed/parameter_descriptions
+/camera/rgb/image_raw/compressed/parameter_updates
+/camera/rgb/image_raw/compressedDepth
+/camera/rgb/image_raw/compressedDepth/parameter_descriptions
+/camera/rgb/image_raw/compressedDepth/parameter_updates
+/camera/rgb/image_raw/theora
+/camera/rgb/image_raw/theora/parameter_descriptions
+/camera/rgb/image_raw/theora/parameter_updates
+/clock
+/cmd_vel
+/diagnostics
+/gazebo/link_states
+/gazebo/model_states
+/gazebo/parameter_descriptions
+/gazebo/parameter_updates
+/gazebo/set_link_state
+/gazebo/set_model_state
+/initialpose
+/joint_states
+/map
+/map_metadata
+/move_base/current_goal
+/move_base/goal
+/move_base_simple/goal
+/odom
+/particlecloud
+/rosout
+/rosout_agg
+/scan
+/sq/patrol/current
+/sq/traffic_light/enable
+/sq/traffic_light/state
+/sq/traffic_light/time_left
+/sq/vision/traffic_light
+/sq/vision/traffic_light_debug
+/task_camera/camera_info
+/task_camera/image_raw
+/task_camera/image_raw/compressed
+/task_camera/image_raw/compressed/parameter_descriptions
+/task_camera/image_raw/compressed/parameter_updates
+/task_camera/image_raw/compressedDepth
+/task_camera/image_raw/compressedDepth/parameter_descriptions
+/task_camera/image_raw/compressedDepth/parameter_updates
+/task_camera/image_raw/theora
+/task_camera/image_raw/theora/parameter_descriptions
+/task_camera/image_raw/theora/parameter_updates
+/task_camera/parameter_descriptions
+/task_camera/parameter_updates
+/tf
+/tf_static
+=== SENSOR MESSAGES ===
+{
+  "topics": {
+    "/camera/rgb/image_raw": {
+      "received": true, 
+      "data_bytes": 2764800, 
+      "wall_time": 1791453602.359319, 
+      "encoding": "rgb8", 
+      "width": 1280, 
+      "height": 720
+    }, 
+    "/sq/vision/traffic_light": {
+      "received": true, 
+      "value": "unknown", 
+      "wall_time": 1791453601.96747
+    }, 
+    "/camera/depth/image_raw": {
+      "received": true, 
+      "data_bytes": 3686400, 
+      "wall_time": 1791453602.272841, 
+      "encoding": "32FC1", 
+      "width": 1280, 
+      "height": 720
+    }, 
+    "/odom": {
+      "y": 1.8, 
+      "received": true, 
+      "frame": "odom", 
+      "x": 1.8, 
+      "wall_time": 1791453602.438324
+    }, 
+    "/scan": {
+      "received": true, 
+      "frame": "base_scan", 
+      "rays": 360, 
+      "wall_time": 1791453601.822803
+    }, 
+    "/map": {
+      "received": true, 
+      "height": 92, 
+      "resolution": 0.05000000074505806, 
+      "width": 92, 
+      "wall_time": 1791453601.231594
+    }, 
+    "/task_camera/image_raw": {
+      "received": true, 
+      "data_bytes": 2764800, 
+      "wall_time": 1791453602.50049, 
+      "encoding": "rgb8", 
+      "width": 1280, 
+      "height": 720
+    }
+  }, 
+  "missing": []
+}
+=== GAZEBO ROBOT ===
+header: 
+  seq: 1
+  stamp: 
+    secs: 0
+    nsecs: 937000000
+  frame_id: "world"
+pose: 
+  position: 
+    x: 1.8
+    y: 1.8
+    z: 0.0019738
+  orientation: 
+    x: -1.56752403172e-31
+    y: 6.60632314604e-32
+    z: 0.999999999999
+    w: 1.32679489668e-06
+twist: 
+  linear: 
+    x: 1.66659615758e-32
+    y: 1.64336347477e-32
+    z: -0.0098
+  angular: 
+    x: 2.46378085015e-31
+    y: -2.42107614893e-31
+    z: 6.89467023259e-34
+success: True
+status_message: "GetModelState: got properties"
+=== NAVIGATION ===
+rosnode: node is [/move_base]
+pinging /move_base with a timeout of 3.0s
+xmlrpc reply from http://ubuntu:39515/	time=4.359961ms
+rosnode: node is [/amcl]
+pinging /amcl with a timeout of 3.0s
+xmlrpc reply from http://ubuntu:44701/	time=7.770061ms
+SMOKE_PASS
+Scene remains running for inspection. Stop only this session using the saved launch PID.

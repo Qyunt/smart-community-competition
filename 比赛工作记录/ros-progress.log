@@ -1,0 +1,83 @@
+=== OS ===
+Ubuntu 18.04.6 LTS
+qyunt
+=== REQUIRED PACKAGES ===
+build-essential	install ok installed	12.4ubuntu1
+python-rosdep	install ok installed	0.23.1-1
+python-rosinstall	install ok installed	0.7.8-1
+python-rosinstall-generator	install ok installed	0.1.23-1
+python-wstool	install ok installed	0.1.17-1
+ros-melodic-desktop-full	install ok installed	1.4.1-0bionic.20230620.175308
+ros-melodic-turtlesim	install ok installed	0.9.3-1bionic.20221025.183010
+=== APT SOURCE AND KEY ===
+deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ bionic main
+pub:-:4096:1:F42ED6FBAB17C654:1559176854:1906547974::-:::scSC::::::23::0:
+fpr:::::::::C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654:
+=== ROSDEP SOURCES AND CACHE ===
+yaml https://mirrors.tuna.tsinghua.edu.cn/rosdistro/rosdep/osx-homebrew.yaml osx
+yaml https://mirrors.tuna.tsinghua.edu.cn/rosdistro/rosdep/base.yaml
+yaml https://mirrors.tuna.tsinghua.edu.cn/rosdistro/rosdep/python.yaml
+yaml https://mirrors.tuna.tsinghua.edu.cn/rosdistro/rosdep/ruby.yaml
+index 2026-09-17 06:18
+751ef9ddb9a05416b9948bb8f51e18e4cc31adde.pickle 2026-09-17 06:18
+151f09005e00cef34212cabd135f439c684e795a.pickle 2026-09-17 06:18
+882b724a692303a61defb64c6e4b5fd8787a3e19.pickle 2026-09-17 06:18
+ba988ce7adfcf29f60bb50031382c26ac453a0c8.pickle 2026-09-17 06:18
+8acfdad222a6551b122c775a1a3dcbf25a6c60f5.pickle 2026-09-17 06:18
+=== PERSISTENT SHELL SETTINGS ===
+118:source /opt/ros/melodic/setup.bash
+119:export ROSDISTRO_INDEX_URL=https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml
+120:source ~/catkin_ws/devel/setup.bash
+=== FRESH INTERACTIVE SHELL CHECK ===
+bash: cannot set terminal process group (2504): Inappropriate ioctl for device
+bash: no job control in this shell
+ROS_DISTRO=melodic
+melodic
+/opt/ros/melodic/bin/roscore
+/opt/ros/melodic/bin/rosrun
+/opt/ros/melodic/share/turtlesim
+#apt
+ros-melodic-roscpp
+=== CURRENT ROS/TURTLESIM PROCESSES ===
+=== ROS RUN LOG EVIDENCE ===
+rostopic_33455_1789651192810.log
+dfb383b2-b29a-11f1-ad5f-000c29d42a39/master.log
+dfb383b2-b29a-11f1-ad5f-000c29d42a39/rosout.log
+dfb383b2-b29a-11f1-ad5f-000c29d42a39/rosout-1-stdout.log
+dfb383b2-b29a-11f1-ad5f-000c29d42a39/roslaunch-ubuntu-34330.log
+rostopic_33453_1789651192807.log
+fffd6854-b29a-11f1-ad5f-000c29d42a39/master.log
+fffd6854-b29a-11f1-ad5f-000c29d42a39/roslaunch-ubuntu-34531.log
+fffd6854-b29a-11f1-ad5f-000c29d42a39/rosout.log
+fffd6854-b29a-11f1-ad5f-000c29d42a39/rosout-1-stdout.log
+76a98de4-b29a-11f1-ad5f-000c29d42a39/master.log
+76a98de4-b29a-11f1-ad5f-000c29d42a39/rosout.log
+76a98de4-b29a-11f1-ad5f-000c29d42a39/rosout-1-stdout.log
+76a98de4-b29a-11f1-ad5f-000c29d42a39/roslaunch-ubuntu-33407.log
+=== LOG FILES MENTIONING TURTLESIM ===
+=== SAVED HISTORY COUNTS (NO COMMAND CONTENTS) ===
+roscore: 1
+turtlesim_node: 0
+turtle_teleop_key: 0
+=== EXISTING TEST LOG ===
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [33427][0m
+[1mROS_MASTER_URI=http://127.0.0.1:11319/[0m
+]2;roscore http://127.0.0.1:11319/
+[1msetting /run_id to 76a98de4-b29a-11f1-ad5f-000c29d42a39[0m
+[1mprocess[rosout-1]: started with pid [33438][0m
+started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+=== WORKSPACE ===
+CATKIN_WORKSPACE_BUILT
+AUDIT_FINISHED

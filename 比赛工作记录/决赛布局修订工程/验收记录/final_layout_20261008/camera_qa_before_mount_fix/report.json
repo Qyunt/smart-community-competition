@@ -1,0 +1,594 @@
+{
+  "records": [
+    {
+      "index": 1, 
+      "task": "TL_UP_WAIT", 
+      "pose": [
+        0.8, 
+        1.8, 
+        3.14159
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        0.8000000000001365, 
+        1.79999999581737
+      ], 
+      "images": {
+        "front": "01_TL_UP_WAIT_front.jpg", 
+        "wide": "01_TL_UP_WAIT_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 2, 
+      "task": "EBIKES_A", 
+      "pose": [
+        -0.4, 
+        1.8, 
+        -0.911
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        -0.4000000023842714, 
+        1.7999999979376555
+      ], 
+      "images": {
+        "front": "02_EBIKES_A_front.jpg", 
+        "wide": "02_EBIKES_A_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 3, 
+      "task": "PEOPLE_A_TOP_R", 
+      "pose": [
+        -0.4, 
+        1.8, 
+        -1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -0.39999999588144697, 
+        1.8000000001031256
+      ], 
+      "images": {
+        "front": "03_PEOPLE_A_TOP_R_front.jpg", 
+        "wide": "03_PEOPLE_A_TOP_R_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 4, 
+      "task": "PEOPLE_A_TOP_L", 
+      "pose": [
+        -1.2, 
+        1.8, 
+        -1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.1999999992420214, 
+        1.8000000000001364
+      ], 
+      "images": {
+        "front": "04_PEOPLE_A_TOP_L_front.jpg", 
+        "wide": "04_PEOPLE_A_TOP_L_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 5, 
+      "task": "PEOPLE_A_WEST_N", 
+      "pose": [
+        -1.8, 
+        1.4, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.8000000000001324, 
+        1.4000000008507743
+      ], 
+      "images": {
+        "front": "05_PEOPLE_A_WEST_N_front.jpg", 
+        "wide": "05_PEOPLE_A_WEST_N_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 6, 
+      "task": "PEOPLE_A_WEST_S", 
+      "pose": [
+        -1.8, 
+        1.0, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.8000000000001362, 
+        1.0000000008346839
+      ], 
+      "images": {
+        "front": "06_PEOPLE_A_WEST_S_front.jpg", 
+        "wide": "06_PEOPLE_A_WEST_S_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 7, 
+      "task": "SIGN_WEST", 
+      "pose": [
+        -1.8, 
+        0.4, 
+        -0.34302
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        -1.8000000004291163, 
+        0.3999999992148928
+      ], 
+      "images": {
+        "front": "07_SIGN_WEST_front.jpg", 
+        "wide": "07_SIGN_WEST_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 8, 
+      "task": "PEOPLE_B_WEST_N", 
+      "pose": [
+        -1.8, 
+        0.2, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.7999999999131993, 
+        0.20000000221104675
+      ], 
+      "images": {
+        "front": "08_PEOPLE_B_WEST_N_front.jpg", 
+        "wide": "08_PEOPLE_B_WEST_N_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 9, 
+      "task": "PEOPLE_B_WEST_S", 
+      "pose": [
+        -1.8, 
+        -0.2, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.8000000000001366, 
+        -0.19999999920284764
+      ], 
+      "images": {
+        "front": "09_PEOPLE_B_WEST_S_front.jpg", 
+        "wide": "09_PEOPLE_B_WEST_S_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 10, 
+      "task": "BUILDING_D", 
+      "pose": [
+        -1.8, 
+        -1.0, 
+        0
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        -1.8000000000001364, 
+        -0.9999999990903361
+      ], 
+      "images": {
+        "front": "10_BUILDING_D_front.jpg", 
+        "wide": "10_BUILDING_D_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 11, 
+      "task": "STATION_GAUGES", 
+      "pose": [
+        -0.6, 
+        -1.8, 
+        1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -0.600000000991384, 
+        -1.800000000000137
+      ], 
+      "images": {
+        "front": "11_STATION_GAUGES_front.jpg", 
+        "wide": "11_STATION_GAUGES_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 12, 
+      "task": "CAR_1", 
+      "pose": [
+        1.2, 
+        -1.8, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        1.1999999999998645, 
+        -1.7999999992574338
+      ], 
+      "images": {
+        "front": "12_CAR_1_front.jpg", 
+        "wide": "12_CAR_1_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 13, 
+      "task": "CAR_2", 
+      "pose": [
+        1.2, 
+        -1.2, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        1.1999999999998636, 
+        -1.1999999993142834
+      ], 
+      "images": {
+        "front": "13_CAR_2_front.jpg", 
+        "wide": "13_CAR_2_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 14, 
+      "task": "BINS_LOW", 
+      "pose": [
+        1.2, 
+        -1.2, 
+        3.14159
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        1.2000000000001376, 
+        -1.2000000008314486
+      ], 
+      "images": {
+        "front": "14_BINS_LOW_front.jpg", 
+        "wide": "14_BINS_LOW_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 15, 
+      "task": "BINS_HIGH", 
+      "pose": [
+        1.2, 
+        -0.8, 
+        3.14159
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        1.2000000000001365, 
+        -0.8000000008700281
+      ], 
+      "images": {
+        "front": "15_BINS_HIGH_front.jpg", 
+        "wide": "15_BINS_HIGH_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 16, 
+      "task": "CAR_3", 
+      "pose": [
+        1.2, 
+        -0.6, 
+        0
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        1.1999999999998645, 
+        -0.5999999992060547
+      ], 
+      "images": {
+        "front": "16_CAR_3_front.jpg", 
+        "wide": "16_CAR_3_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 17, 
+      "task": "BUILDING_B", 
+      "pose": [
+        1.2, 
+        0.0, 
+        3.14159
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        1.2000000000001374, 
+        -9.793489164545294e-10
+      ], 
+      "images": {
+        "front": "17_BUILDING_B_front.jpg", 
+        "wide": "17_BUILDING_B_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 18, 
+      "task": "EBIKES_LOW", 
+      "pose": [
+        1.2, 
+        0.0, 
+        0
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        1.1999999999998645, 
+        8.271692558415941e-10
+      ], 
+      "images": {
+        "front": "18_EBIKES_LOW_front.jpg", 
+        "wide": "18_EBIKES_LOW_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 19, 
+      "task": "EBIKES_MID", 
+      "pose": [
+        1.2, 
+        0.6, 
+        0
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        1.1999999999998636, 
+        0.6000000009343446
+      ], 
+      "images": {
+        "front": "19_EBIKES_MID_front.jpg", 
+        "wide": "19_EBIKES_MID_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 20, 
+      "task": "EBIKES_HIGH", 
+      "pose": [
+        1.2, 
+        1.2, 
+        0
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        1.1999999999998636, 
+        1.2000000006889415
+      ], 
+      "images": {
+        "front": "20_EBIKES_HIGH_front.jpg", 
+        "wide": "20_EBIKES_HIGH_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 21, 
+      "task": "TL_UP_WAIT_2", 
+      "pose": [
+        0.8, 
+        1.8, 
+        3.14159
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        0.8000000000001375, 
+        1.799999999129953
+      ], 
+      "images": {
+        "front": "21_TL_UP_WAIT_2_front.jpg", 
+        "wide": "21_TL_UP_WAIT_2_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 22, 
+      "task": "PEOPLE_A_SOUTH_L", 
+      "pose": [
+        -1.2, 
+        0.6, 
+        1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.200000000772936, 
+        0.5999999999998632
+      ], 
+      "images": {
+        "front": "22_PEOPLE_A_SOUTH_L_front.jpg", 
+        "wide": "22_PEOPLE_A_SOUTH_L_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 23, 
+      "task": "PEOPLE_B_NORTH_L", 
+      "pose": [
+        -1.2, 
+        0.6, 
+        -1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.199999998987126, 
+        0.6000000000001411
+      ], 
+      "images": {
+        "front": "23_PEOPLE_B_NORTH_L_front.jpg", 
+        "wide": "23_PEOPLE_B_NORTH_L_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 24, 
+      "task": "PEOPLE_A_SOUTH_R", 
+      "pose": [
+        -0.6, 
+        0.6, 
+        1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -0.6000000008308077, 
+        0.5999999999998683
+      ], 
+      "images": {
+        "front": "24_PEOPLE_A_SOUTH_R_front.jpg", 
+        "wide": "24_PEOPLE_A_SOUTH_R_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 25, 
+      "task": "PEOPLE_B_NORTH_R", 
+      "pose": [
+        -0.6, 
+        0.6, 
+        -1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -0.5999999992741225, 
+        0.6000000000001411
+      ], 
+      "images": {
+        "front": "25_PEOPLE_B_NORTH_R_front.jpg", 
+        "wide": "25_PEOPLE_B_NORTH_R_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 26, 
+      "task": "BUILDING_A", 
+      "pose": [
+        -0.4, 
+        0.6, 
+        0
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        -0.40000000000013136, 
+        0.6000000008829472
+      ], 
+      "images": {
+        "front": "26_BUILDING_A_front.jpg", 
+        "wide": "26_BUILDING_A_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 27, 
+      "task": "PEOPLE_B_EAST_HIGH", 
+      "pose": [
+        0.0, 
+        0.6, 
+        -2.531
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        -1.6114191158423144e-09, 
+        0.6000000021958479
+      ], 
+      "images": {
+        "front": "27_PEOPLE_B_EAST_HIGH_front.jpg", 
+        "wide": "27_PEOPLE_B_EAST_HIGH_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 28, 
+      "task": "PEOPLE_B_EAST", 
+      "pose": [
+        0.0, 
+        0.2, 
+        3.14159
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        3.1958597210984186e-11, 
+        0.1999999961747063
+      ], 
+      "images": {
+        "front": "28_PEOPLE_B_EAST_front.jpg", 
+        "wide": "28_PEOPLE_B_EAST_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 29, 
+      "task": "BUILDING_C", 
+      "pose": [
+        0.0, 
+        0.0, 
+        -0.71883
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        -2.1416179062343214e-09, 
+        -2.4960540687460306e-09
+      ], 
+      "images": {
+        "front": "29_BUILDING_C_front.jpg", 
+        "wide": "29_BUILDING_C_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 30, 
+      "task": "TL_LOW_WAIT", 
+      "pose": [
+        0.0, 
+        -0.2, 
+        -1.5708
+      ], 
+      "primary_camera": "front", 
+      "odom": [
+        4.328919625608755e-09, 
+        -0.19999999998409151
+      ], 
+      "images": {
+        "front": "30_TL_LOW_WAIT_front.jpg", 
+        "wide": "30_TL_LOW_WAIT_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }, 
+    {
+      "index": 31, 
+      "task": "RETURN", 
+      "pose": [
+        1.8, 
+        1.8, 
+        3.14159
+      ], 
+      "primary_camera": "wide", 
+      "odom": [
+        1.800000000000133, 
+        1.7999999991116646
+      ], 
+      "images": {
+        "front": "31_RETURN_front.jpg", 
+        "wide": "31_RETURN_wide.jpg"
+      }, 
+      "image_setup": "independent camera framing fixture; not autonomous navigation"
+    }
+  ], 
+  "planned": 31
+}

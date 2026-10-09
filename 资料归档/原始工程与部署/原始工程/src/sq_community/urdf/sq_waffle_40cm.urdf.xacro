@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="sq_waffle_40cm" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Retain the verified TurtleBot3 Waffle drive, camera, laser and TF tree. -->
+  <xacro:include filename="$(find turtlebot3_description)/urdf/turtlebot3_waffle.urdf.xacro"/>
+  <!-- A fixed 0.4 x 0.4 m collision/visual envelope represents the contest car. -->
+  <link name="sq_bumper_link">
+    <visual>
+      <origin xyz="0 0 0.048" rpy="0 0 0"/>
+      <geometry><box size="0.400 0.400 0.018"/></geometry>
+      <material name="contest_blue"><color rgba="0.08 0.30 0.63 0.82"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.048" rpy="0 0 0"/>
+      <geometry><box size="0.400 0.400 0.018"/></geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0.048" rpy="0 0 0"/>
+      <mass value="0.10"/>
+      <inertia ixx="0.00134" ixy="0" ixz="0" iyy="0.00134" iyz="0" izz="0.00267"/>
+    </inertial>
+  </link>
+  <joint name="sq_bumper_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="sq_bumper_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

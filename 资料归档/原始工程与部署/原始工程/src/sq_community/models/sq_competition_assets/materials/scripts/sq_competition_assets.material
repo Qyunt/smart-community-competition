@@ -1,0 +1,451 @@
+material SQ4_CarRear
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture car_rear_cutout.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_01
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_01.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_02
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_02.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_03
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_03.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_04
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_04.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_05
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_05.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_06
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_06.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_07
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_07.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_08
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_08.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_09
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_09.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_10
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_10.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_11
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_11.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_12
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_12.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_13
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_13.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_14
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_14.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_15
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_15.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_16
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_16.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_17
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_17.png
+   }
+  }
+ }
+}
+
+material SQ4_Person_18
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture person_18.png
+   }
+  }
+ }
+}
+
+material SQ4_Plate_Blue
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture plate_blue.png
+   }
+  }
+ }
+}
+
+material SQ4_Plate_Yellow
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture plate_yellow.png
+   }
+  }
+ }
+}
+
+material SQ4_Plate_Green
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture plate_green.png
+   }
+  }
+ }
+}
+
+material SQ4_Plate_White
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture plate_white.png
+   }
+  }
+ }
+}
+
+material SQ4_Light_Red
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture light_red.png
+   }
+  }
+ }
+}
+
+material SQ4_Light_Yellow
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture light_yellow.png
+   }
+  }
+ }
+}
+
+material SQ4_Light_Green
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   
+   texture_unit
+   {
+    texture light_green.png
+   }
+  }
+ }
+}
+
+material SQ4_CarRearLarge
+{
+ technique
+ {
+  pass
+  {
+   lighting off
+   scene_blend alpha_blend
+   depth_write off
+   texture_unit
+   {
+    texture car_rear_large_cutout.png
+   }
+  }
+ }
+}

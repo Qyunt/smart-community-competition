@@ -1,0 +1,466 @@
+{
+  "purpose": "Active final-layout observation points; camera runtime QA required",
+  "views": [
+    {
+      "id": "TL_UP_WAIT",
+      "robot_pose_xy_yaw": [
+        0.8,
+        1.8,
+        3.14159
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "first upper red-to-green gate",
+      "target": "sq4_tl_upper",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_TOP_R",
+      "robot_pose_xy_yaw": [
+        0.0,
+        1.8,
+        -2.11
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A north-facing portraits, diagonal right view clear of standee backs",
+      "target": "sq4_person_03",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "EBIKES_A",
+      "robot_pose_xy_yaw": [
+        -0.4,
+        1.8,
+        -0.911
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "diagonal view of A street parking violations",
+      "target": "sq4_ebike_11",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_TOP_L",
+      "robot_pose_xy_yaw": [
+        -1.2,
+        1.8,
+        -1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A north-facing portraits, left view",
+      "target": "sq4_person_01",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_WEST_N",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        1.4,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A west-facing portraits, north view",
+      "target": "sq4_person_08",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_WEST_S",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        1.0,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A west-facing portraits, south view",
+      "target": "sq4_person_07",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "SIGN_WEST",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        0.4,
+        -0.34302
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "sign at B northwest corner; interchangeable label",
+      "target": "sq4_sign_speed30",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_WEST_N",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        0.2,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "B west-facing portraits, north view",
+      "target": "sq4_person_15",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_WEST_S",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        -0.2,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "B west-facing portraits, south view",
+      "target": "sq4_person_14",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BUILDING_D",
+      "robot_pose_xy_yaw": [
+        -1.8,
+        -1.0,
+        0
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "D west facade and temperature target",
+      "target": "sq4_building_D",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "STATION_GAUGES",
+      "robot_pose_xy_yaw": [
+        -0.6,
+        -1.8,
+        1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "station south-facing gauges",
+      "target": "sq4_station",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "CAR_1",
+      "robot_pose_xy_yaw": [
+        1.2,
+        -1.8,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "west-facing bay 1 plate",
+      "target": "sq4_car_1",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "CAR_2",
+      "robot_pose_xy_yaw": [
+        1.2,
+        -1.2,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "west-facing bay 2 plate",
+      "target": "sq4_car_2",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BINS_LOW",
+      "robot_pose_xy_yaw": [
+        1.2,
+        -1.2,
+        3.14159
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "lower two east-facing bins",
+      "target": "sq4_bin_kitchen",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BINS_HIGH",
+      "robot_pose_xy_yaw": [
+        1.2,
+        -0.8,
+        3.14159
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "upper two east-facing bins",
+      "target": "sq4_bin_hazard",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "CAR_3",
+      "robot_pose_xy_yaw": [
+        1.2,
+        -0.6,
+        0
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "west-facing bay 3 plate",
+      "target": "sq4_car_3",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BUILDING_B",
+      "robot_pose_xy_yaw": [
+        1.2,
+        0.0,
+        3.14159
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "B east facade",
+      "target": "sq4_building_B",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "EBIKES_LOW",
+      "robot_pose_xy_yaw": [
+        1.2,
+        0.0,
+        0
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "lower e-bike parking",
+      "target": "sq4_ebike_01",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "EBIKES_MID",
+      "robot_pose_xy_yaw": [
+        1.2,
+        0.6,
+        0
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "middle e-bike parking",
+      "target": "sq4_ebike_05",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "EBIKES_HIGH",
+      "robot_pose_xy_yaw": [
+        1.2,
+        1.2,
+        0
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "upper e-bike parking including fallen models",
+      "target": "sq4_ebike_09",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "TL_UP_WAIT_2",
+      "robot_pose_xy_yaw": [
+        0.8,
+        1.8,
+        3.14159
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "second upper red-to-green gate",
+      "target": "sq4_tl_upper",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_SOUTH_L",
+      "robot_pose_xy_yaw": [
+        -1.2,
+        0.6,
+        1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A south-facing portraits, left view",
+      "target": "sq4_person_04",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_NORTH_L",
+      "robot_pose_xy_yaw": [
+        -1.2,
+        0.6,
+        -1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "B north-facing portraits, left view",
+      "target": "sq4_person_10",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_A_SOUTH_R",
+      "robot_pose_xy_yaw": [
+        -0.6,
+        0.6,
+        1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "A south-facing portraits, right view",
+      "target": "sq4_person_06",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_NORTH_R",
+      "robot_pose_xy_yaw": [
+        -0.6,
+        0.6,
+        -1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "B north-facing portraits, right view",
+      "target": "sq4_person_12",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BUILDING_A",
+      "robot_pose_xy_yaw": [
+        -0.4,
+        0.6,
+        0
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "A west facade",
+      "target": "sq4_building_A",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_EAST_HIGH",
+      "robot_pose_xy_yaw": [
+        0.0,
+        0.6,
+        -2.531
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "diagonal front view of B east-facing portraits",
+      "target": "sq4_person_18",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "PEOPLE_B_EAST",
+      "robot_pose_xy_yaw": [
+        0.0,
+        0.2,
+        3.14159
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "B east-facing portraits",
+      "target": "sq4_person_18",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "BUILDING_C",
+      "robot_pose_xy_yaw": [
+        0.0,
+        0.0,
+        -0.71883
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "C facade above signal wait; no stop-line overlap",
+      "target": "sq4_building_C",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "TL_LOW_WAIT",
+      "robot_pose_xy_yaw": [
+        0.0,
+        -0.2,
+        -1.5708
+      ],
+      "camera": "/camera/rgb/image_raw",
+      "purpose": "lower red-to-green gate",
+      "target": "sq4_tl_lower",
+      "wired_into_patrol": true
+    },
+    {
+      "id": "RETURN",
+      "robot_pose_xy_yaw": [
+        1.8,
+        1.8,
+        3.14159
+      ],
+      "camera": "/task_camera/image_raw",
+      "purpose": "finish via start-finish access",
+      "target": "sq4_zone_start_finish",
+      "wired_into_patrol": true
+    }
+  ],
+  "nominal_portrait_frustum_coverage": {
+    "sq4_person_01": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_TOP_L"
+    ],
+    "sq4_person_02": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_03": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_04": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_05": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_06": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_07": [
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_08": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_09": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_10": [
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L",
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_11": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_12": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH"
+    ],
+    "sq4_person_13": [
+      "PEOPLE_B_WEST_N"
+    ],
+    "sq4_person_14": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L"
+    ],
+    "sq4_person_15": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R"
+    ],
+    "sq4_person_16": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_17": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_18": [
+      "PEOPLE_B_EAST_HIGH"
+    ]
+  },
+  "coverage_limit": "Framing does not prove occlusion-free images, detection or recognition; runtime camera inspection required."
+}

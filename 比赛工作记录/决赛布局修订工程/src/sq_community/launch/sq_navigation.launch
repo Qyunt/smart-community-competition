@@ -1,0 +1,49 @@
+<launch>
+  <!-- ============================================================
+       第三步：导航（AMCL 定位 + move_base 路径规划/避障）
+       用法:
+         roslaunch sq_community sq_navigation.launch \
+             map_file:=$HOME/sq_ws/src/sq_community/maps/sq_community.yaml
+       注意：本 launch 不重复启动 robot_state_publisher
+             （它已由 sq_community.launch 启动），避免 TF 冲突。
+       ============================================================ -->
+
+  <arg name="model"   default="$(optenv TURTLEBOT3_MODEL waffle)"/>
+  <arg name="map_file" default="$(find sq_community)/maps/sq_community.yaml"/>
+  <arg name="open_rviz" default="true"/>
+  <arg name="initial_pose_x" default="-4.60"/>
+  <arg name="initial_pose_y" default="1.80"/>
+  <arg name="initial_pose_a" default="0.0"/>
+
+  <!-- 地图 -->
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+
+  <!-- AMCL 粒子滤波定位（初始位姿对齐出发区） -->
+  <include file="$(find turtlebot3_navigation)/launch/amcl.launch">
+    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+    <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+  </include>
+
+  <!-- ============================================================
+       代价地图 + DWA 局部规划
+       ⚠ 不要改回 turtlebot3_navigation/launch/move_base.launch：
+         那套参数是给开阔室内环境标定的（inflation_radius 1.0 m /
+         conservative_reset_dist 3.0 m），在本场地（10.0×7.2 m，
+         街道净宽约 1.1 m）会频繁触发 DWA 规划失败和"卡住恢复"。
+         本包自带的 param/sq_*.yaml 是**按本场地尺度重新标定**的，
+         每处改动的理由都写在对应 yaml 的注释里。
+       ============================================================ -->
+  <include file="$(find sq_community)/launch/sq_move_base.launch">
+    <arg name="model" value="$(arg model)"/>
+  </include>
+
+  <!-- ⚠ 用本包自己的 sq_nav.rviz，不要改回 turtlebot3_navigation 的原版：
+       原版视角是 Angle=-90° + Scale=112（每米像素），是给"几米见方的室内房间"
+       调的；本场地是 10.0×7.2 m 的横长条，拿原版录视频只能看到中间约 5 m，
+       两头（出生区、泊车位）都在画面外。改动理由写在 tools/mk_sq_rviz.py。 -->
+  <group if="$(arg open_rviz)">
+    <node pkg="rviz" type="rviz" name="rviz_nav" required="true"
+          args="-d $(find sq_community)/rviz/sq_nav.rviz"/>
+  </group>
+</launch>

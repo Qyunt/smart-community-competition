@@ -1,0 +1,40 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/opt/ros/melodic/lib/python2.7/dist-packages/roslib/packages.py:470: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  if resource_name in files:
+[1;31m[Err] [0m[1;31m[[0m[1;31mREST.cc[0m[1;31m:[0m[1;31m205[0m[1;31m] [0m[1;31mError in REST request[0m[1;31m[0m
+
+libcurl: (51) SSL: no alternative certificate subject name matches target host name 'api.ignitionfuel.org'
+[0m[ INFO] [1791464185.526330200]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1791464185.529354220]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[ INFO] [1791464186.998983314]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1791464187.044239336, 0.011000000]: Physics dynamic reconfigure ready.[0m
+[0m[ INFO] [1791464187.154932908, 0.100000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.647180110, 0.155000000]: Camera Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[ INFO] [1791464187.653161315, 0.155000000]: Laser Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[ INFO] [1791464187.653231802, 0.155000000]: Starting Laser Plugin (ns = /)[0m
+[0m[ INFO] [1791464187.654193159, 0.155000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+[0m[ INFO] [1791464187.661423920, 0.155000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+[0m[ INFO] [1791464187.685526091, 0.155000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.687343353, 0.155000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.688791860, 0.155000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.689971066, 0.155000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.691632988, 0.155000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464187.705359173, 0.155000000]: Camera Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[ INFO] [1791464187.757526948, 0.155000000]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+[0m[ INFO] [1791464200.314372770, 10.201000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464200.329417890, 10.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464200.330546987, 10.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464200.333180169, 10.206000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464200.341138708, 10.207000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464200.344364845, 10.208000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.749058449, 25.304000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.750953299, 25.306000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.753555410, 25.307000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.755031172, 25.308000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.756727503, 25.309000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464218.758746378, 25.310000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464222.424869463, 28.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464222.427237307, 28.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464222.428978321, 28.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464222.431173946, 28.404000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[ INFO] [1791464222.433778737, 28.405000000]: Updating LinkState: reference_frame is empty/world/

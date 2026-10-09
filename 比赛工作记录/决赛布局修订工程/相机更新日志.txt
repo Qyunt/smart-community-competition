@@ -1,0 +1,2 @@
+OK: connected 261 cells; 31 task points; 42 planned patrol goals; 45 objects; 27 asset textures
+OK: map 92 x 92 ; 2544 occupied pixels; 42 goals clear for 0.334 x 0.303 m body

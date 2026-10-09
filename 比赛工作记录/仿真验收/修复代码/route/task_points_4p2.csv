@@ -1,0 +1,17 @@
+﻿task_id,grid_x,grid_y,gazebo_x_m,gazebo_y_m,yaw_rad,model_id,asset_id,purpose
+TL_UP_WAIT,14,19,0.800,1.800,3.14159,sq4_tl_upper,light_red/green/yellow,upper signal and stop line
+PEOPLE_A,6,19,-0.800,1.800,-1.57080,sq4_person_01,person_01..09,A-zone count and outsiders
+SIGN_WEST,1,14,-1.800,0.800,0.00000,sq4_sign_speed30,sign_speed30,road sign
+BUILDING_D,1,6,-1.800,-0.800,0.00000,sq4_building_D,win_hot,D building heat
+PEOPLE_B,6,13,-0.800,0.600,-1.57080,sq4_person_10,person_10..18,B-zone count
+BUILDING_A,8,13,-0.400,0.600,0.00000,sq4_building_A,win_fire,A building fires
+BINS,10,10,0.000,0.000,3.14159,sq4_bin_recycle,bin_recycle/hazard/kitchen/other,bin state
+TL_LOW_WAIT,10,9,0.000,-0.200,-1.57080,sq4_tl_lower,light_red/green/yellow,lower signal and stop line
+BUILDING_C,10,4,0.000,-1.200,0.00000,sq4_building_C,win_fire,C building fires
+STATION_GAUGES,7,1,-0.600,-1.800,1.57080,sq4_station,gauge_1/2,station readings
+CAR_1,16,1,1.200,-1.800,0.00000,sq4_car_1,plate_blue,car plate bay 1
+CAR_2,16,4,1.200,-1.200,0.00000,sq4_car_2,plate_yellow,car plate bay 2
+CAR_3,16,7,1.200,-0.600,0.00000,sq4_car_3,plate_green,car plate bay 3
+BUILDING_B,16,10,1.200,0.000,3.14159,sq4_building_B,win_fire,B building fires
+EBIKES,16,13,1.200,0.600,0.00000,sq4_ebike_01,upright/fallen,e-bike parking states
+RETURN,19,19,1.800,1.800,3.14159,sq4_zone_start_finish,none,return to start/finish zone

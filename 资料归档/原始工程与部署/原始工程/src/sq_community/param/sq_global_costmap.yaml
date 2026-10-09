@@ -1,0 +1,26 @@
+# =============================================================================
+# sq_global_costmap.yaml —— 全局代价地图（静态地图 + 激光障碍 + 膨胀）
+#
+# 与库存的区别：
+#   1. 显式给出 plugins 列表（库存不给，会在日志里刷
+#      "Parameter plugins not provided, loading pre-Hydro parameters" 警告）
+#   2. update/publish 从 10 Hz 降到 5 Hz —— 场地只有 10×7.2 m，
+#      全局代价地图基本不变，10 Hz 纯属浪费 CPU
+#   3. track_unknown_space: false —— 地图边缘的未知格**不要**当成障碍，
+#      否则机器人在贴边位置会被"未知区域"挡死
+# =============================================================================
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_footprint
+
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  transform_tolerance: 0.5
+
+  rolling_window: false
+  track_unknown_space: false
+
+  plugins:
+    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}

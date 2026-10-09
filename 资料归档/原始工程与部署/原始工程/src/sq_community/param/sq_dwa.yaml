@@ -1,0 +1,60 @@
+# =============================================================================
+# sq_dwa.yaml —— DWA 局部规划器参数（智慧社区场地专用）
+#
+# 【为什么要改】库存 waffle 参数的三个致命值：
+#   · min_vel_theta: 0.9 —— 角速度要么不动、要么 ≥0.9 rad/s，
+#     在 1.1 m 宽的街道上"微调方向"根本做不到，一转向就过冲
+#   · occdist_scale: 0.02 —— 避障权重低得几乎不起作用，
+#     局部规划器宁可擦着电动车走
+#   · xy_goal_tolerance: 0.05 —— 观测点最窄处离障碍只有 0.28 m，
+#     0.05 m 的到点容差 + 0.32 m 膨胀半径 = 目标点永远落在高代价格里，
+#     DWA 于是反复 "failed to produce path"
+#
+# 【怎么改】降低速度上限、允许慢速原地转、提高避障权重、放宽到点容差，
+# 并打开 latch_xy_goal_tolerance（进了 xy 容差就只转不平移，避免到点抖振）。
+# =============================================================================
+DWAPlannerROS:
+
+  # ---- 机器人运动能力（整体降速，窄场地求稳）----
+  max_vel_x: 0.22          # 0.26 → 0.22
+  min_vel_x: -0.08         # -0.26 → -0.08：只留很小的倒车余量
+  max_vel_y: 0.0
+  min_vel_y: 0.0
+
+  max_vel_trans: 0.22      # 0.26 → 0.22
+  min_vel_trans: 0.08      # 0.13 → 0.08：要能把速度压到很低才不会顶到障碍
+
+  max_vel_theta: 1.60      # 1.82 → 1.60
+  min_vel_theta: 0.25      # 0.90 → 0.25 ← 关键，见文件头
+
+  acc_lim_x: 1.5           # 2.5 → 1.5：加速度小一点，起停更平滑
+  acc_lim_y: 0.0
+  acc_lim_theta: 2.0       # 3.2 → 2.0
+
+  # ---- 到点容差（窄场地必须放宽，否则目标点落在膨胀区里永远"到不了"）----
+  xy_goal_tolerance: 0.15     # 0.05 → 0.15
+  yaw_goal_tolerance: 0.30    # 0.17 → 0.30
+  latch_xy_goal_tolerance: true   # 进了 xy 容差就只转不平移，避免到点抖振
+
+  # ---- 前向仿真 ----
+  sim_time: 1.5            # 2.0 → 1.5：场地小，1.5 s 已能覆盖一个决策周期
+  vx_samples: 20
+  vy_samples: 0
+  vth_samples: 40
+  controller_frequency: 10.0
+
+  # ---- 轨迹评价 ----
+  path_distance_bias: 32.0
+  goal_distance_bias: 24.0     # 20 → 24：更愿意"贴着目标走"
+  occdist_scale: 0.06          # 0.02 → 0.06 ← 关键，避障权重提高 3 倍
+  forward_point_distance: 0.20 # 0.325 → 0.20：前视点拉近，窄道里更灵活
+  stop_time_buffer: 0.2
+  scaling_speed: 0.25
+  max_scaling_factor: 0.2
+
+  # ---- 防抖 ----
+  oscillation_reset_dist: 0.05
+
+  # ---- 调试输出（关掉省 CPU；要可视化时把这两行改 true）----
+  publish_traj_pc: false
+  publish_cost_grid_pc: false

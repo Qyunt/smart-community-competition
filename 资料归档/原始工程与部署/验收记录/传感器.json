@@ -1,0 +1,54 @@
+{
+  "topics": {
+    "/camera/rgb/image_raw": {
+      "received": true, 
+      "data_bytes": 2764800, 
+      "wall_time": 1791454008.145345, 
+      "encoding": "rgb8", 
+      "width": 1280, 
+      "height": 720
+    }, 
+    "/sq/vision/traffic_light": {
+      "received": true, 
+      "value": "unknown", 
+      "wall_time": 1791454007.963346
+    }, 
+    "/camera/depth/image_raw": {
+      "received": true, 
+      "data_bytes": 3686400, 
+      "wall_time": 1791454008.127027, 
+      "encoding": "32FC1", 
+      "width": 1280, 
+      "height": 720
+    }, 
+    "/odom": {
+      "y": 1.7999999720315494, 
+      "received": true, 
+      "frame": "odom", 
+      "x": 1.8000000000005065, 
+      "wall_time": 1791454008.187782
+    }, 
+    "/scan": {
+      "received": true, 
+      "frame": "base_scan", 
+      "rays": 360, 
+      "wall_time": 1791454008.204446
+    }, 
+    "/map": {
+      "received": true, 
+      "height": 92, 
+      "resolution": 0.05000000074505806, 
+      "width": 92, 
+      "wall_time": 1791454005.833693
+    }, 
+    "/task_camera/image_raw": {
+      "received": true, 
+      "data_bytes": 2764800, 
+      "wall_time": 1791454008.155104, 
+      "encoding": "rgb8", 
+      "width": 1280, 
+      "height": 720
+    }
+  }, 
+  "missing": []
+}

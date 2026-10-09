@@ -1,0 +1,13 @@
+{
+  "vm_source_files_compared": 68,
+  "vm_vs_source_differences": [],
+  "map_evidence_checks": {
+    "raw_sha256_matches_record": true,
+    "crop_sha256_matches_record": true,
+    "crop_pixels_match_raw_crop": true,
+    "derived_map_sha256_matches_record": true,
+    "nav_source_sha256_matches_crop": true
+  },
+  "crop_unknown_pixels": 1807,
+  "crop_total_pixels": 8464
+}

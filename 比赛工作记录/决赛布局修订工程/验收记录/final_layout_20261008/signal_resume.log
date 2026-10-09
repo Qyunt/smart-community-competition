@@ -1,0 +1,26 @@
+[INFO] [1791560073.263328, 38.575000]: [sq4 lights] state=red
+[INFO] [1791560086.799335, 48.582000]: [sq4 lights] state=green
+[INFO] [1791560105.944000, 63.679000]: [sq4 lights] state=yellow
+[INFO] [1791560110.682144, 66.780000]: [sq4 lights] state=red
+[INFO] [1791560126.245174, 76.888000]: [sq4 lights] state=green
+[INFO] [1791560148.944665, 91.986000]: [sq4 lights] state=yellow
+[INFO] [1791560153.773317, 95.085000]: [sq4 lights] state=red
+[INFO] [1791560168.303165, 105.190000]: [sq4 lights] state=green
+[INFO] [1791560189.059947, 120.281000]: [sq4 lights] state=yellow
+[INFO] [1791560193.317853, 123.381000]: [sq4 lights] state=red
+[INFO] [1791560205.505770, 133.485000]: [sq4 lights] state=green
+[INFO] [1791560223.985769, 148.583000]: [sq4 lights] state=yellow
+[INFO] [1791560227.781209, 151.681000]: [sq4 lights] state=red
+[INFO] [1791560240.258994, 161.789000]: [sq4 lights] state=green
+[INFO] [1791560258.605629, 176.878000]: [sq4 lights] state=yellow
+[INFO] [1791560262.654092, 179.981000]: [sq4 lights] state=red
+[INFO] [1791560275.314158, 190.081000]: [sq4 lights] state=green
+[INFO] [1791560293.803065, 205.186000]: [sq4 lights] state=yellow
+[INFO] [1791560297.578754, 208.279000]: [sq4 lights] state=red
+[INFO] [1791560309.922503, 218.388000]: [sq4 lights] state=green
+[INFO] [1791560328.473626, 233.483000]: [sq4 lights] state=yellow
+[INFO] [1791560332.739533, 236.582000]: [sq4 lights] state=red
+[INFO] [1791560346.408297, 246.692000]: [sq4 lights] state=green
+[INFO] [1791560367.386793, 261.789000]: [sq4 lights] state=yellow
+[INFO] [1791560371.185558, 264.885000]: [sq4 lights] state=red
+shutdown request: user request

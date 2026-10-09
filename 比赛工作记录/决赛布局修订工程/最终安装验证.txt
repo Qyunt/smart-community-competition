@@ -1,0 +1,12 @@
+OK: connected 261 cells; 31 task points; 41 planned patrol goals; 45 objects; 27 asset textures
+OK: map 92 x 92 ; 2544 occupied pixels; 41 goals clear for 0.334 x 0.303 m body
+/gazebo
+/gazebo_gui
+/robot_state_publisher
+/rosout
+/sq_traffic_light_4p2
+5930 /bin/sh /opt/ros/melodic/lib/gazebo_ros/gzclient __name:=gazebo_gui __log:=/home/qyunt/.ros/log/ab91a2da-c3f7-11f1-8ebb-000c29d42a39/gazebo_gui-3.log
+5981 gzclient -g /opt/ros/melodic/lib/libgazebo_ros_paths_plugin.so -g /opt/ros/melodic/lib/libgazebo_ros_api_plugin.so __name:=gazebo_gui __log:=/home/qyunt/.ros/log/ab91a2da-c3f7-11f1-8ebb-000c29d42a39/gazebo_gui-3.log
+        c1        121 gdm              seat0            tty1            
+         2       1000 qyunt            seat0            tty2            
+FINAL_SOURCE_INSTALLED

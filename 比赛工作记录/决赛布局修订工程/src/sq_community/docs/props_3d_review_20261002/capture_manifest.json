@@ -1,0 +1,176 @@
+[
+  {
+    "stamp": 88.708, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/02_people_B.png", 
+    "label": "02_people_B"
+  }, 
+  {
+    "stamp": 89.563, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/03_people_close_front.png", 
+    "label": "03_people_close_front"
+  }, 
+  {
+    "stamp": 90.512, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/04_people_close_back.png", 
+    "label": "04_people_close_back"
+  }, 
+  {
+    "stamp": 91.342, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/05_ebike_parking.png", 
+    "label": "05_ebike_parking"
+  }, 
+  {
+    "stamp": 92.128, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/06_ebike_detail.png", 
+    "label": "06_ebike_detail"
+  }, 
+  {
+    "stamp": 92.928, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/07_ebike_fallen.png", 
+    "label": "07_ebike_fallen"
+  }, 
+  {
+    "stamp": 93.748, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/08_ebike_A_violations.png", 
+    "label": "08_ebike_A_violations"
+  }, 
+  {
+    "stamp": 94.522, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/09_scene_overview.png", 
+    "label": "09_scene_overview"
+  }, 
+  {
+    "stamp": 95.421, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_people_A_front.png", 
+    "label": "robot_people_A_front"
+  }, 
+  {
+    "stamp": 95.421, 
+    "topic_camera": "wide", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_people_A_wide.png", 
+    "label": "robot_people_A_wide"
+  }, 
+  {
+    "stamp": 96.229, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_people_B_front.png", 
+    "label": "robot_people_B_front"
+  }, 
+  {
+    "stamp": 96.229, 
+    "topic_camera": "wide", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_people_B_wide.png", 
+    "label": "robot_people_B_wide"
+  }, 
+  {
+    "stamp": 97.044, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_ebikes_front.png", 
+    "label": "robot_ebikes_front"
+  }, 
+  {
+    "stamp": 97.044, 
+    "topic_camera": "wide", 
+    "file": "/home/terry/sq4_props3d_review_20261002/robot_ebikes_wide.png", 
+    "label": "robot_ebikes_wide"
+  }, 
+  {
+    "stamp": 97.855, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_1.png", 
+    "label": "scan_A_1"
+  }, 
+  {
+    "stamp": 98.547, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_2.png", 
+    "label": "scan_A_2"
+  }, 
+  {
+    "stamp": 99.358, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_3.png", 
+    "label": "scan_A_3"
+  }, 
+  {
+    "stamp": 100.193, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_B_1.png", 
+    "label": "scan_B_1"
+  }, 
+  {
+    "stamp": 101.052, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_B_2.png", 
+    "label": "scan_B_2"
+  }, 
+  {
+    "stamp": 101.886, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_B_3.png", 
+    "label": "scan_B_3"
+  }, 
+  {
+    "stamp": 102.709, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_violations_1.png", 
+    "label": "scan_A_violations_1"
+  }, 
+  {
+    "stamp": 103.51, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_violations_2.png", 
+    "label": "scan_A_violations_2"
+  }, 
+  {
+    "stamp": 104.269, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_violations_3.png", 
+    "label": "scan_A_violations_3"
+  }, 
+  {
+    "stamp": 105.031, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_parking_1.png", 
+    "label": "scan_parking_1"
+  }, 
+  {
+    "stamp": 105.757, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_parking_2.png", 
+    "label": "scan_parking_2"
+  }, 
+  {
+    "stamp": 106.517, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_parking_3.png", 
+    "label": "scan_parking_3"
+  }, 
+  {
+    "stamp": 107.295, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_parking_4.png", 
+    "label": "scan_parking_4"
+  }, 
+  {
+    "stamp": 685.063, 
+    "topic_camera": "review", 
+    "file": "/home/terry/sq4_props3d_review_20261002/01_people_A.png", 
+    "label": "01_people_A"
+  }, 
+  {
+    "stamp": 685.949, 
+    "topic_camera": "front", 
+    "file": "/home/terry/sq4_props3d_review_20261002/scan_A_4.png", 
+    "label": "scan_A_4"
+  }
+]

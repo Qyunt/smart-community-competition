@@ -1,0 +1,3 @@
+[1;31m[Err] [0m[1;31m[[0m[1;31mREST.cc[0m[1;31m:[0m[1;31m205[0m[1;31m] [0m[1;31mError in REST request[0m[1;31m[0m
+
+libcurl: (51) SSL: no alternative certificate subject name matches target host name 'api.ignitionfuel.org'

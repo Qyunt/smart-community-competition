@@ -1,0 +1,54 @@
+<launch>
+  <!-- ============================================================
+       智慧社区仿真场地  ——  第一步：起 Gazebo + 生成机器人
+       用法:
+         export TURTLEBOT3_MODEL=waffle
+         roslaunch sq_community sq_community.launch
+       机器人出生在出发区 (-4.60, 1.80)，车头朝 +x（沿 A 街向东）
+
+       ⚠ 如果 Gazebo 窗口没出来：场地有 256 个物体，gzserver 要几十秒
+         才加载完，而 gzclient 连不上 gzserver 就会立刻以 255 退出。
+         补一条命令即可（服务和世界都还在）：
+             gzclient
+         或改用：  roslaunch sq_community sq_community.launch gui:=false
+                   （等 40-60 秒后另开终端执行 gzclient）
+       ============================================================ -->
+
+  <arg name="model"  default="$(optenv TURTLEBOT3_MODEL waffle)" doc="waffle 才有深度相机"/>
+  <arg name="x_pos"  default="-4.60"/>
+  <arg name="y_pos"  default="1.80"/>
+  <arg name="z_pos"  default="0.01"/>
+  <arg name="gui"    default="true"/>
+  <arg name="rviz"   default="true"/>
+  <arg name="traffic_light" default="true"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find sq_community)/worlds/sq_community.world"/>
+    <arg name="paused"     value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui"        value="$(arg gui)"/>
+    <arg name="headless"   value="false"/>
+    <arg name="debug"      value="false"/>
+  </include>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
+
+  <!-- 机器人本体 -->
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"
+        args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description"/>
+
+  <!-- TF 树：/tf 与 /tf_static 由它发布（gmapping / amcl 依赖） -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+    <param name="publish_frequency" value="30.0"/>
+  </node>
+
+  <!-- 红绿灯：红10s -> 绿15s -> 黄3s，动态换灯 -->
+  <node pkg="sq_community" type="traffic_light_controller.py" name="sq_traffic_light"
+        output="screen" if="$(arg traffic_light)"/>
+
+  <!-- 场景自带 RViz（可选）。同样换成按本场地尺度调过视角的 sq_slam.rviz，
+       原版 turtlebot3_gmapping.rviz 会把场地两头裁掉。 -->
+  <node pkg="rviz" type="rviz" name="rviz" if="$(arg rviz)"
+        args="-d $(find sq_community)/rviz/sq_slam.rviz"/>
+</launch>

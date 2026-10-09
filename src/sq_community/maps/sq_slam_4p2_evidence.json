@@ -1,0 +1,28 @@
+{
+  "source": "GMapping /map after 33/33 current 4.2 m patrol goals",
+  "raw_size_pixels": [
+    288,
+    288
+  ],
+  "crop_box_pixels": [
+    0,
+    196,
+    92,
+    288
+  ],
+  "crop_size_pixels": [
+    92,
+    92
+  ],
+  "resolution_m": 0.05,
+  "origin_m": [
+    -2.3,
+    -2.3,
+    0.0
+  ],
+  "raw_sha256": "1b4b7df616995a969b39f44325e5fd5f726f24b145e303c4a28749badc102475",
+  "crop_sha256": "d9074c6664f4a31ff52a329db6e1e67d949117eba32d712cda8a618d7861aeba",
+  "crop_occupied_pixels": 784,
+  "crop_free_pixels": 5873,
+  "crop_unknown_pixels": 1807
+}

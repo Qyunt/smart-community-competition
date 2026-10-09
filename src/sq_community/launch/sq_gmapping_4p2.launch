@@ -1,0 +1,19 @@
+<launch>
+  <!-- GMapping for the current 4.2 m world and mecanum robot. Run separately
+       from map_server/AMCL; save the resulting /map after the mapping route. -->
+  <node pkg="gmapping" type="slam_gmapping" name="sq4_slam_gmapping" output="screen">
+    <param name="base_frame" value="base_footprint"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="map_frame" value="map"/>
+    <rosparam command="load" file="$(find turtlebot3_slam)/config/gmapping_params.yaml"/>
+    <param name="delta" value="0.05"/>
+    <param name="xmin" value="-2.3"/>
+    <param name="ymin" value="-2.3"/>
+    <param name="xmax" value="2.3"/>
+    <param name="ymax" value="2.3"/>
+    <param name="particles" value="40"/>
+    <param name="linearUpdate" value="0.05"/>
+    <param name="angularUpdate" value="0.05"/>
+    <param name="temporalUpdate" value="-1.0"/>
+  </node>
+</launch>

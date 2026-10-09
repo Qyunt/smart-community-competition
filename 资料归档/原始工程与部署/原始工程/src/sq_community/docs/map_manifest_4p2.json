@@ -1,0 +1,49 @@
+{
+  "source": "SDF collision geometry of sq_community_4p2.world",
+  "status": "geometric prior; live localization and drive test required",
+  "resolution_m": 0.05,
+  "origin_xy_m": [
+    -2.3,
+    -2.3
+  ],
+  "size_pixels": [
+    92,
+    92
+  ],
+  "collision_shapes": 31,
+  "occupied_pixels": 2667,
+  "free_pixels": 5797,
+  "collision_models": [
+    "sq4_bin_hazard",
+    "sq4_bin_kitchen",
+    "sq4_bin_other",
+    "sq4_bin_recycle",
+    "sq4_boundary_east",
+    "sq4_boundary_north",
+    "sq4_boundary_south",
+    "sq4_boundary_west",
+    "sq4_building_A",
+    "sq4_building_B",
+    "sq4_building_C",
+    "sq4_building_D",
+    "sq4_person_01",
+    "sq4_person_02",
+    "sq4_person_03",
+    "sq4_person_04",
+    "sq4_person_05",
+    "sq4_person_06",
+    "sq4_person_07",
+    "sq4_person_08",
+    "sq4_person_09",
+    "sq4_person_10",
+    "sq4_person_11",
+    "sq4_person_12",
+    "sq4_person_13",
+    "sq4_person_14",
+    "sq4_person_15",
+    "sq4_person_16",
+    "sq4_person_17",
+    "sq4_person_18",
+    "sq4_station"
+  ]
+}

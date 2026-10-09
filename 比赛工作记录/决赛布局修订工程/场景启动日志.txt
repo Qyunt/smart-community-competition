@@ -1,0 +1,15 @@
+xacro: in-order processing became default in ROS Melodic. You can drop the option.
+/opt/ros/melodic/lib/python2.7/dist-packages/roslib/packages.py:470: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  if resource_name in files:
+[31m[gazebo-1] process has died [pid 8840, exit code 255, cmd /opt/ros/melodic/lib/gazebo_ros/gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-1.log].
+log file: /home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-1*.log[0m
+[1;31m[Err] [0m[1;31m[[0m[1;31mREST.cc[0m[1;31m:[0m[1;31m205[0m[1;31m] [0m[1;31mError in REST request[0m[1;31m[0m
+
+libcurl: (51) SSL: no alternative certificate subject name matches target host name 'api.ignitionfuel.org'
+terminate called after throwing an instance of 'boost::system::system_error'
+  what():  End of file
+[WARN] [1791464083.671851, 0.000000]: wait_for_service(/gazebo/spawn_urdf_model): failed to contact, will keep trying
+[WARN] [1791464083.722226, 0.000000]: wait_for_service(/gazebo/set_link_state): failed to contact, will keep trying
+Aborted (core dumped)
+[31m[gazebo_gui-2] process has died [pid 8844, exit code 134, cmd /opt/ros/melodic/lib/gazebo_ros/gzclient __name:=gazebo_gui __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo_gui-2.log].
+log file: /home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo_gui-2*.log[0m

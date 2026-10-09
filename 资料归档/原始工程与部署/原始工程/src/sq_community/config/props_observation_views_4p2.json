@@ -1,0 +1,260 @@
+{
+  "purpose": "Visual QA and future recognition sampling; NOT wired into patrol",
+  "views": [
+    {
+      "id": "A_1",
+      "group": "A",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        1.87,
+        -2.0207963267948967
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_2",
+      "group": "A",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        1.87,
+        -1.5707963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_3",
+      "group": "A",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        1.87,
+        -1.1207963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "B_1",
+      "group": "B",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        0.67,
+        -2.0207963267948967
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "B_2",
+      "group": "B",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        0.67,
+        -1.5707963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "B_3",
+      "group": "B",
+      "robot_pose_xy_yaw": [
+        -0.8,
+        0.67,
+        -1.1207963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_violations_1",
+      "group": "A_violations",
+      "robot_pose_xy_yaw": [
+        0.08,
+        1.89,
+        -1.8707963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_violations_2",
+      "group": "A_violations",
+      "robot_pose_xy_yaw": [
+        0.08,
+        1.89,
+        -1.5707963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_violations_3",
+      "group": "A_violations",
+      "robot_pose_xy_yaw": [
+        0.08,
+        1.89,
+        -1.2707963267948965
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "A_4",
+      "group": "A",
+      "robot_pose_xy_yaw": [
+        -0.35,
+        1.88,
+        -1.5707963267948966
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "parking_1",
+      "group": "parking",
+      "robot_pose_xy_yaw": [
+        1.1,
+        -0.02,
+        0.0
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "parking_2",
+      "group": "parking",
+      "robot_pose_xy_yaw": [
+        1.1,
+        0.43,
+        0.0
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "parking_3",
+      "group": "parking",
+      "robot_pose_xy_yaw": [
+        1.1,
+        0.88,
+        0.0
+      ],
+      "camera": "/camera/rgb/image_raw"
+    },
+    {
+      "id": "parking_4",
+      "group": "parking",
+      "robot_pose_xy_yaw": [
+        1.1,
+        1.3,
+        0.0
+      ],
+      "camera": "/camera/rgb/image_raw"
+    }
+  ],
+  "nominal_projection_coverage": {
+    "sq4_person_01": [
+      "A_1"
+    ],
+    "sq4_person_02": [
+      "A_1",
+      "A_2"
+    ],
+    "sq4_person_03": [
+      "A_1",
+      "A_2"
+    ],
+    "sq4_person_04": [
+      "A_2",
+      "A_3"
+    ],
+    "sq4_person_05": [
+      "A_2",
+      "A_3",
+      "A_4"
+    ],
+    "sq4_person_06": [
+      "A_3",
+      "A_4"
+    ],
+    "sq4_person_07": [
+      "A_1",
+      "A_2"
+    ],
+    "sq4_person_08": [
+      "A_2",
+      "A_3",
+      "A_4"
+    ],
+    "sq4_person_09": [
+      "A_2",
+      "A_3",
+      "A_4"
+    ],
+    "sq4_person_10": [
+      "B_1"
+    ],
+    "sq4_person_11": [
+      "B_1"
+    ],
+    "sq4_person_12": [
+      "B_1",
+      "B_2"
+    ],
+    "sq4_person_13": [
+      "B_2",
+      "B_3"
+    ],
+    "sq4_person_14": [
+      "B_2",
+      "B_3"
+    ],
+    "sq4_person_15": [
+      "B_3"
+    ],
+    "sq4_person_16": [
+      "B_1",
+      "B_2"
+    ],
+    "sq4_person_17": [
+      "B_1",
+      "B_2",
+      "B_3"
+    ],
+    "sq4_person_18": [
+      "B_2",
+      "B_3"
+    ],
+    "sq4_ebike_01": [
+      "parking_1"
+    ],
+    "sq4_ebike_02": [
+      "parking_1"
+    ],
+    "sq4_ebike_03": [
+      "parking_1",
+      "parking_2"
+    ],
+    "sq4_ebike_04": [
+      "parking_2"
+    ],
+    "sq4_ebike_05": [
+      "parking_2"
+    ],
+    "sq4_ebike_06": [
+      "parking_2",
+      "parking_3"
+    ],
+    "sq4_ebike_07": [
+      "parking_3"
+    ],
+    "sq4_ebike_08": [
+      "parking_3"
+    ],
+    "sq4_ebike_09": [
+      "parking_4"
+    ],
+    "sq4_ebike_10": [
+      "parking_4"
+    ],
+    "sq4_ebike_11": [
+      "A_violations_1",
+      "A_violations_2"
+    ],
+    "sq4_ebike_12": [
+      "A_violations_2",
+      "A_violations_3"
+    ]
+  },
+  "coverage_limit": "Frustum containment only; actual image inspection is required for occlusion and recognition"
+}

@@ -1,0 +1,25 @@
+# =============================================================================
+# sq_local_costmap.yaml —— 局部代价地图（滚动窗口 + 激光障碍 + 膨胀）
+#
+# 与库存的区别：
+#   1. 显式 plugins（同上，消警告）
+#   2. 窗口从 3×3 m 保持 3×3 m —— 场地 10×7.2 m，3 m 窗口已能覆盖
+#      "从当前位姿到下一个航点"的一整段，再大没有信息增益
+#   3. resolution 0.05 与地图一致，避免插值引起的定位/避障错位
+# =============================================================================
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_footprint
+
+  update_frequency: 10.0
+  publish_frequency: 5.0
+  transform_tolerance: 0.5
+
+  rolling_window: true
+  width: 3.0
+  height: 3.0
+  resolution: 0.05
+
+  plugins:
+    - {name: obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}

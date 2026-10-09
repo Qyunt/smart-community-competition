@@ -1,0 +1,60 @@
+=== SYSTEM ===
+uid=1000(qyunt) gid=1000(qyunt) groups=1000(qyunt),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+NAME="Ubuntu"
+VERSION="18.04.6 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.6 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        20G  9.3G  9.3G  50% /
+=== ROS / GAZEBO ===
+/opt/ros/melodic
+/opt/ros/melodic/bin/catkin_make
+melodic
+/opt/ros/melodic/share/gazebo_ros
+/opt/ros/melodic/share/gazebo_plugins
+/opt/ros/melodic/share/gmapping
+/opt/ros/melodic/share/move_base
+/opt/ros/melodic/share/amcl
+/opt/ros/melodic/share/cv_bridge
+/opt/ros/melodic/share/xacro
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+Python 2.7.17
+Python 3.6.9
+=== CURRENT WORKSPACES AND SESSION ===
+/home/qyunt/catkin_ws/.catkin_workspace
+   822 gdm-wayland-ses /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+   829 gnome-session-b /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+  1177 at-spi2-registr /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+  1847 gdm-x-session   /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+  1858 gnome-session-b /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+  1935 ssh-agent       /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+  1945 at-spi2-registr /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+=== HOST NETWORK ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 192.168.80.129/24 brd 192.168.80.255 scope global dynamic noprefixroute ens33
+       valid_lft 1028sec preferred_lft 1028sec
+default via 192.168.80.2 dev ens33 proto dhcp metric 100 
+169.254.0.0/16 dev ens33 scope link metric 1000 
+192.168.80.0/24 dev ens33 proto kernel scope link src 192.168.80.129 metric 100 

@@ -1,0 +1,30 @@
+# =============================================================================
+# sq_move_base.yaml —— move_base 主控参数（智慧社区场地专用）
+#
+# 【最关键的一处修改】conservative_reset_dist: 3.0 → 1.0
+#   move_base 的 "conservative_reset" 恢复行为会以机器人为中心、
+#   按这个半径把障碍物从代价地图上**抹掉**，用来脱离"被围住"的状态。
+#   库存值 3.0 m 是给开阔环境用的；在本场地里街道带宽才 1.1 m，
+#   一次 3 m 的清障会把周围**整条街的墙都擦掉**——机器人可能因此
+#   规划出一条穿墙路径。实测第一遍日志里就出现了
+#   "Clearing both costmaps to unstuck robot (3.00m)"，必须收紧。
+#
+# 另外把 planner_frequency 提到 10 Hz：场地小、路径短，
+# 更高的重规划频率能让机器人在被违停电动车挡住时更快绕开。
+# =============================================================================
+shutdown_costmaps: false
+
+controller_frequency: 10.0
+controller_patience: 15.0
+
+planner_frequency: 10.0
+planner_patience: 5.0
+
+# ↓ 库存 3.0，本场地必须收到 1.0（详见文件头说明）
+conservative_reset_dist: 1.0
+
+oscillation_timeout: 10.0
+oscillation_distance: 0.2
+
+recovery_behavior_enabled: true
+clearing_rotation_allowed: true

@@ -1,0 +1,139 @@
+{
+  "method": "centre rays against prop AABBs, not full-pixel visibility or recognition",
+  "clear_views": {
+    "sq4_person_01": [
+      "PEOPLE_A_TOP_L"
+    ],
+    "sq4_person_02": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_03": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_04": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_05": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_06": [
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_07": [
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_08": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_09": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_10": [
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L"
+    ],
+    "sq4_person_11": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_12": [
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH"
+    ],
+    "sq4_person_13": [
+      "PEOPLE_B_WEST_N"
+    ],
+    "sq4_person_14": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L"
+    ],
+    "sq4_person_15": [
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R"
+    ],
+    "sq4_person_16": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_17": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_18": [
+      "PEOPLE_B_EAST_HIGH"
+    ]
+  },
+  "missing": [],
+  "blocked": {
+    "sq4_person_01": {
+      "PEOPLE_A_TOP_R": [
+        "sq4_person_08"
+      ]
+    },
+    "sq4_person_02": {},
+    "sq4_person_03": {},
+    "sq4_person_04": {},
+    "sq4_person_05": {},
+    "sq4_person_06": {
+      "PEOPLE_A_WEST_S": [
+        "sq4_person_07"
+      ]
+    },
+    "sq4_person_07": {},
+    "sq4_person_08": {
+      "PEOPLE_A_WEST_S": [
+        "sq4_person_07"
+      ]
+    },
+    "sq4_person_09": {
+      "PEOPLE_A_WEST_N": [
+        "sq4_person_08"
+      ]
+    },
+    "sq4_person_10": {
+      "PEOPLE_B_EAST_HIGH": [
+        "sq4_person_18"
+      ],
+      "PEOPLE_B_EAST": [
+        "sq4_person_14",
+        "sq4_person_15"
+      ]
+    },
+    "sq4_person_11": {
+      "PEOPLE_B_NORTH_L": [
+        "sq4_person_14"
+      ]
+    },
+    "sq4_person_12": {
+      "PEOPLE_B_WEST_N": [
+        "sq4_person_14"
+      ]
+    },
+    "sq4_person_13": {},
+    "sq4_person_14": {},
+    "sq4_person_15": {
+      "PEOPLE_B_WEST_N": [
+        "sq4_person_13"
+      ]
+    },
+    "sq4_person_16": {},
+    "sq4_person_17": {},
+    "sq4_person_18": {}
+  }
+}

@@ -1,0 +1,19 @@
+/home/qyunt/sq_community_ws_20261008/src/sq_community
+/opt/ros/melodic/share/dwa_local_planner
+SCRIPT_OK=/home/qyunt/sq_community_ws_20261008/start_mapping.sh
+SCRIPT_OK=/home/qyunt/sq_community_ws_20261008/start_navigation.sh
+SCRIPT_OK=/home/qyunt/sq_community_ws_20261008/start_patrol.sh
+SCRIPT_OK=/home/qyunt/sq_community_ws_20261008/start_scene.sh
+SCRIPT_OK=/home/qyunt/sq_community_ws_20261008/stop_preview.sh
+INSTALL_EXIT=0
+MOVE_BASE_ACTION_READY
+SMOKE_PASS
+ONE_GOAL_PASS
+total 24
+-rwxrw-rw- 1 qyunt qyunt 7203 Oct  8 02:56 01_project_summary.md
+-rwxrw-rw- 1 qyunt qyunt 6984 Oct  8 02:56 02_next_steps.md
+-rwxrw-rw- 1 qyunt qyunt 6195 Oct  8 03:10 03_run_guide.md
+-rwxr--r-- 1 qyunt qyunt 278 Oct  8 03:04 /home/qyunt/Desktop/sq_community_patrol_20261008.desktop
+-rwxr--r-- 1 qyunt qyunt 274 Oct  8 03:04 /home/qyunt/Desktop/sq_community_scene_20261008.desktop
+PREVIEW_STOPPED
+FINAL_CHECK_PASS

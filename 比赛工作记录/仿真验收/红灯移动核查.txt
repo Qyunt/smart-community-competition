@@ -1,0 +1,40 @@
+
+header: 
+  seq: 1
+  stamp: 
+    secs: 3565
+    nsecs:  15000000
+  frame_id: "world"
+pose: 
+  position: 
+    x: -1.80015065824
+    y: 0.82344866378
+    z: -6.37000065599e-05
+  orientation: 
+    x: -1.97933662896e-08
+    y: 5.31795594389e-09
+    z: 0.255505229584
+    w: -0.96680767356
+twist: 
+  linear: 
+    x: -3.39784513004e-10
+    y: -2.13736319076e-09
+    z: -0.00709094590328
+  angular: 
+    x: -2.64315147342e-08
+    y: 1.42133726162e-08
+    z: -0.262584433494
+success: True
+status_message: "GetModelState: got properties"
+data: !!python/str "\u8FC7\u8DEF06"
+---
+data: "red"
+---
+{"topic": "/sq/patrol/current", "wall_time": 1791461064.740607, "sim_time": 3500.917, "payload": "PEOPLE_A"}
+{"topic": "/sq/patrol/observation", "wall_time": 1791461093.266885, "sim_time": 3517.688, "payload": {"stamp": 3517.688, "index": 4, "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/04_PEOPLE_A.jpg", "task_type": "people", "task_id": "PEOPLE_A"}}
+{"topic": "/sq/patrol/current", "wall_time": 1791461093.269699, "sim_time": 3517.69, "payload": "过路03"}
+{"topic": "/sq/patrol/current", "wall_time": 1791461119.478588, "sim_time": 3534.097, "payload": "过路04"}
+{"topic": "/sq/patrol/current", "wall_time": 1791461134.044914, "sim_time": 3543.413, "payload": "过路05"}
+{"topic": "/sq/patrol/current", "wall_time": 1791461149.377909, "sim_time": 3553.463, "payload": "SIGN_WEST"}
+{"topic": "/sq/patrol/observation", "wall_time": 1791461164.372844, "sim_time": 3563.236, "payload": {"stamp": 3563.232, "index": 8, "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/08_SIGN_WEST.jpg", "task_type": "sign", "task_id": "SIGN_WEST"}}
+{"topic": "/sq/patrol/current", "wall_time": 1791461164.375051, "sim_time": 3563.239, "payload": "过路06"}

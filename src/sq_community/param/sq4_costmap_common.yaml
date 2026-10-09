@@ -1,0 +1,20 @@
+# 4.2 m arena only. The mecanum body envelope is 0.334 x 0.303 m.
+# A 0.27 m inflation halo made the single north perimeter wall bias the
+# global path outside the top road. 0.17 m preserves the footprint collision
+# checks while keeping the 0.6 m lane centre free in the live costmap.
+obstacle_range: 2.5
+raytrace_range: 3.0
+footprint: [[-0.167, -0.1515], [-0.167, 0.1515], [0.167, 0.1515], [0.167, -0.1515]]
+inflation_radius: 0.17
+cost_scaling_factor: 8.0
+map_type: costmap
+observation_sources: scan
+scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+obstacle_layer:
+  observation_sources: scan
+  scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+  obstacle_range: 2.5
+  raytrace_range: 3.0
+inflation_layer:
+  inflation_radius: 0.17
+  cost_scaling_factor: 8.0

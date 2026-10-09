@@ -1,0 +1,34 @@
+=== PROCESSES ===
+  1873   1821    3227 roslaunch       /usr/bin/python /opt/ros/melodic/bin/roslaunch sq_community sq_community_4p2.launch
+  1905   1873    3226 gzserver        /bin/sh /opt/ros/melodic/lib/gazebo_ros/gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-2.log
+  1969   1905    3225 gzserver        gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world -s /opt/ros/melodic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/melodic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-2.log
+  2425      1    3051 gzclient        gzclient
+=== NODES ===
+/gazebo
+/gazebo_gui
+/robot_state_publisher
+/rosout
+/sq_traffic_light_4p2
+=== COMMAND PUBLISHERS ===
+Type: geometry_msgs/Twist
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://ubuntu:36043/)
+
+
+=== POSE AND SIMULATION RATE ===
+{
+  "position": [
+    1.800000000000507, 
+    1.7999970098183502
+  ], 
+  "real_time_factor": 0.8076328099459763, 
+  "orientation": [
+    -1.078039643134881e-12, 
+    -2.5360556768070983e-08, 
+    0.9999999999991023, 
+    1.339814540687867e-06
+  ]
+}

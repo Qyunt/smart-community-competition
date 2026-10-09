@@ -1,0 +1,29 @@
+<launch>
+  <!-- Planned 4.2 x 4.2 m competition layout. Original 10 x 7.2 m launch remains intact. -->
+  <arg name="gui" default="true"/>
+  <arg name="spawn_robot" default="true"/>
+  <arg name="traffic_light" default="true"/>
+  <!-- Default: training p5 independent 150 x 50 x 5 mm portrait standees. -->
+  <arg name="world_file" default="$(find sq_community)/worlds/sq_community_4p2.world"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(find sq_community)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_file)"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+  <group if="$(arg spawn_robot)">
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find sq_community)/urdf/sq_mecanum_334.urdf.xacro"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_sq4_robot"
+          args="-urdf -model sq_mecanum_334 -x 1.8 -y 1.8 -z 0.01 -Y 3.14159265 -param robot_description"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" value="30.0"/>
+    </node>
+  </group>
+  <node pkg="sq_community" type="traffic_light_controller_4p2.py" name="sq_traffic_light_4p2"
+        output="screen" if="$(arg traffic_light)">
+    <param name="cycle_red" value="10"/>
+    <param name="cycle_green" value="15"/>
+    <param name="cycle_yellow" value="3"/>
+  </node>
+</launch>

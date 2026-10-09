@@ -1,0 +1,121 @@
+('Stopping prior scene process', 1873, '/usr/bin/python /opt/ros/melodic/bin/roslaunch sq_community sq_community_4p2.launch')
+('Stopping prior scene process', 2425, 'gzclient')
+OK: connected 261 cells; 30 task points; 40 planned patrol goals; 45 objects; 27 asset textures
+OK: map 92 x 92 ; 2544 occupied pixels; 40 goals clear for 0.334 x 0.303 m body
+[  0%] Built target _turtlebot3_msgs_generate_messages_check_deps_Sound
+[  0%] Built target _turtlebot3_msgs_generate_messages_check_deps_SensorState
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _turtlebot3_msgs_generate_messages_check_deps_VersionInfo
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_nodejs
+[  0%] Built target diagnostic_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target diagnostic_msgs_generate_messages_eus
+[  0%] Built target diagnostic_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target diagnostic_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3Result
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionGoal
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3Action
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3Goal
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionFeedback
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3Feedback
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target _turtlebot3_example_generate_messages_check_deps_Turtlebot3ActionResult
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target gazebo_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target gazebo_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target gazebo_ros_gencfg
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target gazebo_msgs_generate_messages_cpp
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target gazebo_msgs_generate_messages_eus
+[  0%] Built target gazebo_msgs_generate_messages_lisp
+[  3%] Built target flat_world_imu_node
+[  3%] Built target turtlebot3_description_xacro_generated_to_devel_space_
+[  9%] Built target turtlebot3_msgs_generate_messages_eus
+[ 16%] Built target turtlebot3_msgs_generate_messages_py
+[ 20%] Built target turtlebot3_msgs_generate_messages_nodejs
+[ 25%] Built target turtlebot3_msgs_generate_messages_cpp
+[ 30%] Built target turtlebot3_msgs_generate_messages_lisp
+[ 43%] Built target turtlebot3_example_generate_messages_eus
+[ 56%] Built target turtlebot3_example_generate_messages_py
+[ 67%] Built target turtlebot3_example_generate_messages_nodejs
+[ 79%] Built target turtlebot3_example_generate_messages_lisp
+[ 90%] Built target turtlebot3_example_generate_messages_cpp
+[ 93%] Built target turtlebot3_fake_node
+[ 96%] Built target turtlebot3_drive
+[ 96%] Built target turtlebot3_msgs_generate_messages
+[100%] Built target turtlebot3_diagnostics
+[100%] Built target turtlebot3_example_generate_messages
+Base path: /home/qyunt/sq_community_ws_20261008
+Source space: /home/qyunt/sq_community_ws_20261008/src
+Build space: /home/qyunt/sq_community_ws_20261008/build
+Devel space: /home/qyunt/sq_community_ws_20261008/devel
+Install space: /home/qyunt/sq_community_ws_20261008/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/qyunt/sq_community_ws_20261008/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/qyunt/sq_community_ws_20261008/build"
+####
+INSTALL_COMPLETE
+SCENE_STARTED

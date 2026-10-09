@@ -1,0 +1,478 @@
+{
+  "meta": {
+    "package": "sq_community",
+    "world": "worlds/sq_community.world",
+    "arena_m": [
+      10.0,
+      7.2
+    ],
+    "robot": {
+      "model": "turtlebot3_waffle",
+      "start_xyz": [
+        -4.6,
+        1.8,
+        0.01
+      ],
+      "start_yaw": 0.0,
+      "sensors": {
+        "laser": "scan (360°, 0.12~3.5m)",
+        "rgb": "camera/rgb/image_raw 1920x1080",
+        "depth": "camera/depth/image_raw"
+      }
+    },
+    "a_axis": "x 向东, y 向北, z 向上; 单位 m",
+    "usage": "本文件是场地真值(answer key)，可用于校验视觉识别结果，亦可作为复赛技术方案的场地说明附录。"
+  },
+  "traffic_lights": {
+    "count": 2,
+    "cycle_s": {
+      "red": 10,
+      "green": 15,
+      "yellow": 3
+    },
+    "models": [
+      "sq_traffic_light_red",
+      "sq_traffic_light_green",
+      "sq_traffic_light_yellow"
+    ],
+    "items": [
+      {
+        "id": "sq_tl_1",
+        "xy": [
+          1.1,
+          2.62
+        ],
+        "face": "西(-x)",
+        "serves": "A街东行"
+      },
+      {
+        "id": "sq_tl_2",
+        "xy": [
+          1.1,
+          -2.62
+        ],
+        "face": "东(+x)",
+        "serves": "B街西行"
+      }
+    ],
+    "wait_lines": {
+      "street_A_x": -0.75,
+      "street_B_x": 0.75
+    }
+  },
+  "persons": {
+    "total": 16,
+    "street_A": 8,
+    "street_B": 8,
+    "outsiders_total": 2,
+    "outsiders_in_A": 2,
+    "color_rule": "橙色 = 非社区人员(外来)；蓝/绿/紫/棕 = 社区人员",
+    "items": [
+      {
+        "id": "person_00",
+        "xy": [
+          -3.9,
+          2.5
+        ],
+        "is_outsider": true
+      },
+      {
+        "id": "person_01",
+        "xy": [
+          -3.1,
+          2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_02",
+        "xy": [
+          -2.3,
+          2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_03",
+        "xy": [
+          -1.5,
+          2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_04",
+        "xy": [
+          -2.6,
+          1.1
+        ],
+        "is_outsider": true
+      },
+      {
+        "id": "person_05",
+        "xy": [
+          -1.8,
+          1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_06",
+        "xy": [
+          1.4,
+          1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_07",
+        "xy": [
+          2.2,
+          1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_08",
+        "xy": [
+          -3.9,
+          -1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_09",
+        "xy": [
+          -2.9,
+          -1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_10",
+        "xy": [
+          -1.9,
+          -1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_11",
+        "xy": [
+          -0.9,
+          -1.1
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_12",
+        "xy": [
+          -1.9,
+          -2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_13",
+        "xy": [
+          -0.9,
+          -2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_14",
+        "xy": [
+          1.9,
+          -2.5
+        ],
+        "is_outsider": false
+      },
+      {
+        "id": "person_15",
+        "xy": [
+          2.9,
+          -2.5
+        ],
+        "is_outsider": false
+      }
+    ]
+  },
+  "bins": {
+    "count": 4,
+    "items": [
+      {
+        "id": "bin_recycle",
+        "type": "recycle",
+        "open": false,
+        "load": null,
+        "xy": [
+          -2.3,
+          0.85
+        ]
+      },
+      {
+        "id": "bin_hazard",
+        "type": "hazard",
+        "open": true,
+        "load": "correct",
+        "xy": [
+          -2.0,
+          0.85
+        ]
+      },
+      {
+        "id": "bin_kitchen",
+        "type": "kitchen",
+        "open": true,
+        "load": "wrong",
+        "xy": [
+          -1.7,
+          0.85
+        ]
+      },
+      {
+        "id": "bin_other",
+        "type": "other",
+        "open": false,
+        "load": null,
+        "xy": [
+          -1.4,
+          0.85
+        ]
+      }
+    ]
+  },
+  "buildings": {
+    "count": 4,
+    "fire_windows": {
+      "A": 3,
+      "B": 5,
+      "C": 2
+    },
+    "fire_window_rule": "窗户为 FIRE 贴图(橙红火焰)者 = 火灾隐患；蓝色普通窗 = 正常",
+    "hot": {
+      "building": "D",
+      "window_index": 7,
+      "floor": 2,
+      "temp_c": 68,
+      "xy": [
+        2.9,
+        -3.1
+      ]
+    },
+    "items": [
+      {
+        "id": "bld_A",
+        "xy": [
+          -3.2,
+          3.1
+        ],
+        "size": [
+          1.6,
+          0.7,
+          0.85
+        ]
+      },
+      {
+        "id": "bld_B",
+        "xy": [
+          2.9,
+          3.1
+        ],
+        "size": [
+          1.6,
+          0.7,
+          0.85
+        ]
+      },
+      {
+        "id": "bld_C",
+        "xy": [
+          -3.2,
+          -3.1
+        ],
+        "size": [
+          1.6,
+          0.7,
+          0.85
+        ]
+      },
+      {
+        "id": "bld_D",
+        "xy": [
+          2.9,
+          -3.1
+        ],
+        "size": [
+          1.6,
+          0.7,
+          0.85
+        ]
+      }
+    ],
+    "floors": 2
+  },
+  "station": {
+    "xy": [
+      -3.3,
+      0.55
+    ],
+    "gauges": [
+      {
+        "id": "gauge_1",
+        "reading": "01357",
+        "xy": [
+          -3.62,
+          0.815
+        ]
+      },
+      {
+        "id": "gauge_2",
+        "reading": "24680",
+        "xy": [
+          -2.98,
+          0.815
+        ]
+      }
+    ]
+  },
+  "cars": {
+    "count": 3,
+    "items": [
+      {
+        "id": "car_1",
+        "plate": "苏E·12345",
+        "xy": [
+          3.25,
+          -0.35
+        ],
+        "heading": "+y (朝A街)"
+      },
+      {
+        "id": "car_2",
+        "plate": "苏E·67890",
+        "xy": [
+          3.8,
+          -0.35
+        ],
+        "heading": "+y (朝A街)"
+      },
+      {
+        "id": "car_3",
+        "plate": "苏E·A8888",
+        "xy": [
+          4.35,
+          -0.35
+        ],
+        "heading": "+y (朝A街)"
+      }
+    ]
+  },
+  "ebikes": {
+    "parking_area": {
+      "upright": 8,
+      "fallen": 2
+    },
+    "illegal_parking": {
+      "street_A": 2,
+      "street_B": 0
+    },
+    "fallen_pose": "车体绕 x 轴转 90° 平躺于地面"
+  },
+  "signs": {
+    "count": 6,
+    "items": [
+      {
+        "id": "sign_sign_speed30",
+        "xy": [
+          -4.3,
+          2.55
+        ]
+      },
+      {
+        "id": "sign_sign_no_straight",
+        "xy": [
+          -1.0,
+          2.55
+        ]
+      },
+      {
+        "id": "sign_sign_turn_left",
+        "xy": [
+          2.6,
+          2.55
+        ]
+      },
+      {
+        "id": "sign_sign_crosswalk",
+        "xy": [
+          -0.8,
+          0.9
+        ]
+      },
+      {
+        "id": "sign_sign_no_entry",
+        "xy": [
+          0.8,
+          -0.3
+        ]
+      },
+      {
+        "id": "sign_sign_turn_right",
+        "xy": [
+          3.6,
+          -2.55
+        ]
+      }
+    ]
+  },
+  "parking": {
+    "bays": [
+      {
+        "id": "bay_1",
+        "xy": [
+          3.25,
+          -0.35
+        ]
+      },
+      {
+        "id": "bay_2",
+        "xy": [
+          3.8,
+          -0.35
+        ]
+      },
+      {
+        "id": "bay_3",
+        "xy": [
+          4.35,
+          -0.35
+        ]
+      }
+    ],
+    "final_slot": {
+      "xy": [
+        4.45,
+        2.8
+      ],
+      "size": [
+        0.55,
+        0.7
+      ],
+      "required_heading": "车头朝向街道(A街一侧)"
+    }
+  },
+  "answer_key": {
+    "红绿灯": "红灯10s→绿灯15s→黄灯3s；共两处；红灯亮时车头不得越过等待线 x=-0.75(A街) / x=+0.75(B街)",
+    "人群数量": "社区内共有16人，其中A街8人，B街8人，发现2名非社区人员在A街",
+    "垃圾桶状态": "可回收垃圾桶关闭；有害垃圾桶打开、投放正确；厨余垃圾桶打开、投放错误；其他垃圾桶关闭",
+    "楼宇火灾": "A座发现火灾隐患3个，B座5个，C座2个",
+    "楼宇异常温度": "D座在2楼处发现高温，约68℃",
+    "站房仪表": "1号表读数01357，2号表读数24680",
+    "车辆车牌": "1号车位苏E·12345，2号车位苏E·67890，3号车位苏E·A8888",
+    "电动车状态": "A街区有2辆电动车违停，B街区无违停；停车区内电动车正常8辆，倒伏2辆",
+    "指示牌": "沿途6块：限速30 / 禁止直行 / 左转 / 人行横道 / 禁止驶入 / 右转",
+    "停车": "需停入A街北侧泊车位(x=4.45, y=2.80)，车头朝向街道"
+  }
+}

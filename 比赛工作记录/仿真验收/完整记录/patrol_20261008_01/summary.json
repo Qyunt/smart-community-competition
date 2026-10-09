@@ -1,0 +1,23 @@
+{
+  "failed": [
+    {
+      "status": "failed", 
+      "index": 2, 
+      "target": [
+        0.8, 
+        1.8, 
+        3.14159
+      ], 
+      "elapsed_s": 75.6, 
+      "reason": "no fresh visual red-to-green transition", 
+      "name": "TL_UP_WAIT"
+    }
+  ], 
+  "planned": 33, 
+  "success": false, 
+  "successful": 1, 
+  "road_samples": 728, 
+  "saved_images": 0, 
+  "recorded": 2, 
+  "outside_samples": 0
+}

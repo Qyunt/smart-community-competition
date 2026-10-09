@@ -1,0 +1,49 @@
+# =============================================================================
+# sq_costmap_common.yaml —— 智慧社区赛题场地「专用」代价地图公共参数
+#
+# 【为什么要改】
+#   turtlebot3 库存参数是为开阔室内环境标定的：inflation_radius = 1.0 m。
+#   本场地只有 10.0 × 7.2 m，A / B 街的可用带宽约 1.1 m。
+#   1.0 m 的膨胀半径意味着**整条街道都落在膨胀梯度里**，
+#   代价地图上几乎找不到"低代价走廊"。
+#   实测（2026-09-24 Stage B 第一遍，用库存参数）表现为：
+#     · 全程反复 "[WARN] DWA planner failed to produce path"
+#     · 多次触发 "[WARN] Clearing both costmaps to unstuck robot (3.00m)"
+#   虽然最终 25/25 到点，但那是靠 move_base 的"卡住恢复"兜住的，不是稳定复现的行为。
+#
+# 【怎么改】
+#   按"场地尺度"重新标定：膨胀半径压到 0.32 m（= 底盘外接半径 0.257 m + 约 6 cm 余量），
+#   代价衰减调陡（cost_scaling_factor 3.0 → 5.0），让街道中线保持低代价。
+# =============================================================================
+
+obstacle_range: 2.5          # 3.0 → 2.5：场地任一点到最近障碍一般 < 3 m，缩短可少标远处噪声
+raytrace_range: 3.0          # 3.5 → 3.0：清障范围略大于观测范围即可
+
+# 底盘真实轮廓（turtlebot3 waffle：0.282 m × 0.310 m；几何中心不在 base_footprint 原点）
+footprint: [[-0.205, -0.155], [-0.205, 0.155], [0.077, 0.155], [0.077, -0.155]]
+# 外接半径 ≈ √(0.205² + 0.155²) = 0.257 m，内切半径 ≈ 0.155 m
+
+inflation_radius: 0.32       # 1.0 → 0.32
+cost_scaling_factor: 5.0     # 3.0 → 5.0：衰减更陡，走廊中线才敢走
+
+map_type: costmap
+observation_sources: scan
+scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+
+# -----------------------------------------------------------------------------
+# 下面两块是「现代插件式加载」用的同名副本。
+# costmap_2d 有两种加载方式：
+#   · 老式（pre-Hydro）：不写 plugins，参数直接挂在 costmap 命名空间下
+#   · 新式：写 plugins 列表，每个插件从 <costmap>/<插件名>/ 下读参数
+# 本 launch 用的是**新式**（可以消掉 "Parameter plugins not provided" 警告），
+# 所以参数必须在插件子命名空间里再写一份。两份保持一致，改一处记得改另一处。
+# -----------------------------------------------------------------------------
+obstacle_layer:
+  observation_sources: scan
+  scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+  obstacle_range: 2.5
+  raytrace_range: 3.0
+
+inflation_layer:
+  inflation_radius: 0.32
+  cost_scaling_factor: 5.0

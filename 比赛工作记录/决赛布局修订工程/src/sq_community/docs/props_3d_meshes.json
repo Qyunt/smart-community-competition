@@ -1,0 +1,58 @@
+[
+  {
+    "asset": "models/sq_ebikes_3d/meshes/ebike_0.dae",
+    "triangles": 8396,
+    "bounds_min": [
+      -0.09,
+      -0.0375,
+      0.0
+    ],
+    "bounds_max": [
+      0.09,
+      0.0375,
+      0.13
+    ]
+  },
+  {
+    "asset": "models/sq_ebikes_3d/meshes/ebike_1.dae",
+    "triangles": 8396,
+    "bounds_min": [
+      -0.09,
+      -0.0375,
+      0.0
+    ],
+    "bounds_max": [
+      0.09,
+      0.0375,
+      0.13
+    ]
+  },
+  {
+    "asset": "models/sq_ebikes_3d/meshes/ebike_2.dae",
+    "triangles": 8396,
+    "bounds_min": [
+      -0.09,
+      -0.0375,
+      0.0
+    ],
+    "bounds_max": [
+      0.09,
+      0.0375,
+      0.13
+    ]
+  },
+  {
+    "asset": "models/sq_ebikes_3d/meshes/ebike_3.dae",
+    "triangles": 8396,
+    "bounds_min": [
+      -0.09,
+      -0.0375,
+      0.0
+    ],
+    "bounds_max": [
+      0.09,
+      0.0375,
+      0.13
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+  9094   9059       31:12 /bin/sh /opt/ros/melodic/lib/gazebo_ros/gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world __name:=gazebo __log:=/home/qyunt/.ros/log/aaff339a-c317-11f1-bfa7-000c29d42a39/gazebo-2.log
+  9105   9059       31:12 /opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher __name:=robot_state_publisher __log:=/home/qyunt/.ros/log/aaff339a-c317-11f1-bfa7-000c29d42a39/robot_state_publisher-5.log
+  9173   9094       31:12 gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world -s /opt/ros/melodic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/melodic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/qyunt/.ros/log/aaff339a-c317-11f1-bfa7-000c29d42a39/gazebo-2.log
+ 10572  10571       02:41 /bin/bash /tmp/sq_finish_final_revision.sh
+ 10631  10572       02:40 python -
+ 10648      2       02:33 /usr/bin/python3 /usr/share/apport/apport -p9173 -s6 -c18446744073709551615 -d1 -P9173 -u1000 -g1000 -F -- !usr!bin!gzserver-9.0.0
+/gazebo
+/gazebo_gui
+/robot_state_publisher
+/rosout
+/sq_refresh_camera_mount_10631_1791465897235
+/sq_traffic_light_4p2
+OK: connected 261 cells; 31 task points; 42 planned patrol goals; 45 objects; 27 asset textures
+OK: map 92 x 92 ; 2544 occupied pixels; 42 goals clear for 0.334 x 0.303 m body
+tail: cannot open '/home/qyunt/sq_community_ws_20261008/acceptance/final_layout_20261008/camera_qa.log' for reading: No such file or directory

@@ -1,0 +1,79 @@
+{
+  "records": [
+    {
+      "xy_error_m": 0.025, 
+      "index": 1, 
+      "odom": [
+        0.825, 
+        1.8, 
+        -3.142
+      ], 
+      "status": "success", 
+      "name": "TL_UP_WAIT", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/01_TL_UP_WAIT.jpg", 
+      "elapsed_s": 44.7, 
+      "target": [
+        0.8, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 2, 
+      "odom": [
+        0.024, 
+        1.8, 
+        -2.164
+      ], 
+      "status": "success", 
+      "name": "PEOPLE_A_TOP_R", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/02_PEOPLE_A_TOP_R.jpg", 
+      "elapsed_s": 23.4, 
+      "target": [
+        0.0, 
+        1.8, 
+        -2.11
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 3, 
+      "odom": [
+        -0.377, 
+        1.8, 
+        -0.964
+      ], 
+      "status": "success", 
+      "name": "EBIKES_A", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/03_EBIKES_A.jpg", 
+      "elapsed_s": 30.2, 
+      "target": [
+        -0.4, 
+        1.8, 
+        -0.911
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 4, 
+      "odom": [
+        -1.176, 
+        1.8, 
+        -1.623
+      ], 
+      "status": "success", 
+      "name": "PEOPLE_A_TOP_L", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/04_PEOPLE_A_TOP_L.jpg", 
+      "elapsed_s": 38.4, 
+      "target": [
+        -1.2, 
+        1.8, 
+        -1.5708
+      ]
+    }
+  ], 
+  "planned_count": 41, 
+  "outside_samples": 0, 
+  "road_samples": 4233
+}

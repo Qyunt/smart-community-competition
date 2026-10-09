@@ -1,0 +1,1582 @@
+{
+  "status": "engineered_layout_from_schematic",
+  "authority": {
+    "official": "rules PDF p3 for topology/orientation; training PDF pp3,5-8 for dimensions and visual tasks",
+    "estimated": "all precise prop anchors, subdivisions and task waypoints, selected by engineering planning",
+    "old_scene": "10.0 x 7.2 m manifest and coordinates are excluded"
+  },
+  "arena_m": [
+    4.2,
+    4.2
+  ],
+  "robot_target_m": [
+    0.334,
+    0.303
+  ],
+  "robot_height_m": 0.222,
+  "robot_ground_clearance_m": 0.034,
+  "grid": {
+    "count": [
+      21,
+      21
+    ],
+    "cell_m": 0.2,
+    "cell_centers_world_formula": [
+      "-2.0 + 0.2*x",
+      "-2.0 + 0.2*y"
+    ]
+  },
+  "start_finish": {
+    "cells_x": [
+      18,
+      20
+    ],
+    "cells_y": [
+      18,
+      20
+    ],
+    "center_world_m": [
+      1.8,
+      1.8
+    ]
+  },
+  "road_width_m": 0.6,
+  "roads_cells_half_open": [
+    {
+      "id": "top",
+      "bounds": [
+        0,
+        18,
+        18,
+        21
+      ]
+    },
+    {
+      "id": "west",
+      "bounds": [
+        0,
+        3,
+        3,
+        18
+      ]
+    },
+    {
+      "id": "connector",
+      "bounds": [
+        3,
+        12,
+        12,
+        15
+      ]
+    },
+    {
+      "id": "central",
+      "bounds": [
+        9,
+        12,
+        3,
+        15
+      ]
+    },
+    {
+      "id": "bottom",
+      "bounds": [
+        0,
+        18,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "east",
+      "bounds": [
+        15,
+        18,
+        3,
+        18
+      ]
+    }
+  ],
+  "zones_cells_half_open": [
+    {
+      "id": "start_finish",
+      "bounds": [
+        18,
+        21,
+        18,
+        21
+      ]
+    },
+    {
+      "id": "a_people",
+      "bounds": [
+        3,
+        9,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "a_street",
+      "bounds": [
+        9,
+        15,
+        15,
+        18
+      ]
+    },
+    {
+      "id": "b_people",
+      "bounds": [
+        3,
+        9,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "building_A",
+      "bounds": [
+        12,
+        15,
+        12,
+        15
+      ]
+    },
+    {
+      "id": "building_B",
+      "bounds": [
+        12,
+        15,
+        9,
+        12
+      ]
+    },
+    {
+      "id": "building_C",
+      "bounds": [
+        12,
+        15,
+        3,
+        9
+      ]
+    },
+    {
+      "id": "building_D",
+      "bounds": [
+        3,
+        6,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "station",
+      "bounds": [
+        6,
+        9,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "ebike_parking",
+      "bounds": [
+        18,
+        21,
+        9,
+        18
+      ]
+    },
+    {
+      "id": "car_parking",
+      "bounds": [
+        18,
+        21,
+        0,
+        9
+      ]
+    }
+  ],
+  "stop_lines_physical_m": {
+    "upper_x": 2.6,
+    "lower_y": 1.25
+  },
+  "traffic_cycle_s": {
+    "red": 10,
+    "green": 15,
+    "yellow": 3
+  },
+  "objects": [
+    {
+      "id": "sq4_person_01",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        0.85,
+        3.24
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "gardener",
+      "reference_asset": "person_01.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_02",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.03,
+        3.43
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "business_woman",
+      "reference_asset": "person_02.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_03",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.18,
+        3.17
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "artist",
+      "reference_asset": "person_03.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_04",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.32,
+        3.39
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "construction_worker",
+      "reference_asset": "person_04.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_05",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.47,
+        3.22
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "police_officer",
+      "reference_asset": "person_05.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_06",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.65,
+        3.35
+      ],
+      "yaw_deg": 90,
+      "is_outsider": true,
+      "representation": "standee",
+      "role_reference": "hooded_outsider",
+      "reference_asset": "person_06.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_07",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        0.97,
+        3.07
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "traveler",
+      "reference_asset": "person_07.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_08",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.42,
+        3.07
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "skater",
+      "reference_asset": "person_08.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_09",
+      "type": "person",
+      "zone": "A",
+      "physical_xy_m": [
+        1.68,
+        3.1
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "business_woman_black",
+      "reference_asset": "person_09.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_10",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        0.82,
+        2.13
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "student_woman",
+      "reference_asset": "person_10.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_11",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.0,
+        2.2
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "cook",
+      "reference_asset": "person_11.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_12",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.17,
+        2.09
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "doctor",
+      "reference_asset": "person_12.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_13",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.34,
+        2.18
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "polo_man",
+      "reference_asset": "person_13.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_14",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.51,
+        2.1
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "elder",
+      "reference_asset": "person_14.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_15",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.67,
+        2.2
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "waiter",
+      "reference_asset": "person_15.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_16",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        0.94,
+        1.96
+      ],
+      "yaw_deg": 90,
+      "is_outsider": true,
+      "representation": "standee",
+      "role_reference": "vest_outsider",
+      "reference_asset": "person_16.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_17",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.3,
+        1.93
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "guitar_student",
+      "reference_asset": "person_17.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_person_18",
+      "type": "person",
+      "zone": "B",
+      "physical_xy_m": [
+        1.63,
+        1.94
+      ],
+      "yaw_deg": 90,
+      "is_outsider": false,
+      "representation": "standee",
+      "role_reference": "professor",
+      "reference_asset": "person_18.png",
+      "dimensions_xyz_m": [
+        0.005,
+        0.05,
+        0.15
+      ],
+      "placement": "engineered_scattered_positions",
+      "source": "training p5"
+    },
+    {
+      "id": "sq4_building_A",
+      "type": "building",
+      "label": "A",
+      "physical_xy_m": [
+        2.7,
+        2.7
+      ],
+      "front": "west",
+      "floor_count": 3,
+      "window_grid": [
+        3,
+        3
+      ],
+      "side_window_grid": [
+        3,
+        2
+      ],
+      "fire_windows": 3,
+      "fire_window_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "hot_window": false,
+      "hot_window_cell": null,
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_building_B",
+      "type": "building",
+      "label": "B",
+      "physical_xy_m": [
+        2.7,
+        2.1
+      ],
+      "front": "east",
+      "floor_count": 3,
+      "window_grid": [
+        3,
+        3
+      ],
+      "side_window_grid": [
+        3,
+        2
+      ],
+      "fire_windows": 5,
+      "fire_window_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "hot_window": false,
+      "hot_window_cell": null,
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_building_C",
+      "type": "building",
+      "label": "C",
+      "physical_xy_m": [
+        2.7,
+        1.2
+      ],
+      "front": "west",
+      "floor_count": 3,
+      "window_grid": [
+        3,
+        4
+      ],
+      "side_window_grid": [
+        3,
+        2
+      ],
+      "fire_windows": 2,
+      "fire_window_cells": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "hot_window": false,
+      "hot_window_cell": null,
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_building_D",
+      "type": "building",
+      "label": "D",
+      "physical_xy_m": [
+        0.9,
+        1.1
+      ],
+      "front": "west",
+      "floor_count": 3,
+      "window_grid": [
+        3,
+        3
+      ],
+      "side_window_grid": [
+        3,
+        2
+      ],
+      "fire_windows": 0,
+      "fire_window_cells": [],
+      "hot_window": true,
+      "hot_window_cell": [
+        1,
+        1
+      ],
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_station",
+      "type": "station",
+      "physical_xy_m": [
+        1.5,
+        1.1
+      ],
+      "gauges": [
+        "01357",
+        "24680"
+      ],
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_bin_recycle",
+      "type": "bin",
+      "category": "recycle",
+      "open": false,
+      "load": "none",
+      "physical_xy_m": [
+        0.96,
+        1.79
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_bin_hazard",
+      "type": "bin",
+      "category": "hazard",
+      "open": true,
+      "load": "correct",
+      "physical_xy_m": [
+        1.16,
+        1.79
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_bin_kitchen",
+      "type": "bin",
+      "category": "kitchen",
+      "open": true,
+      "load": "wrong",
+      "physical_xy_m": [
+        1.36,
+        1.79
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_bin_other",
+      "type": "bin",
+      "category": "other",
+      "open": false,
+      "load": "none",
+      "physical_xy_m": [
+        1.56,
+        1.79
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_car_1",
+      "type": "car_plate_board",
+      "bay": 1,
+      "physical_xy_m": [
+        3.88,
+        0.3
+      ],
+      "plate": "苏A·31682",
+      "plate_style": "blue",
+      "vehicle_category": "small_passenger_vehicle",
+      "source": "supplied_car_cutout_and_generated_plate",
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_car_2",
+      "type": "car_plate_board",
+      "bay": 2,
+      "physical_xy_m": [
+        3.88,
+        0.9
+      ],
+      "plate": "苏A·57246",
+      "plate_style": "yellow",
+      "vehicle_category": "large_passenger_vehicle",
+      "source": "generated_large_vehicle_and_plate",
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_car_3",
+      "type": "car_plate_board",
+      "bay": 3,
+      "physical_xy_m": [
+        3.88,
+        1.5
+      ],
+      "plate": "苏A·D68125",
+      "plate_style": "green",
+      "vehicle_category": "small_passenger_vehicle",
+      "source": "supplied_car_cutout_and_generated_plate",
+      "placement": "planned_from_schematic"
+    },
+    {
+      "id": "sq4_ebike_01",
+      "physical_xy_m": [
+        3.814,
+        1.94
+      ],
+      "yaw_deg": 176,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 0,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.814,
+        1.94
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_02",
+      "physical_xy_m": [
+        3.83,
+        2.102
+      ],
+      "yaw_deg": 183,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 1,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.83,
+        2.102
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_03",
+      "physical_xy_m": [
+        3.846,
+        2.264
+      ],
+      "yaw_deg": 178,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 2,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.846,
+        2.264
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_04",
+      "physical_xy_m": [
+        3.814,
+        2.426
+      ],
+      "yaw_deg": 186,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 3,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.814,
+        2.426
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_05",
+      "physical_xy_m": [
+        3.83,
+        2.588
+      ],
+      "yaw_deg": 174,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 0,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.83,
+        2.588
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_06",
+      "physical_xy_m": [
+        3.846,
+        2.75
+      ],
+      "yaw_deg": 176,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 1,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.846,
+        2.75
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_07",
+      "physical_xy_m": [
+        3.814,
+        2.912
+      ],
+      "yaw_deg": 183,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 2,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.814,
+        2.912
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_08",
+      "physical_xy_m": [
+        3.83,
+        3.074
+      ],
+      "yaw_deg": 178,
+      "roll_deg": 0,
+      "zone": "parking",
+      "fallen": false,
+      "illegal_parking": false,
+      "color_index": 3,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.83,
+        3.074
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_09",
+      "physical_xy_m": [
+        3.846,
+        3.2359999999999998
+      ],
+      "yaw_deg": 186,
+      "roll_deg": 90,
+      "zone": "parking",
+      "fallen": true,
+      "illegal_parking": false,
+      "color_index": 0,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.8527943501123976,
+        3.171356076801062
+      ],
+      "ground_z_m": 0.041499999999999995
+    },
+    {
+      "id": "sq4_ebike_10",
+      "physical_xy_m": [
+        3.814,
+        3.3979999999999997
+      ],
+      "yaw_deg": 174,
+      "roll_deg": -90,
+      "zone": "parking",
+      "fallen": true,
+      "illegal_parking": false,
+      "color_index": 1,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        3.8207943501123975,
+        3.4626439231989377
+      ],
+      "ground_z_m": 0.041499999999999995
+    },
+    {
+      "id": "sq4_ebike_11",
+      "physical_xy_m": [
+        2.03,
+        3.27
+      ],
+      "yaw_deg": 110,
+      "roll_deg": 0,
+      "zone": "A",
+      "fallen": false,
+      "illegal_parking": true,
+      "color_index": 3,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        2.03,
+        3.27
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_ebike_12",
+      "physical_xy_m": [
+        2.31,
+        3.37
+      ],
+      "yaw_deg": 165,
+      "roll_deg": 0,
+      "zone": "A",
+      "fallen": false,
+      "illegal_parking": true,
+      "color_index": 0,
+      "type": "ebike",
+      "dimensions_upright_xyz_m": [
+        0.18,
+        0.075,
+        0.13
+      ],
+      "placement": "engineered_example_not_mandatory_count",
+      "source": "rules p6: street violations and parking-area upright/fallen states",
+      "model_origin_physical_xy_m": [
+        2.31,
+        3.37
+      ],
+      "ground_z_m": 0.004
+    },
+    {
+      "id": "sq4_sign_speed30",
+      "type": "traffic_sign",
+      "label": "speed30",
+      "physical_xy_m": [
+        0.69,
+        3.52
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_sign_crosswalk",
+      "type": "traffic_sign",
+      "label": "crosswalk",
+      "physical_xy_m": [
+        2.48,
+        3.42
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_sign_no_straight",
+      "type": "traffic_sign",
+      "label": "no_straight",
+      "physical_xy_m": [
+        0.7,
+        2.03
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_sign_turn_left",
+      "type": "traffic_sign",
+      "label": "turn_left",
+      "physical_xy_m": [
+        1.73,
+        3.05
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_sign_no_entry",
+      "type": "traffic_sign",
+      "label": "no_entry",
+      "physical_xy_m": [
+        1.73,
+        1.7
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_sign_turn_right",
+      "type": "traffic_sign",
+      "label": "turn_right",
+      "physical_xy_m": [
+        3.68,
+        1.64
+      ],
+      "placement": "planned_extra_task"
+    },
+    {
+      "id": "sq4_tl_upper",
+      "type": "traffic_light",
+      "physical_xy_m": [
+        1.5,
+        3.9
+      ],
+      "face": "east",
+      "cycle_s": {
+        "red": 10,
+        "green": 15,
+        "yellow": 3
+      },
+      "placement": "planned_from_schematic",
+      "inactive_faces": "inside_housing"
+    },
+    {
+      "id": "sq4_tl_lower",
+      "type": "traffic_light",
+      "physical_xy_m": [
+        2.1,
+        0.9
+      ],
+      "face": "north",
+      "cycle_s": {
+        "red": 10,
+        "green": 15,
+        "yellow": 3
+      },
+      "placement": "planned_from_schematic",
+      "inactive_faces": "inside_housing"
+    }
+  ],
+  "task_points": [
+    {
+      "id": "TL_UP_WAIT",
+      "grid_xy": [
+        14,
+        19
+      ],
+      "world_xy_m": [
+        0.8,
+        1.8
+      ],
+      "yaw_rad": 3.14159,
+      "target": "sq4_tl_upper",
+      "asset": "light_red/green/yellow",
+      "purpose": "upper signal and stop line",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "PEOPLE_A",
+      "grid_xy": [
+        6,
+        19
+      ],
+      "world_xy_m": [
+        -0.8,
+        1.8
+      ],
+      "yaw_rad": -1.5708,
+      "target": "sq4_person_01",
+      "asset": "person_01..09",
+      "purpose": "A-zone count and outsiders",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "SIGN_WEST",
+      "grid_xy": [
+        1,
+        14
+      ],
+      "world_xy_m": [
+        -1.8,
+        0.8
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_sign_speed30",
+      "asset": "sign_speed30",
+      "purpose": "road sign",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "BUILDING_D",
+      "grid_xy": [
+        1,
+        6
+      ],
+      "world_xy_m": [
+        -1.8,
+        -0.8
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_building_D",
+      "asset": "win_hot",
+      "purpose": "D building heat",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "PEOPLE_B",
+      "grid_xy": [
+        6,
+        13
+      ],
+      "world_xy_m": [
+        -0.8,
+        0.6
+      ],
+      "yaw_rad": -1.5708,
+      "target": "sq4_person_10",
+      "asset": "person_10..18",
+      "purpose": "B-zone count",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "BUILDING_A",
+      "grid_xy": [
+        8,
+        13
+      ],
+      "world_xy_m": [
+        -0.4,
+        0.6
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_building_A",
+      "asset": "win_fire",
+      "purpose": "A building fires",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "BINS",
+      "grid_xy": [
+        10,
+        10
+      ],
+      "world_xy_m": [
+        0.0,
+        0.0
+      ],
+      "yaw_rad": 3.14159,
+      "target": "sq4_bin_recycle",
+      "asset": "bin_recycle/hazard/kitchen/other",
+      "purpose": "bin state",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "TL_LOW_WAIT",
+      "grid_xy": [
+        10,
+        9
+      ],
+      "world_xy_m": [
+        0.0,
+        -0.2
+      ],
+      "yaw_rad": -1.5708,
+      "target": "sq4_tl_lower",
+      "asset": "light_red/green/yellow",
+      "purpose": "lower signal and stop line",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "BUILDING_C",
+      "grid_xy": [
+        10,
+        4
+      ],
+      "world_xy_m": [
+        0.0,
+        -1.2
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_building_C",
+      "asset": "win_fire",
+      "purpose": "C building fires",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "STATION_GAUGES",
+      "grid_xy": [
+        7,
+        1
+      ],
+      "world_xy_m": [
+        -0.6,
+        -1.8
+      ],
+      "yaw_rad": 1.5708,
+      "target": "sq4_station",
+      "asset": "gauge_1/2",
+      "purpose": "station readings",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "CAR_1",
+      "grid_xy": [
+        16,
+        1
+      ],
+      "world_xy_m": [
+        1.2,
+        -1.8
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_car_1",
+      "asset": "plate_blue",
+      "purpose": "car plate bay 1",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "CAR_2",
+      "grid_xy": [
+        16,
+        4
+      ],
+      "world_xy_m": [
+        1.2,
+        -1.2
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_car_2",
+      "asset": "plate_yellow",
+      "purpose": "car plate bay 2",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "CAR_3",
+      "grid_xy": [
+        16,
+        7
+      ],
+      "world_xy_m": [
+        1.2,
+        -0.6
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_car_3",
+      "asset": "plate_green",
+      "purpose": "car plate bay 3",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "BUILDING_B",
+      "grid_xy": [
+        16,
+        10
+      ],
+      "world_xy_m": [
+        1.2,
+        0.0
+      ],
+      "yaw_rad": 3.14159,
+      "target": "sq4_building_B",
+      "asset": "win_fire",
+      "purpose": "B building fires",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "EBIKES",
+      "grid_xy": [
+        16,
+        13
+      ],
+      "world_xy_m": [
+        1.2,
+        0.6
+      ],
+      "yaw_rad": 0,
+      "target": "sq4_ebike_01",
+      "asset": "upright/fallen",
+      "purpose": "e-bike parking states",
+      "position_source": "engineered_from_schematic"
+    },
+    {
+      "id": "RETURN",
+      "grid_xy": [
+        19,
+        19
+      ],
+      "world_xy_m": [
+        1.8,
+        1.8
+      ],
+      "yaw_rad": 3.14159,
+      "target": "sq4_zone_start_finish",
+      "asset": "none",
+      "purpose": "return to start/finish zone",
+      "position_source": "engineered_from_schematic"
+    }
+  ],
+  "asset_manifest": {
+    "person_source": "training PDF page 5 image xref 57; 18 separate standees",
+    "car_source": "user-supplied blue-car rear PNG edited via built-in imagegen for transparent cutout and blank plate mount",
+    "signal_sources": [
+      "D:\\Downloads\\g_light.png",
+      "D:\\Downloads\\y_light.png",
+      "D:\\Downloads\\r_light.png"
+    ],
+    "plates": [
+      {
+        "kind": "blue",
+        "number": "苏A·31682",
+        "texture": "plate_blue.png",
+        "vehicle_category": "ordinary_small_passenger"
+      },
+      {
+        "kind": "yellow",
+        "number": "苏A·57246",
+        "texture": "plate_yellow.png",
+        "vehicle_category": "large_passenger_vehicle"
+      },
+      {
+        "kind": "green",
+        "number": "苏A·D68125",
+        "texture": "plate_green.png",
+        "vehicle_category": "small_pure_electric"
+      },
+      {
+        "kind": "white",
+        "number": "苏A·7624警",
+        "texture": "plate_white.png",
+        "vehicle_category": "police_vehicle_optional"
+      }
+    ],
+    "plate_semantics": {
+      "blue": "ordinary small passenger vehicle; five-digit serial",
+      "yellow": "large passenger vehicle; five-digit serial",
+      "green": "small pure-electric vehicle; D followed by five digits",
+      "white": "police vehicle; four digits and final red police ideograph; optional asset"
+    },
+    "plate_reference_urls": [
+      "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=8B1827F150C5BB19E05397BE0A0AB44A",
+      "https://www.shanghai.gov.cn/nw5827/20200905/0001-5827_1179681.html",
+      "https://www.dhlh.gov.cn/gaj/Web/_F0_0_6FUWICT154ACDD640D354656A1.htm"
+    ],
+    "materials": {
+      "car_rear_cutout": "SQ4_CarRear",
+      "person_01": "SQ4_Person_01",
+      "person_02": "SQ4_Person_02",
+      "person_03": "SQ4_Person_03",
+      "person_04": "SQ4_Person_04",
+      "person_05": "SQ4_Person_05",
+      "person_06": "SQ4_Person_06",
+      "person_07": "SQ4_Person_07",
+      "person_08": "SQ4_Person_08",
+      "person_09": "SQ4_Person_09",
+      "person_10": "SQ4_Person_10",
+      "person_11": "SQ4_Person_11",
+      "person_12": "SQ4_Person_12",
+      "person_13": "SQ4_Person_13",
+      "person_14": "SQ4_Person_14",
+      "person_15": "SQ4_Person_15",
+      "person_16": "SQ4_Person_16",
+      "person_17": "SQ4_Person_17",
+      "person_18": "SQ4_Person_18",
+      "plate_blue": "SQ4_Plate_Blue",
+      "plate_yellow": "SQ4_Plate_Yellow",
+      "plate_green": "SQ4_Plate_Green",
+      "plate_white": "SQ4_Plate_White",
+      "light_red": "SQ4_Light_Red",
+      "light_yellow": "SQ4_Light_Yellow",
+      "light_green": "SQ4_Light_Green",
+      "car_rear_large_cutout": "SQ4_CarRearLarge"
+    },
+    "large_vehicle_source": "AI-generated transparent large-passenger rear with blank plate mount"
+  },
+  "gazebo_model_count_expected": 94,
+  "limitations": [
+    "Prop anchors and counts beyond training specifications are planned placements, not official measured coordinates.",
+    "The supplied map does not dimension start/finish subdivisions; both use the 0.6 m upper-right zone without a rigid divider.",
+    "Yellow large-vehicle and white police plates are valid category variants; three schematic parking bays display blue, yellow and green, while white is packaged as an exchangeable asset.",
+    "Default people are independent 150 x 50 x 5 mm training-reference standees. The *_standees.world file is a compatibility alias. Legacy volumetric people are not used.",
+    "Electric mopeds are engineered 180 x 75 x 130 mm models; no official dimension was found. Counts 8 upright + 2 fallen in parking and 2 violations in A are demonstration choices from the rule example, not fixed competition counts.",
+    "Person textures preserve the supplied training references. Identity metadata is not a recognition output; actual YOLO accuracy remains untested."
+  ]
+}

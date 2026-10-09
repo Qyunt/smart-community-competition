@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<robot name="sq_mecanum_334" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Envelope from the MO-SERGEANT guide: 334 x 303 x 222 mm, 34 mm chassis clearance. -->
+  <!-- Gazebo planar motion is a kinematic approximation of a four-wheel mecanum base. -->
+  <material name="sq_body_blue"><color rgba="0.06 0.28 0.62 1"/></material>
+  <material name="sq_body_dark"><color rgba="0.09 0.13 0.17 1"/></material>
+  <material name="sq_roller"><color rgba="0.42 0.47 0.52 1"/></material>
+
+  <link name="base_footprint"/>
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.073" rpy="0 0 0"/>
+  </joint>
+  <link name="base_link">
+    <visual>
+      <geometry><box size="0.334 0.270 0.078"/></geometry>
+      <material name="sq_body_blue"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.049" rpy="0 0 0"/>
+      <geometry><box size="0.295 0.245 0.012"/></geometry>
+      <material name="sq_body_dark"/>
+    </visual>
+    <!-- Side guards bring the physical and rendered width to exactly 303 mm. -->
+    <visual>
+      <origin xyz="0 0.1475 0.014" rpy="0 0 0"/>
+      <geometry><box size="0.250 0.008 0.018"/></geometry>
+      <material name="sq_body_blue"/>
+    </visual>
+    <visual>
+      <origin xyz="0 -0.1475 0.014" rpy="0 0 0"/>
+      <geometry><box size="0.250 0.008 0.018"/></geometry>
+      <material name="sq_body_blue"/>
+    </visual>
+    <collision>
+      <geometry><box size="0.334 0.270 0.078"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0.1475 0.014" rpy="0 0 0"/>
+      <geometry><box size="0.250 0.008 0.018"/></geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 -0.1475 0.014" rpy="0 0 0"/>
+      <geometry><box size="0.250 0.008 0.018"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="4.20"/>
+      <inertia ixx="0.0274" ixy="0" ixz="0" iyy="0.0412" iyz="0" izz="0.0645"/>
+    </inertial>
+  </link>
+
+  <xacro:macro name="sq_roller_visual" params="x z angle hand">
+    <visual>
+      <origin xyz="${x} 0 ${z}" rpy="${hand * 0.785398} ${angle} 0"/>
+      <geometry><cylinder radius="0.006" length="0.028"/></geometry>
+      <material name="sq_roller"/>
+    </visual>
+  </xacro:macro>
+  <xacro:macro name="sq_mecanum_wheel" params="id px py hand">
+    <joint name="${id}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${id}_link"/>
+      <origin xyz="${px} ${py} -0.030" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit effort="20" velocity="25"/>
+      <dynamics damping="0.02" friction="0.0"/>
+    </joint>
+    <link name="${id}_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="1.570796 0 0"/>
+        <geometry><cylinder radius="0.036" length="0.028"/></geometry>
+        <material name="sq_body_dark"/>
+      </visual>
+      <xacro:sq_roller_visual x="0.037" z="0" angle="0" hand="${hand}"/>
+      <xacro:sq_roller_visual x="0.02616" z="0.02616" angle="0.785398" hand="${hand}"/>
+      <xacro:sq_roller_visual x="0" z="0.037" angle="1.570796" hand="${hand}"/>
+      <xacro:sq_roller_visual x="-0.02616" z="0.02616" angle="2.356194" hand="${hand}"/>
+      <xacro:sq_roller_visual x="-0.037" z="0" angle="3.141593" hand="${hand}"/>
+      <xacro:sq_roller_visual x="-0.02616" z="-0.02616" angle="3.926991" hand="${hand}"/>
+      <xacro:sq_roller_visual x="0" z="-0.037" angle="4.712389" hand="${hand}"/>
+      <xacro:sq_roller_visual x="0.02616" z="-0.02616" angle="5.497787" hand="${hand}"/>
+      <collision>
+        <origin xyz="0 0 0" rpy="1.570796 0 0"/>
+        <geometry><cylinder radius="0.043" length="0.030"/></geometry>
+      </collision>
+      <inertial>
+        <mass value="0.25"/>
+        <inertia ixx="0.00013" ixy="0" ixz="0" iyy="0.00023" iyz="0" izz="0.00013"/>
+      </inertial>
+    </link>
+    <gazebo reference="${id}_link">
+      <mu1>0.02</mu1><mu2>0.02</mu2>
+      <kp>100000</kp><kd>1</kd>
+    </gazebo>
+  </xacro:macro>
+  <xacro:sq_mecanum_wheel id="wheel_front_left"  px="0.115"  py="0.125"  hand="1"/>
+  <xacro:sq_mecanum_wheel id="wheel_front_right" px="0.115"  py="-0.125" hand="-1"/>
+  <xacro:sq_mecanum_wheel id="wheel_rear_left"   px="-0.115" py="0.125"  hand="-1"/>
+  <xacro:sq_mecanum_wheel id="wheel_rear_right"  px="-0.115" py="-0.125" hand="1"/>
+
+  <joint name="scan_joint" type="fixed">
+    <parent link="base_link"/><child link="base_scan"/>
+    <origin xyz="0.025 -0.100 0.129" rpy="0 0 0"/>
+  </joint>
+  <link name="base_scan">
+    <visual><geometry><cylinder radius="0.018" length="0.040"/></geometry>
+      <material name="sq_body_dark"/></visual>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/><child link="camera_link"/>
+    <origin xyz="0.142 0 0.086" rpy="0 0 0"/>
+  </joint>
+  <link name="camera_link">
+    <visual><geometry><box size="0.026 0.088 0.028"/></geometry>
+      <material name="sq_body_dark"/></visual>
+  </link>
+  <joint name="camera_rgb_joint" type="fixed">
+    <parent link="camera_link"/><child link="camera_rgb_frame"/>
+    <origin xyz="0.014 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="camera_rgb_frame"/>
+  <joint name="camera_rgb_optical_joint" type="fixed">
+    <parent link="camera_rgb_frame"/><child link="camera_rgb_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
+  </joint>
+  <link name="camera_rgb_optical_frame"/>
+  <joint name="camera_depth_joint" type="fixed">
+    <parent link="camera_link"/><child link="camera_depth_frame"/>
+    <origin xyz="0.014 0.04 0" rpy="0 0 0"/>
+  </joint>
+  <link name="camera_depth_frame"/>
+  <joint name="camera_depth_optical_joint" type="fixed">
+    <parent link="camera_depth_frame"/><child link="camera_depth_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
+  </joint>
+  <link name="camera_depth_optical_frame"/>
+
+  <!-- One additional monocular camera stays inside the 334 x 303 x 222 mm
+       envelope. Its rearward position and 120-degree lens include full
+       facades from the road centre line; the front RGBD camera reads plates. -->
+  <joint name="task_camera_joint" type="fixed">
+    <parent link="base_link"/><child link="task_camera_link"/>
+    <origin xyz="-0.120 0.065 0.140" rpy="0 0 0"/>
+  </joint>
+  <link name="task_camera_link">
+    <visual><geometry><box size="0.018 0.036 0.018"/></geometry>
+      <material name="sq_body_dark"/></visual>
+  </link>
+  <joint name="task_camera_optical_joint" type="fixed">
+    <parent link="task_camera_link"/><child link="task_camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
+  </joint>
+  <link name="task_camera_optical_frame"/>
+
+  <gazebo>
+    <plugin name="sq_mecanum_planar_drive" filename="libgazebo_ros_planar_move.so">
+      <robotNamespace>/</robotNamespace>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_footprint</robotBaseFrame>
+      <odometryRate>30</odometryRate>
+      <cmdTimeout>0.4</cmdTimeout>
+    </plugin>
+  </gazebo>
+  <gazebo reference="base_scan">
+    <sensor type="ray" name="sq_lidar_360">
+      <always_on>true</always_on><update_rate>5</update_rate>
+      <ray><scan><horizontal><samples>360</samples><resolution>1</resolution>
+        <min_angle>0</min_angle><max_angle>6.283185</max_angle>
+      </horizontal></scan>
+      <range><min>0.12</min><max>3.5</max><resolution>0.015</resolution></range></ray>
+      <plugin name="sq_lidar_ros" filename="libgazebo_ros_laser.so">
+        <topicName>scan</topicName><frameName>base_scan</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="camera_rgb_frame">
+    <sensor type="depth" name="sq_rgbd_camera">
+      <always_on>true</always_on>
+      <camera><horizontal_fov>1.3439</horizontal_fov>
+        <image><width>1280</width><height>720</height><format>R8G8B8</format></image>
+        <depth_camera/>
+        <clip><near>0.03</near><far>10.0</far></clip>
+      </camera>
+      <plugin name="sq_rgbd_ros" filename="libgazebo_ros_openni_kinect.so">
+        <alwaysOn>true</alwaysOn><updateRate>20.0</updateRate>
+        <cameraName>camera</cameraName><frameName>camera_rgb_optical_frame</frameName>
+        <imageTopicName>rgb/image_raw</imageTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+        <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+        <pointCloudCutoff>0.4</pointCloudCutoff>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <gazebo reference="task_camera_link">
+    <sensor type="camera" name="sq_task_monocular">
+      <always_on>true</always_on>
+      <camera><horizontal_fov>2.0944</horizontal_fov>
+        <image><width>1280</width><height>720</height><format>R8G8B8</format></image>
+        <clip><near>0.03</near><far>10.0</far></clip>
+      </camera>
+      <plugin name="sq_task_monocular_ros" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn><updateRate>10.0</updateRate>
+        <cameraName>task_camera</cameraName><frameName>task_camera_optical_frame</frameName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

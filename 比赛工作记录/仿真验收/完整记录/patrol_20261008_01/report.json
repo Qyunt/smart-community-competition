@@ -1,0 +1,37 @@
+{
+  "records": [
+    {
+      "xy_error_m": 0.025, 
+      "index": 1, 
+      "odom": [
+        1.025, 
+        1.8, 
+        3.142
+      ], 
+      "status": "success", 
+      "name": "过路01", 
+      "image": "", 
+      "elapsed_s": 15.2, 
+      "target": [
+        1.0, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "status": "failed", 
+      "index": 2, 
+      "name": "TL_UP_WAIT", 
+      "elapsed_s": 75.6, 
+      "reason": "no fresh visual red-to-green transition", 
+      "target": [
+        0.8, 
+        1.8, 
+        3.14159
+      ]
+    }
+  ], 
+  "planned_count": 33, 
+  "outside_samples": 0, 
+  "road_samples": 728
+}

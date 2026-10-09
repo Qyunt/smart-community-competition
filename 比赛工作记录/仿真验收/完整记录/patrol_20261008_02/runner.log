@@ -1,0 +1,10 @@
+{
+  "failed": [], 
+  "planned": 33, 
+  "success": true, 
+  "successful": 33, 
+  "road_samples": 31641, 
+  "saved_images": 16, 
+  "recorded": 33, 
+  "outside_samples": 0
+}

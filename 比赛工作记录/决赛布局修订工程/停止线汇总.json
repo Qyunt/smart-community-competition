@@ -1,0 +1,18 @@
+{
+  "samples": 176,
+  "moving_non_green_samples": 0,
+  "counts": [
+    {
+      "line": "upper",
+      "light": "green",
+      "moving": true,
+      "samples": 118
+    },
+    {
+      "line": "lower",
+      "light": "green",
+      "moving": true,
+      "samples": 58
+    }
+  ]
+}

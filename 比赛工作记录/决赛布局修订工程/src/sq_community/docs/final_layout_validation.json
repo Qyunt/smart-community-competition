@@ -1,0 +1,148 @@
+{
+  "layout": "rules p3 topology and orientations; engineering coordinates",
+  "route_length_m": 27.6,
+  "goals": 41,
+  "observation_tasks": 31,
+  "gated_crossings": {
+    "upper": 2,
+    "lower": 1
+  },
+  "road_and_turn_clearance": "pass for 334x303 mm body",
+  "portrait_frustum_coverage": {
+    "sq4_person_01": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_TOP_L"
+    ],
+    "sq4_person_02": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_03": [
+      "PEOPLE_A_TOP_R",
+      "PEOPLE_A_WEST_N"
+    ],
+    "sq4_person_04": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_05": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_06": [
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_07": [
+      "PEOPLE_A_TOP_L",
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_08": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_L"
+    ],
+    "sq4_person_09": [
+      "PEOPLE_A_WEST_N",
+      "PEOPLE_A_WEST_S",
+      "PEOPLE_A_SOUTH_R"
+    ],
+    "sq4_person_10": [
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L",
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_11": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_12": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R",
+      "PEOPLE_B_EAST_HIGH"
+    ],
+    "sq4_person_13": [
+      "PEOPLE_B_WEST_N"
+    ],
+    "sq4_person_14": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_L"
+    ],
+    "sq4_person_15": [
+      "PEOPLE_B_WEST_N",
+      "PEOPLE_B_WEST_S",
+      "PEOPLE_B_NORTH_R"
+    ],
+    "sq4_person_16": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_17": [
+      "PEOPLE_B_EAST_HIGH",
+      "PEOPLE_B_EAST"
+    ],
+    "sq4_person_18": [
+      "PEOPLE_B_EAST_HIGH"
+    ]
+  },
+  "portraits_without_complete_nominal_front_view": [],
+  "limit": "Framing does not prove occlusion-free images, detection or recognition; runtime camera inspection required.",
+  "ebike_wide_frustum_coverage": {
+    "sq4_ebike_01": [
+      "EBIKES_LOW"
+    ],
+    "sq4_ebike_02": [
+      "EBIKES_LOW"
+    ],
+    "sq4_ebike_03": [
+      "EBIKES_LOW",
+      "EBIKES_MID"
+    ],
+    "sq4_ebike_04": [
+      "EBIKES_LOW",
+      "EBIKES_MID"
+    ],
+    "sq4_ebike_05": [
+      "EBIKES_LOW",
+      "EBIKES_MID"
+    ],
+    "sq4_ebike_06": [
+      "EBIKES_LOW",
+      "EBIKES_MID",
+      "EBIKES_HIGH"
+    ],
+    "sq4_ebike_07": [
+      "EBIKES_MID",
+      "EBIKES_HIGH"
+    ],
+    "sq4_ebike_08": [
+      "EBIKES_MID",
+      "EBIKES_HIGH"
+    ],
+    "sq4_ebike_09": [
+      "EBIKES_MID",
+      "EBIKES_HIGH"
+    ],
+    "sq4_ebike_10": [
+      "EBIKES_HIGH"
+    ],
+    "sq4_ebike_11": [
+      "EBIKES_A"
+    ],
+    "sq4_ebike_12": [
+      "EBIKES_A"
+    ]
+  },
+  "ebikes_without_complete_nominal_view": []
+}

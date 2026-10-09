@@ -1,0 +1,58 @@
+  8818      1       01:06 roslaunch       /usr/bin/python /opt/ros/melodic/bin/roslaunch sq_community sq_community_4p2.launch
+  8852   8818       01:06 python          python /home/qyunt/sq_community_ws_20261008/src/sq_community/scripts/traffic_light_controller_4p2.py __name:=sq_traffic_light_4p2 __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/sq_traffic_light_4p2-5.log
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1791464075 611167711) [Err] [Master.cc:96] EXCEPTION: Unable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+
+(1791464075 612105455) [Err] [Master.cc:96] EXCEPTION: Unable to start server[bind: Address already in use]. There is probably another Gazebo process running.
+
+05:54:35: Parsing scripts for resource group LookNFeel
+05:54:35: Finished parsing scripts for resource group LookNFeel
+05:54:35: Creating resources for group LookNFeel
+05:54:35: All done
+05:54:35: Parsing scripts for resource group Schemes
+05:54:35: Finished parsing scripts for resource group Schemes
+05:54:35: Creating resources for group Schemes
+05:54:35: All done
+05:54:35: Parsing scripts for resource group SkyX
+05:54:35: Parsing script SkyX.material
+05:54:35: Finished parsing scripts for resource group SkyX
+05:54:35: Creating resources for group SkyX
+05:54:35: All done
+05:54:35: Added resource location '/usr/share/gazebo-9/media/rtshaderlib/' of type 'FileSystem' to resource group 'General'
+05:54:35: Creating resource group ShaderGeneratorResourceGroup
+05:54:35: Added resource location '/tmp/gazebo-qyunt-rtshaderlibcache/' of type 'FileSystem' to resource group 'ShaderGeneratorResourceGroup'
+05:54:35: Texture: SkyX_Starfield.png: Loading 1 faces(PF_A8R8G8B8,512x512x1) with 5 hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,512x512x1.
+05:54:35: Texture: SkyX_Moon.png: Loading 1 faces(PF_A8R8G8B8,512x512x1) with 5 hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,512x512x1.
+05:54:36: Texture: SkyX_MoonHalo.png: Loading 1 faces(PF_SHORT_RGBA,512x256x1) with 5 hardware generated mipmaps from Image. Internal format is PF_SHORT_RGBA,512x256x1.
+05:54:36: Texture: Noise.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1791464075 510819855) [Wrn] [GuiIface.cc:199] g/gui-plugin is really loading a SystemPlugin. To load a GUI plugin please use --gui-client-plugin 
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1791464075 669286172) [Msg] Waiting for master.
+(1791464075 673189303) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1791464075 673201452) [Msg] Publicized address: 192.168.80.129
+(1791464075 673363215) Loaded .ini file from: "/home/qyunt/.gazebo/gui.ini"
+(1791464075 801801546) [Wrn] [GuiIface.cc:120] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-qyunt'
+(1791464075 879220531) [Err] [InsertModelWidget.cc:405] Missing model.config for model "/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace"
+(1791464075 879299924) model.config file is missing in directory["/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace"]
+(1791464075 879370467) [Err] [InsertModelWidget.cc:405] Missing model.config for model "/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace_2020"
+(1791464075 879452910) model.config file is missing in directory["/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace_2020"]
+(1791464075 879627567) [Err] [InsertModelWidget.cc:405] Missing model.config for model "/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_common_meshes"
+(1791464075 879724974) model.config file is missing in directory["/home/qyunt/sq_community_ws_20261008/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_common_meshes"]
+(1791464076 151023345) [Wrn] [Event.cc:61] Warning: Deleting a connection right after creation. Make sure to save the ConnectionPtr from a Connect call
+(1791464083 35461461) [Err] [Connection.cc:546] Connection[3] Closed during Read

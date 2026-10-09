@@ -1,0 +1,32 @@
+<launch>
+  <!-- New map and 334 x 303 mm mecanum footprint. Start after sq_community_4p2.launch. -->
+  <arg name="map_file" default="$(find sq_community)/maps/sq_community_4p2.yaml"/>
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+  <include file="$(find turtlebot3_navigation)/launch/amcl.launch">
+    <arg name="initial_pose_x" value="1.8"/>
+    <arg name="initial_pose_y" value="1.8"/>
+    <arg name="initial_pose_a" value="3.14159265"/>
+  </include>
+  <!-- The TurtleBot3 AMCL include defaults to differential odometry.  This
+       four-mecanum robot can translate laterally and has a measured start pose. -->
+  <param name="/amcl/odom_model_type" value="omni"/>
+  <param name="/amcl/odom_alpha1" value="0.05"/>
+  <param name="/amcl/odom_alpha2" value="0.05"/>
+  <param name="/amcl/odom_alpha3" value="0.05"/>
+  <param name="/amcl/odom_alpha4" value="0.05"/>
+  <param name="/amcl/odom_alpha5" value="0.05"/>
+  <param name="/amcl/update_min_d" value="0.05"/>
+  <param name="/amcl/update_min_a" value="0.05"/>
+  <param name="/amcl/initial_cov_xx" value="0.0025"/>
+  <param name="/amcl/initial_cov_yy" value="0.0025"/>
+  <param name="/amcl/initial_cov_aa" value="0.01"/>
+  <node pkg="move_base" type="move_base" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <rosparam file="$(find sq_community)/param/sq4_costmap_common.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find sq_community)/param/sq4_costmap_common.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find sq_community)/param/sq4_global_costmap.yaml" command="load"/>
+    <rosparam file="$(find sq_community)/param/sq4_local_costmap.yaml" command="load"/>
+    <rosparam file="$(find sq_community)/param/sq4_move_base.yaml" command="load"/>
+    <rosparam file="$(find sq_community)/param/sq4_dwa.yaml" command="load"/>
+  </node>
+</launch>

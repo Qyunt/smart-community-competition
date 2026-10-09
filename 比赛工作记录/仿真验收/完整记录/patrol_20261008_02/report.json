@@ -1,0 +1,601 @@
+{
+  "records": [
+    {
+      "xy_error_m": 0.023, 
+      "index": 1, 
+      "odom": [
+        1.023, 
+        1.8, 
+        3.089
+      ], 
+      "status": "success", 
+      "name": "过路01", 
+      "image": "", 
+      "elapsed_s": 15.8, 
+      "target": [
+        1.0, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 2, 
+      "odom": [
+        0.824, 
+        1.8, 
+        3.089
+      ], 
+      "status": "success", 
+      "name": "TL_UP_WAIT", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/02_TL_UP_WAIT.jpg", 
+      "elapsed_s": 34.1, 
+      "target": [
+        0.8, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 3, 
+      "odom": [
+        0.024, 
+        1.8, 
+        3.09
+      ], 
+      "status": "success", 
+      "name": "过路02", 
+      "image": "", 
+      "elapsed_s": 18.1, 
+      "target": [
+        0.0, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 4, 
+      "odom": [
+        -0.776, 
+        1.8, 
+        -1.624
+      ], 
+      "status": "success", 
+      "name": "PEOPLE_A", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/04_PEOPLE_A.jpg", 
+      "elapsed_s": 28.5, 
+      "target": [
+        -0.8, 
+        1.8, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 5, 
+      "odom": [
+        -1.576, 
+        1.8, 
+        -3.088
+      ], 
+      "status": "success", 
+      "name": "过路03", 
+      "image": "", 
+      "elapsed_s": 26.2, 
+      "target": [
+        -1.6, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 6, 
+      "odom": [
+        -1.776, 
+        1.8, 
+        -1.623
+      ], 
+      "status": "success", 
+      "name": "过路04", 
+      "image": "", 
+      "elapsed_s": 14.6, 
+      "target": [
+        -1.8, 
+        1.8, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 7, 
+      "odom": [
+        -1.8, 
+        1.024, 
+        -1.623
+      ], 
+      "status": "success", 
+      "name": "过路05", 
+      "image": "", 
+      "elapsed_s": 15.3, 
+      "target": [
+        -1.8, 
+        1.0, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 8, 
+      "odom": [
+        -1.8, 
+        0.823, 
+        -0.054
+      ], 
+      "status": "success", 
+      "name": "SIGN_WEST", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/08_SIGN_WEST.jpg", 
+      "elapsed_s": 15.0, 
+      "target": [
+        -1.8, 
+        0.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 9, 
+      "odom": [
+        -1.8, 
+        0.024, 
+        -1.519
+      ], 
+      "status": "success", 
+      "name": "过路06", 
+      "image": "", 
+      "elapsed_s": 191.1, 
+      "target": [
+        -1.8, 
+        0.0, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 10, 
+      "odom": [
+        -1.8, 
+        -0.776, 
+        -0.051
+      ], 
+      "status": "success", 
+      "name": "BUILDING_D", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/10_BUILDING_D.jpg", 
+      "elapsed_s": 26.3, 
+      "target": [
+        -1.8, 
+        -0.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 11, 
+      "odom": [
+        -1.8, 
+        -0.024, 
+        1.517
+      ], 
+      "status": "success", 
+      "name": "过路07", 
+      "image": "", 
+      "elapsed_s": 24.9, 
+      "target": [
+        -1.8, 
+        0.0, 
+        1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 12, 
+      "odom": [
+        -1.8, 
+        0.576, 
+        0.054
+      ], 
+      "status": "success", 
+      "name": "过路08", 
+      "image": "", 
+      "elapsed_s": 21.4, 
+      "target": [
+        -1.8, 
+        0.6, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 13, 
+      "odom": [
+        -1.024, 
+        0.6, 
+        0.054
+      ], 
+      "status": "success", 
+      "name": "过路09", 
+      "image": "", 
+      "elapsed_s": 14.7, 
+      "target": [
+        -1.0, 
+        0.6, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.025, 
+      "index": 14, 
+      "odom": [
+        -0.825, 
+        0.6, 
+        -1.519
+      ], 
+      "status": "success", 
+      "name": "PEOPLE_B", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/14_PEOPLE_B.jpg", 
+      "elapsed_s": 15.2, 
+      "target": [
+        -0.8, 
+        0.6, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.025, 
+      "index": 15, 
+      "odom": [
+        -0.425, 
+        0.6, 
+        -0.053
+      ], 
+      "status": "success", 
+      "name": "BUILDING_A", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/15_BUILDING_A.jpg", 
+      "elapsed_s": 18.2, 
+      "target": [
+        -0.4, 
+        0.6, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 16, 
+      "odom": [
+        -0.023, 
+        0.6, 
+        -1.517
+      ], 
+      "status": "success", 
+      "name": "过路10", 
+      "image": "", 
+      "elapsed_s": 17.7, 
+      "target": [
+        0.0, 
+        0.6, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 17, 
+      "odom": [
+        0.0, 
+        0.024, 
+        -3.091
+      ], 
+      "status": "success", 
+      "name": "BINS", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/17_BINS.jpg", 
+      "elapsed_s": 21.2, 
+      "target": [
+        0.0, 
+        0.0, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 18, 
+      "odom": [
+        -0.0, 
+        -0.176, 
+        -1.624
+      ], 
+      "status": "success", 
+      "name": "TL_LOW_WAIT", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/18_TL_LOW_WAIT.jpg", 
+      "elapsed_s": 50.9, 
+      "target": [
+        0.0, 
+        -0.2, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 19, 
+      "odom": [
+        -0.0, 
+        -0.776, 
+        -0.052
+      ], 
+      "status": "success", 
+      "name": "BUILDING_C", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/19_BUILDING_C.jpg", 
+      "elapsed_s": 22.2, 
+      "target": [
+        0.0, 
+        -0.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 20, 
+      "odom": [
+        0.0, 
+        -1.576, 
+        -1.518
+      ], 
+      "status": "success", 
+      "name": "过路11", 
+      "image": "", 
+      "elapsed_s": 28.8, 
+      "target": [
+        0.0, 
+        -1.6, 
+        -1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 21, 
+      "odom": [
+        0.0, 
+        -1.776, 
+        -3.092
+      ], 
+      "status": "success", 
+      "name": "过路12", 
+      "image": "", 
+      "elapsed_s": 15.4, 
+      "target": [
+        0.0, 
+        -1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 22, 
+      "odom": [
+        -0.576, 
+        -1.8, 
+        1.622
+      ], 
+      "status": "success", 
+      "name": "STATION_GAUGES", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/22_STATION_GAUGES.jpg", 
+      "elapsed_s": 23.2, 
+      "target": [
+        -0.6, 
+        -1.8, 
+        1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 23, 
+      "odom": [
+        0.176, 
+        -1.8, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "过路13", 
+      "image": "", 
+      "elapsed_s": 23.6, 
+      "target": [
+        0.2, 
+        -1.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.025, 
+      "index": 24, 
+      "odom": [
+        0.975, 
+        -1.8, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "过路14", 
+      "image": "", 
+      "elapsed_s": 15.3, 
+      "target": [
+        1.0, 
+        -1.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 25, 
+      "odom": [
+        1.176, 
+        -1.8, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "CAR_1", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/25_CAR_1.jpg", 
+      "elapsed_s": 5.3, 
+      "target": [
+        1.2, 
+        -1.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 26, 
+      "odom": [
+        1.176, 
+        -1.8, 
+        1.518
+      ], 
+      "status": "success", 
+      "name": "过路15", 
+      "image": "", 
+      "elapsed_s": 9.5, 
+      "target": [
+        1.2, 
+        -1.8, 
+        1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 27, 
+      "odom": [
+        1.2, 
+        -1.223, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "CAR_2", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/27_CAR_2.jpg", 
+      "elapsed_s": 22.3, 
+      "target": [
+        1.2, 
+        -1.2, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.022, 
+      "index": 28, 
+      "odom": [
+        1.2, 
+        -0.622, 
+        0.051
+      ], 
+      "status": "success", 
+      "name": "CAR_3", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/28_CAR_3.jpg", 
+      "elapsed_s": 31.4, 
+      "target": [
+        1.2, 
+        -0.6, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 29, 
+      "odom": [
+        1.2, 
+        -0.024, 
+        3.089
+      ], 
+      "status": "success", 
+      "name": "BUILDING_B", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/29_BUILDING_B.jpg", 
+      "elapsed_s": 31.9, 
+      "target": [
+        1.2, 
+        0.0, 
+        3.14159
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 30, 
+      "odom": [
+        1.2, 
+        0.577, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "EBIKES", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/30_EBIKES.jpg", 
+      "elapsed_s": 31.4, 
+      "target": [
+        1.2, 
+        0.6, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 31, 
+      "odom": [
+        1.2, 
+        1.377, 
+        1.518
+      ], 
+      "status": "success", 
+      "name": "过路16", 
+      "image": "", 
+      "elapsed_s": 27.4, 
+      "target": [
+        1.2, 
+        1.4, 
+        1.5708
+      ]
+    }, 
+    {
+      "xy_error_m": 0.024, 
+      "index": 32, 
+      "odom": [
+        1.2, 
+        1.776, 
+        0.053
+      ], 
+      "status": "success", 
+      "name": "过路17", 
+      "image": "", 
+      "elapsed_s": 18.3, 
+      "target": [
+        1.2, 
+        1.8, 
+        0.0
+      ]
+    }, 
+    {
+      "xy_error_m": 0.023, 
+      "index": 33, 
+      "odom": [
+        1.777, 
+        1.8, 
+        3.088
+      ], 
+      "status": "success", 
+      "name": "RETURN", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/33_RETURN.jpg", 
+      "elapsed_s": 30.3, 
+      "target": [
+        1.8, 
+        1.8, 
+        3.14159
+      ]
+    }
+  ], 
+  "planned_count": 33, 
+  "outside_samples": 0, 
+  "road_samples": 31641
+}

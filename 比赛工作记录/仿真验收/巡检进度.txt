@@ -1,0 +1,25 @@
+PROCESS_EXIT=0
+FINISHED
+[INFO] [1791461655.455348, 3771.583000]: [sq4 patrol] 22 STATION_GAUGES error 0.024 m
+[INFO] [1791461679.112921, 3787.744000]: [sq4 patrol] 23 过路13 error 0.024 m
+[INFO] [1791461694.445459, 3797.974000]: [sq4 patrol] 24 过路14 error 0.025 m
+[INFO] [1791461699.724616, 3801.181000]: [sq4 patrol] 25 CAR_1 error 0.024 m
+[INFO] [1791461709.247427, 3807.474000]: [sq4 patrol] 26 过路15 error 0.024 m
+[INFO] [1791461731.591228, 3821.323000]: [sq4 patrol] 27 CAR_2 error 0.023 m
+[INFO] [1791461762.989489, 3841.601000]: [sq4 patrol] 28 CAR_3 error 0.022 m
+[INFO] [1791461794.933238, 3862.112000]: [sq4 patrol] 29 BUILDING_B error 0.024 m
+[INFO] [1791461826.354966, 3882.599000]: [sq4 patrol] 30 EBIKES error 0.023 m
+[INFO] [1791461853.765101, 3898.991000]: [sq4 patrol] 31 过路16 error 0.023 m
+[INFO] [1791461872.019880, 3910.721000]: [sq4 patrol] 32 过路17 error 0.024 m
+[INFO] [1791461902.291880, 3930.508000]: [sq4 patrol] 33 RETURN error 0.023 m
+{
+  "failed": [], 
+  "planned": 33, 
+  "success": true, 
+  "successful": 33, 
+  "road_samples": 31641, 
+  "saved_images": 16, 
+  "recorded": 33, 
+  "outside_samples": 0
+}PROGRESS=33/33
+{"status": "success", "index": 33, "name": "RETURN", "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_02/frames/33_RETURN.jpg", "elapsed_s": 30.3, "xy_error_m": 0.023, "odom": [1.777, 1.8, 3.088], "target": [1.8, 1.8, 3.14159]}

@@ -1,0 +1,15 @@
+=== Versions and dependencies ===
+melodic
+1.14.13
+#apt
+ros-melodic-roscpp
+/opt/ros/melodic/bin/roscore
+/opt/ros/melodic/bin/rviz
+/usr/bin/gazebo
+/opt/ros/melodic/bin/catkin_make
+=== Starting isolated ROS master for a real topic exchange ===
+/rosout
+data: "ROS_Melodic_OK"
+---
+=== Installation and pub/sub verification passed ===
+VERIFY_EXIT=0

@@ -1,0 +1,87 @@
+========================================================================
+ sq_community 包静态自检   pkg=.
+========================================================================
+
+【1】XML 良构性
+[OK] launch\sq_community.launch
+[OK] launch\sq_gmapping.launch
+[OK] launch\sq_move_base.launch
+[OK] launch\sq_navigation.launch
+[OK] models\sq_textures\model.config
+[OK] models\sq_textures\model.sdf
+[OK] models\sq_traffic_light_green\model.config
+[OK] models\sq_traffic_light_green\model.sdf
+[OK] models\sq_traffic_light_red\model.config
+[OK] models\sq_traffic_light_red\model.sdf
+[OK] models\sq_traffic_light_yellow\model.config
+[OK] models\sq_traffic_light_yellow\model.sdf
+[OK] package.xml
+[OK] worlds\sq_community.world
+[OK] 共解析 14 个 XML 文件
+
+【2】结构：link 嵌套 / pose / geometry
+[OK] 没有 link 嵌套 link
+[OK] visual=256 collision=185 ; 缺 geometry: 无
+[OK] 世界内 <model> 元素 10 个, <link> 256 个
+[OK] <include> 2 处
+
+【3】model:// URI 落地检查
+[OK] 发现 model:// 引用 3 条
+[OK]   sq_textures/materials/scripts  -> 存在
+[OK]   sq_textures/materials/textures  -> 存在
+[OK]   sq_traffic_light_red  -> 模型目录存在
+
+【4】SQ_* 材质定义检查
+[OK] 材质脚本定义 35 条
+[OK] 世界/模型中引用 SQ_* 材质 30 个
+[OK] 未定义的材质: 无
+[WARN] 已定义但未使用: 5 个 (SQ_gnd_asphalt, SQ_gnd_lane_dash, SQ_gnd_lane_solid, SQ_gnd_paving, SQ_gnd_stopline)
+
+【5】几何包围盒
+[OK] x ∈ [-5.15, 5.15]  (场地 ±5.00)
+[OK] y ∈ [-3.75, 3.75]  (场地 ±3.60)
+[OK] z ∈ [-0.10, 0.89]
+[OK] 所有物件均在场地范围内
+
+【6】赛题元素对照（以 docs/scene_manifest.json 为真值）
+[OK] 红绿灯        真值=2   世界内=2    两处，含红/黄/绿三套可切换模型
+[OK] 人偶立牌       真值=16  世界内=16   A街8 + B街8，其中外来2
+[OK] 垃圾桶        真值=4   世界内=4    可回收/有害/厨余/其他，含开闭与投放
+[OK] 楼宇         真值=4   世界内=4    A/B/C/D 四座
+[OK] 火灾隐患窗      真值=10  世界内=10   A座3 + B座5 + C座2
+[OK] 高温窗        真值=1   世界内=1    D座 2 楼异常温度 + 温度牌
+[OK] 站房仪表       真值=2   世界内=6    读数 01357 / 24680
+[OK] 车辆         真值=3   世界内=3    苏E·12345 苏E·67890 苏E·A8888
+[OK] 车牌贴图       真值=3   世界内=3    3 张车牌
+[OK] 电动车        真值=12  世界内=12   停车区正常8 + 倒伏2；A街违停2，B街违停0
+[OK] 指示牌        真值=6   世界内=6    限速30/禁止直行/左转/人行横道/禁止驶入/右转
+[OK] 停车位        真值=3   世界内=3    3 个停车场车位 + 1 个终点泊车位
+[OK] 斑马线        真值=1   世界内=1    A街与连接路交叉处
+[OK] 出发点        真值=1   世界内=1    出发区地贴 x=-4.62
+
+  ── 场地答案键（可直接用于校验识别结果 / 写入复赛文档）──
+    红绿灯: 红灯10s→绿灯15s→黄灯3s；共两处；红灯亮时车头不得越过等待线 x=-0.75(A街) / x=+0.75(B街)
+    人群数量: 社区内共有16人，其中A街8人，B街8人，发现2名非社区人员在A街
+    垃圾桶状态: 可回收垃圾桶关闭；有害垃圾桶打开、投放正确；厨余垃圾桶打开、投放错误；其他垃圾桶关闭
+    楼宇火灾: A座发现火灾隐患3个，B座5个，C座2个
+    楼宇异常温度: D座在2楼处发现高温，约68℃
+    站房仪表: 1号表读数01357，2号表读数24680
+    车辆车牌: 1号车位苏E·12345，2号车位苏E·67890，3号车位苏E·A8888
+    电动车状态: A街区有2辆电动车违停，B街区无违停；停车区内电动车正常8辆，倒伏2辆
+    指示牌: 沿途6块：限速30 / 禁止直行 / 左转 / 人行横道 / 禁止驶入 / 右转
+    停车: 需停入A街北侧泊车位(x=4.45, y=2.80)，车头朝向街道
+
+【7】包文件清单
+[OK] 文件 80 个, 合计 0.63 MB
+[OK]   worlds/  1 文件
+[OK]   models/  44 文件
+[OK]   launch/  4 文件
+[OK]   scripts/ 4 文件
+[OK]   maps/    4 文件
+[OK]   rviz/    2 文件
+[OK]   docs/    4 文件
+[OK]   tools/   4 文件
+
+========================================================================
+ 通过 53 项 / 失败 0 项 / 警告 1 项
+========================================================================

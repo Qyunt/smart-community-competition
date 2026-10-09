@@ -1,0 +1,28 @@
+<launch>
+  <!-- 4.2 m map_server + AMCL + move_base patrol. Never start this together
+       with sq_patrol_4p2.py: both controllers would command /cmd_vel. -->
+  <arg name="gui" default="true"/>
+  <arg name="map_file" default="$(find sq_community)/maps/sq_community_4p2.yaml"/>
+  <arg name="start_patrol" default="true"/>
+  <arg name="enable_ocr" default="true"/>
+  <arg name="enable_voice" default="true"/>
+  <arg name="ocr_url" default="http://192.168.232.1:8765/ocr"/>
+  <include file="$(find sq_community)/launch/sq_community_4p2.launch">
+    <arg name="gui" value="$(arg gui)"/>
+  </include>
+  <include file="$(find sq_community)/launch/sq_navigation_4p2.launch">
+    <arg name="map_file" value="$(arg map_file)"/>
+  </include>
+  <node pkg="sq_community" type="sq_signal_vision_4p2.py"
+        name="sq_signal_vision_4p2" output="screen">
+    <param name="min_brightness_upper" value="90"/>
+  </node>
+  <node pkg="sq_community" type="sq_voice_4p2.py"
+        name="sq_voice_4p2" output="screen" if="$(arg enable_voice)"/>
+  <node pkg="sq_community" type="sq_plate_ocr_bridge_4p2.py"
+        name="sq_plate_ocr_bridge_4p2" output="screen" if="$(arg enable_ocr)">
+    <param name="url" value="$(arg ocr_url)"/>
+  </node>
+  <node pkg="sq_community" type="sq_patrol_nav_4p2.py"
+        name="sq_patrol_nav_4p2" output="screen" if="$(arg start_patrol)"/>
+</launch>

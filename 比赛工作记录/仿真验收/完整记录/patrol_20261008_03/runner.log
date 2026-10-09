@@ -1,0 +1,12 @@
+{
+  "successful": 4, 
+  "planned": 4, 
+  "success": true, 
+  "failed": [], 
+  "full_route_planned": 33, 
+  "scope": "local lower stop-line regression, route indices 18 through 21", 
+  "road_samples": 2561, 
+  "saved_images": 2, 
+  "recorded": 4, 
+  "outside_samples": 0
+}

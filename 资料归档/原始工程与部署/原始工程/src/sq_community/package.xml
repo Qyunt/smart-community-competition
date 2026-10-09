@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sq_community</name>
+  <version>1.0.0</version>
+  <description>
+    智慧社区 Gazebo 仿真场地（全球校园人工智能算法精英大赛 · 算法应用赛（赛马制）· 智慧社区）。
+    包含：10m×7.2m 沙盘世界（楼宇A/B/C/D、红绿灯×2、人偶立牌×16、垃圾桶×4、站房+仪表×2、
+    停车场+车牌×3、电动车×12、指示牌×6、泊车位、斑马线、车道线），场地真值清单，
+    红绿灯 10s/15s/3s 动态切换节点，多点巡检节点，相机视觉识别接入示例。
+  </description>
+  <maintainer email="251880209@example.com">马天瑞</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>actionlib</depend>
+  <depend>move_base_msgs</depend>
+
+  <exec_depend>gazebo</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>turtlebot3_slam</exec_depend>
+  <exec_depend>turtlebot3_navigation</exec_depend>
+  <exec_depend>turtlebot3_bringup</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>gmapping</exec_depend>
+  <exec_depend>map_server</exec_depend>
+  <exec_depend>amcl</exec_depend>
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>dwa_local_planner</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>teleop_twist_keyboard</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+
+  <export>
+    <!-- 让 gazebo 通过 model:// 找到本包的 models/（含 sq_textures 贴图材质） -->
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+  </export>
+</package>

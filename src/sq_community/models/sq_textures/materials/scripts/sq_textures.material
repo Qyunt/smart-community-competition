@@ -1,0 +1,595 @@
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_plate_A
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture plate_A.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_plate_B
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture plate_B.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_plate_C
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture plate_C.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gauge_1
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gauge_1.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gauge_2
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gauge_2.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_win_normal
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture win_normal.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_win_fire
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture win_fire.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_win_hot
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture win_hot.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_no_straight
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_no_straight.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_turn_left
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_turn_left.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_turn_right
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_turn_right.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_no_entry
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_no_entry.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_crosswalk
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_crosswalk.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_sign_speed30
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture sign_speed30.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bin_recycle
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bin_recycle.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bin_hazard
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bin_hazard.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bin_kitchen
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bin_kitchen.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bin_other
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bin_other.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bldg_A
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bldg_A.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bldg_B
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bldg_B.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bldg_C
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bldg_C.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_bldg_D
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture bldg_D.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_station_plate
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture station_plate.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_start_plate
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture start_plate.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_floor_1f
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture floor_1f.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_floor_2f
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture floor_2f.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_panel_temp
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture panel_temp.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_asphalt
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_asphalt.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_paving
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_paving.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_parking
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_parking.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_crosswalk
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_crosswalk.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_lane_dash
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_lane_dash.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_lane_solid
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_lane_solid.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_stopline
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_stopline.png
+      }
+    }
+  }
+}
+// 智慧社区仿真场地 - 自动生成，请勿手改
+material SQ_gnd_grass
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.9 0.9 0.9 1
+      diffuse 1.0 1.0 1.0 1
+      specular 0.02 0.02 0.02 1
+      texture_unit
+      {
+        texture gnd_grass.png
+      }
+    }
+  }
+}

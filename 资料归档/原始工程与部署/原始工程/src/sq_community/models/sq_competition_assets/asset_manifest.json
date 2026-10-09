@@ -1,0 +1,76 @@
+{
+  "person_source": "training PDF page 5 image xref 57; 18 separate standees",
+  "car_source": "user-supplied blue-car rear PNG edited via built-in imagegen for transparent cutout and blank plate mount",
+  "signal_sources": [
+    "D:\\Downloads\\g_light.png",
+    "D:\\Downloads\\y_light.png",
+    "D:\\Downloads\\r_light.png"
+  ],
+  "plates": [
+    {
+      "kind": "blue",
+      "number": "苏A·31682",
+      "texture": "plate_blue.png",
+      "vehicle_category": "ordinary_small_passenger"
+    },
+    {
+      "kind": "yellow",
+      "number": "苏A·57246",
+      "texture": "plate_yellow.png",
+      "vehicle_category": "large_passenger_vehicle"
+    },
+    {
+      "kind": "green",
+      "number": "苏A·D68125",
+      "texture": "plate_green.png",
+      "vehicle_category": "small_pure_electric"
+    },
+    {
+      "kind": "white",
+      "number": "苏A·7624警",
+      "texture": "plate_white.png",
+      "vehicle_category": "police_vehicle_optional"
+    }
+  ],
+  "plate_semantics": {
+    "blue": "ordinary small passenger vehicle; five-digit serial",
+    "yellow": "large passenger vehicle; five-digit serial",
+    "green": "small pure-electric vehicle; D followed by five digits",
+    "white": "police vehicle; four digits and final red police ideograph; optional asset"
+  },
+  "plate_reference_urls": [
+    "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=8B1827F150C5BB19E05397BE0A0AB44A",
+    "https://www.shanghai.gov.cn/nw5827/20200905/0001-5827_1179681.html",
+    "https://www.dhlh.gov.cn/gaj/Web/_F0_0_6FUWICT154ACDD640D354656A1.htm"
+  ],
+  "materials": {
+    "car_rear_cutout": "SQ4_CarRear",
+    "person_01": "SQ4_Person_01",
+    "person_02": "SQ4_Person_02",
+    "person_03": "SQ4_Person_03",
+    "person_04": "SQ4_Person_04",
+    "person_05": "SQ4_Person_05",
+    "person_06": "SQ4_Person_06",
+    "person_07": "SQ4_Person_07",
+    "person_08": "SQ4_Person_08",
+    "person_09": "SQ4_Person_09",
+    "person_10": "SQ4_Person_10",
+    "person_11": "SQ4_Person_11",
+    "person_12": "SQ4_Person_12",
+    "person_13": "SQ4_Person_13",
+    "person_14": "SQ4_Person_14",
+    "person_15": "SQ4_Person_15",
+    "person_16": "SQ4_Person_16",
+    "person_17": "SQ4_Person_17",
+    "person_18": "SQ4_Person_18",
+    "plate_blue": "SQ4_Plate_Blue",
+    "plate_yellow": "SQ4_Plate_Yellow",
+    "plate_green": "SQ4_Plate_Green",
+    "plate_white": "SQ4_Plate_White",
+    "light_red": "SQ4_Light_Red",
+    "light_yellow": "SQ4_Light_Yellow",
+    "light_green": "SQ4_Light_Green",
+    "car_rear_large_cutout": "SQ4_CarRearLarge"
+  },
+  "large_vehicle_source": "AI-generated transparent large-passenger rear with blank plate mount"
+}

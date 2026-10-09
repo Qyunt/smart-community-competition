@@ -1,0 +1,25 @@
+PROCESS_EXIT=0
+FINISHED
+[INFO] [1791465489.222060, 641.622000]: [sq4 patrol] 29 PEOPLE_A_SOUTH_R error 0.024 m
+[INFO] [1791465506.079786, 648.917000]: [sq4 patrol] 30 PEOPLE_B_NORTH_R error 0.024 m
+[INFO] [1791465520.492486, 655.138000]: [sq4 patrol] 31 BUILDING_A error 0.024 m
+[INFO] [1791465543.628035, 664.633000]: [sq4 patrol] 32 PEOPLE_B_EAST_HIGH error 0.024 m
+[INFO] [1791465568.322701, 674.616000]: [sq4 patrol] 33 PEOPLE_B_EAST error 0.024 m
+[INFO] [1791465591.756432, 683.400000]: [sq4 patrol] 34 BUILDING_C error 0.024 m
+[INFO] [1791465606.528913, 689.514000]: [sq4 patrol] 35 TL_LOW_WAIT error 0.024 m
+[INFO] [1791465624.522250, 697.153000]: [sq4 patrol] 36 过路07 error 0.024 m
+[INFO] [1791465645.779720, 705.992000]: [sq4 patrol] 37 过路08 error 0.023 m
+[INFO] [1791465677.178288, 718.902000]: [sq4 patrol] 38 过路09 error 0.025 m
+[INFO] [1791465747.918996, 747.596000]: [sq4 patrol] 39 过路10 error 0.024 m
+[INFO] [1791465776.531711, 759.492000]: [sq4 patrol] 40 RETURN error 0.025 m
+{
+  "failed": [], 
+  "planned": 40, 
+  "success": true, 
+  "successful": 40, 
+  "road_samples": 43739, 
+  "saved_images": 30, 
+  "recorded": 40, 
+  "outside_samples": 0
+}PROGRESS=40/40
+{"status": "success", "index": 40, "name": "RETURN", "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261008_final05/frames/40_RETURN.jpg", "elapsed_s": 28.6, "xy_error_m": 0.025, "odom": [1.775, 1.8, 3.087], "target": [1.8, 1.8, 3.14159]}

@@ -1,0 +1,20 @@
+<launch>
+  <!-- Empty 4.2 m engineering preview. Official layout and textures pending. -->
+  <arg name="gui" default="false"/>
+  <arg name="spawn_robot" default="false"/>
+  <arg name="model" default="$(optenv TURTLEBOT3_MODEL waffle)"/>
+  <env name="GAZEBO_MODEL_PATH" value="$(find sq_community)/models:$(optenv GAZEBO_MODEL_PATH)"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find sq_community)/worlds/sq_community_4p2_skeleton.world"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+  <!-- Existing Waffle is for interface preview only; its geometry is not 0.4 x 0.4 m. -->
+  <group if="$(arg spawn_robot)">
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_preview_urdf"
+          args="-urdf -model turtlebot3_$(arg model) -x 1.8 -y 1.8 -z 0.01 -param robot_description"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+  </group>
+</launch>

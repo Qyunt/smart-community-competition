@@ -1,0 +1,26 @@
+<launch>
+  <!-- One-call 4.2 m simulation and sensor-driven patrol.  Gazebo's GUI is
+       required on the tested Ubuntu 18.04 VM to render live camera frames. -->
+  <arg name="gui" default="true"/>
+  <arg name="start_patrol" default="true"/>
+  <arg name="enable_ocr" default="true"/>
+  <arg name="enable_voice" default="true"/>
+  <arg name="ocr_url" default="http://192.168.232.1:8765/ocr"/>
+  <arg name="map_file" default="$(find sq_community)/maps/sq_community_4p2.yaml"/>
+  <include file="$(find sq_community)/launch/sq_community_4p2.launch">
+    <arg name="gui" value="$(arg gui)"/>
+  </include>
+  <include file="$(find sq_community)/launch/sq_navigation_4p2.launch">
+    <arg name="map_file" value="$(arg map_file)"/>
+  </include>
+  <node pkg="sq_community" type="sq_signal_vision_4p2.py"
+        name="sq_signal_vision_4p2" output="screen"/>
+  <node pkg="sq_community" type="sq_voice_4p2.py"
+        name="sq_voice_4p2" output="screen" if="$(arg enable_voice)"/>
+  <node pkg="sq_community" type="sq_plate_ocr_bridge_4p2.py"
+        name="sq_plate_ocr_bridge_4p2" output="screen" if="$(arg enable_ocr)">
+    <param name="url" value="$(arg ocr_url)"/>
+  </node>
+  <node pkg="sq_community" type="sq_patrol_4p2.py"
+        name="sq_patrol_4p2" output="screen" if="$(arg start_patrol)"/>
+</launch>

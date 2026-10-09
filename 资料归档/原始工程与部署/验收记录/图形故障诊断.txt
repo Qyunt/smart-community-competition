@@ -1,0 +1,43 @@
+2026-10-08T03:57:30-07:00
+   768    699     193 gdm-wayland-ses /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+   782    768     193 gnome-session-b /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+  1133    732     192 at-spi2-registr /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+  1319   1298     169 gdm-x-session   /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+  1330   1319     169 gnome-session-b /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+  1407   1330     169 ssh-agent       /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+  1416   1301     168 at-spi2-registr /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+  1873   1821     150 roslaunch       /usr/bin/python /opt/ros/melodic/bin/roslaunch sq_community sq_community_4p2.launch
+  1905   1873     149 gzserver        /bin/sh /opt/ros/melodic/lib/gazebo_ros/gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-2.log
+  1969   1905     148 gzserver        gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world -s /opt/ros/melodic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/melodic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-2.log
+=== GUI LOGS ===
+/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39
+=== OGRE LOG ===
+03:55:10: Texture: bin_recycle.png: Loading 1 faces(PF_R8G8B8,240x240x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,240x240x1.
+03:55:10: Texture: bin_kitchen.png: Loading 1 faces(PF_R8G8B8,240x240x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,240x240x1.
+03:55:10: Texture: car_rear_cutout.png: Loading 1 faces(PF_A8R8G8B8,1488x1057x1) with 5 hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,1488x1057x1.
+03:55:10: Texture: car_rear_large_cutout.png: Loading 1 faces(PF_A8R8G8B8,1448x1086x1) with 5 hardware generated mipmaps from Image. Internal format is PF_A8R8G8B8,1448x1086x1.
+03:55:10: Texture: light_red.png: Loading 1 faces(PF_R8G8B8,3048x1020x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,3048x1020x1.
+03:55:10: Texture: sign_speed30.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:10: Texture: sign_no_entry.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:11: Texture: light_green.png: Loading 1 faces(PF_R8G8B8,3068x1024x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,3068x1024x1.
+03:55:11: Texture: sign_crosswalk.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:11: Texture: sign_turn_left.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:11: Texture: light_yellow.png: Loading 1 faces(PF_R8G8B8,3060x1024x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,3060x1024x1.
+03:55:12: Texture: sign_turn_right.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:12: Texture: sign_no_straight.png: Loading 1 faces(PF_R8G8B8,320x320x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,320x320x1.
+03:55:12: Texture: bldg_A.png: Loading 1 faces(PF_R8G8B8,420x190x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,420x190x1.
+03:55:12: Texture: bldg_B.png: Loading 1 faces(PF_R8G8B8,420x190x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,420x190x1.
+03:55:12: Texture: bldg_C.png: Loading 1 faces(PF_R8G8B8,420x190x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,420x190x1.
+03:55:12: Texture: bldg_D.png: Loading 1 faces(PF_R8G8B8,420x190x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,420x190x1.
+03:55:12: Texture: station_plate.png: Loading 1 faces(PF_R8G8B8,420x190x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,420x190x1.
+03:55:12: Texture: win_fire.png: Loading 1 faces(PF_R8G8B8,160x200x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,160x200x1.
+03:55:12: Texture: win_hot.png: Loading 1 faces(PF_R8G8B8,160x200x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,160x200x1.
+ng 1 faces(PF_R8G8B8,160x200x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,160x200x1.
+03:55:10: Texture: win_hot.png: Loading 1 faces(PF_R8G8B8,160x200x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,160x200x1.
+03:55:10: [SkyX] VClouds warning: unregistered camera registered, manual unregistering is needed before camera destruction
+03:55:10: Texture: spot_shadow_fade.png: Loading 1 faces(PF_R8G8B8,128x128x1) with 5 hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,128x128x1.
+03:55:11: Using FSAA from GL_ARB_multisample extension.
+=== SOFTWARE DRIVER ===
+/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+DISPLAY=:0
+XAUTHORITY=/run/user/1000/gdm/Xauthority

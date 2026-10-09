@@ -1,0 +1,32 @@
+Waiting for the existing system package update to finish.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libcdr-0.1-1 libclucene-contribs1v5
+  libclucene-core1v5 libcmis-0.5-5v5 libcolamd2 libdazzle-1.0-0
+  libe-book-0.1-1 libedataserverui-1.2-2 libeot0 libepubgen-0.1-1
+  libetonyek-0.1-1 libevent-2.1-6 libexiv2-14 libfreerdp-client2-2
+  libfreerdp2-2 libgc1c2 libgee-0.8-2 libgexiv2-2 libgom-1.0-0 libgpgmepp6
+  libgpod-common libgpod4 liblangtag-common liblangtag1 liblirc-client0
+  liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5
+  librevenge-0.0-0 libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwinpr2-2 libxapian30 libxmlsec1-nss lp-solve media-player-info
+  python3-mako python3-markupsafe syslinux syslinux-common syslinux-legacy
+  usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  ros-melodic-dwa-local-planner
+0 upgraded, 1 newly installed, 0 to remove and 49 not upgraded.
+Need to get 108 kB of archives.
+After this operation, 518 kB of additional disk space will be used.
+Get:1 https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu bionic/main amd64 ros-melodic-dwa-local-planner amd64 1.16.7-1bionic.20221025.211229 [108 kB]
+Fetched 108 kB in 1s (94.7 kB/s)
+Selecting previously unselected package ros-melodic-dwa-local-planner.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 237649 files and directories currently installed.)
+Preparing to unpack .../ros-melodic-dwa-local-planner_1.16.7-1bionic.20221025.211229_amd64.deb ...
+Unpacking ros-melodic-dwa-local-planner (1.16.7-1bionic.20221025.211229) ...
+Setting up ros-melodic-dwa-local-planner (1.16.7-1bionic.20221025.211229) ...
+DEPENDENCIES_COMPLETE

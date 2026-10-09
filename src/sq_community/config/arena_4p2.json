@@ -1,0 +1,102 @@
+{
+  "status": "planned_engineering_layout",
+  "world": "worlds/sq_community_4p2.world",
+  "manifest": "docs/scene_manifest_4p2.json",
+  "plan": "docs/sq_community_plan_4p2.svg",
+  "task_points": "route/task_points_4p2.csv",
+  "frame": "gazebo_world_center",
+  "arena_m": [
+    4.2,
+    4.2
+  ],
+  "grid": {
+    "cell_size_m": 0.2,
+    "count_x": 21,
+    "count_y": 21,
+    "cell_center_world_m": [
+      "-2.0 + 0.2*x",
+      "-2.0 + 0.2*y"
+    ]
+  },
+  "start": {
+    "corner": "upper_right",
+    "grid_x": [
+      18,
+      20
+    ],
+    "grid_y": [
+      18,
+      20
+    ],
+    "area_m": [
+      0.6,
+      0.6
+    ],
+    "center_world_m": [
+      1.8,
+      1.8
+    ]
+  },
+  "robot_target_m": [
+    0.334,
+    0.303
+  ],
+  "lane_target_width_m": 0.6,
+  "road_cells_half_open": [
+    {
+      "id": "top",
+      "bounds": [
+        0,
+        18,
+        18,
+        21
+      ]
+    },
+    {
+      "id": "west",
+      "bounds": [
+        0,
+        3,
+        3,
+        18
+      ]
+    },
+    {
+      "id": "connector",
+      "bounds": [
+        3,
+        12,
+        12,
+        15
+      ]
+    },
+    {
+      "id": "central",
+      "bounds": [
+        9,
+        12,
+        3,
+        15
+      ]
+    },
+    {
+      "id": "bottom",
+      "bounds": [
+        0,
+        18,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "east",
+      "bounds": [
+        15,
+        18,
+        3,
+        18
+      ]
+    }
+  ],
+  "placement_authority": "physical anchors planned from schematic, not measured official coordinates"
+}

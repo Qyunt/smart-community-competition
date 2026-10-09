@@ -1,0 +1,991 @@
+=== ENVIRONMENT ===
+2026-10-08T04:26:21-07:00
+              total        used        free      shared  buff/cache   available
+Mem:           5911        2585        2446          38         878        3051
+Swap:           947           0         947
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        20G  9.9G  8.7G  54% /
+   PID %CPU %MEM ELAPSED COMMAND         COMMAND
+  2425  107  9.0    1705 gzclient        gzclient
+  1969 61.7 10.1    1879 gzserver        gzserver -e ode /home/qyunt/sq_community_ws_20261008/src/sq_community/worlds/sq_community_4p2.world -s /opt/ros/melodic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/melodic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/gazebo-2.log
+  1917  6.0  1.3    1880 python          python /home/qyunt/sq_community_ws_20261008/src/sq_community/scripts/traffic_light_controller_4p2.py __name:=sq_traffic_light_4p2 __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/sq_traffic_light_4p2-6.log
+  1916  2.3  0.2    1880 robot_state_pub /opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher __name:=robot_state_publisher __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/robot_state_publisher-5.log
+  1902  2.1  0.1    1880 rosout          /opt/ros/melodic/lib/rosout/rosout __name:=rosout __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/rosout-1.log
+  1457  1.1  0.2    1898 pulseaudio      /usr/bin/pulseaudio --start --log-target=syslog
+  1321  0.8  2.4    1900 Xorg            /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+  1435  0.7  2.9    1898 gnome-shell     /usr/bin/gnome-shell
+  1183  0.2  0.7    1922 packagekitd     /usr/lib/packagekit/packagekitd
+   827  0.1  2.3    1924 gnome-shell     /usr/bin/gnome-shell
+  1873  0.1  1.0    1881 roslaunch       /usr/bin/python /opt/ros/melodic/bin/roslaunch sq_community sq_community_4p2.launch
+  1891  0.1  1.0    1880 rosmaster       /usr/bin/python /opt/ros/melodic/bin/rosmaster --core -p 11311 -w 3 __log:=/home/qyunt/.ros/log/b6078abe-c306-11f1-bfa7-000c29d42a39/master.log
+     1  0.0  0.1    1928 systemd         /sbin/init auto noprompt
+     2  0.0  0.0    1928 kthreadd        [kthreadd]
+     3  0.0  0.0    1928 rcu_gp          [rcu_gp]
+     4  0.0  0.0    1928 rcu_par_gp      [rcu_par_gp]
+     6  0.0  0.0    1928 kworker/0:0H-kb [kworker/0:0H-kb]
+=== DEPENDENCIES ===
+/opt/ros/melodic/share/gmapping
+/opt/ros/melodic/share/amcl
+/opt/ros/melodic/share/move_base
+/opt/ros/melodic/share/dwa_local_planner
+/opt/ros/melodic/share/cv_bridge
+/opt/ros/melodic/share/gazebo_ros
+/opt/ros/melodic/share/xacro
+/usr/bin/spd-say
+easyocr MISSING
+ultralytics MISSING
+torch MISSING
+cv2 MISSING
+numpy MISSING
+PIL PRESENT
+=== LAUNCH SCRIPTS ===
+FILE=/home/qyunt/sq_community_ws_20261008/start_mapping.sh
+#!/usr/bin/env bash
+set -e
+source "/home/qyunt/sq_community_ws_20261008/software_render_env.sh"
+source /opt/ros/melodic/setup.bash
+source "/home/qyunt/sq_community_ws_20261008/devel/setup.bash"
+export TURTLEBOT3_MODEL=waffle
+export GAZEBO_MODEL_PATH="/home/qyunt/sq_community_ws_20261008/src/sq_community/models:${GAZEBO_MODEL_PATH:-}"
+roslaunch sq_community sq_mapping_run_4p2.launch "$@"
+FILE=/home/qyunt/sq_community_ws_20261008/start_navigation.sh
+#!/usr/bin/env bash
+set -e
+source "/home/qyunt/sq_community_ws_20261008/software_render_env.sh"
+source /opt/ros/melodic/setup.bash
+source "/home/qyunt/sq_community_ws_20261008/devel/setup.bash"
+export TURTLEBOT3_MODEL=waffle
+export GAZEBO_MODEL_PATH="/home/qyunt/sq_community_ws_20261008/src/sq_community/models:${GAZEBO_MODEL_PATH:-}"
+roslaunch sq_community sq_autonomous_nav_4p2.launch "$@"
+FILE=/home/qyunt/sq_community_ws_20261008/start_patrol.sh
+#!/usr/bin/env bash
+set -e
+source "/home/qyunt/sq_community_ws_20261008/software_render_env.sh"
+task_ws="$(cd "$(dirname "$0")" && pwd)"
+source /opt/ros/melodic/setup.bash
+source "$task_ws/devel/setup.bash"
+export TURTLEBOT3_MODEL=waffle
+export GAZEBO_MODEL_PATH="$task_ws/src/sq_community/models:${GAZEBO_MODEL_PATH:-}"
+# The external OCR model service is not part of the ZIP. Enable it explicitly after setup.
+roslaunch sq_community sq_autonomous_4p2.launch enable_ocr:=false enable_voice:=false "$@"
+FILE=/home/qyunt/sq_community_ws_20261008/start_scene.sh
+#!/usr/bin/env bash
+set -e
+source "/home/qyunt/sq_community_ws_20261008/software_render_env.sh"
+task_ws="$(cd "$(dirname "$0")" && pwd)"
+source /opt/ros/melodic/setup.bash
+source "$task_ws/devel/setup.bash"
+export TURTLEBOT3_MODEL=waffle
+export GAZEBO_MODEL_PATH="$task_ws/src/sq_community/models:${GAZEBO_MODEL_PATH:-}"
+roslaunch sq_community sq_community_4p2.launch "$@"
+FILE=/home/qyunt/sq_community_ws_20261008/software_render_env.sh
+#!/usr/bin/env bash
+# Work around the VMware SVGA/Mesa crash when opening Gazebo 9.
+export LIBGL_ALWAYS_SOFTWARE=true
+export GALLIUM_DRIVER=llvmpipe
+export GAZEBO_MODEL_DATABASE_URI=''
+=== ASSET AND SOURCE HASHES ===
+=== SAVED ACCEPTANCE FILES ===
+gui_software.pid 5 bytes
+task_camera.png 71353 bytes
+smoke.txt 4113 bytes
+gui_fix_20261008_backup/start_scene.sh 304 bytes
+gui_fix_20261008_backup/start_navigation.sh 324 bytes
+gui_fix_20261008_backup/start_patrol.sh 434 bytes
+gui_fix_20261008_backup/start_mapping.sh 321 bytes
+one_goal.log 308 bytes
+front_camera.png 100562 bytes
+audit_20261008/audit.txt 5062 bytes
+audit_20261008/source_hashes.txt 10054 bytes
+launch.log 31386 bytes
+gui_software.log 238 bytes
+launch.pid 6 bytes
+sensors.json 1252 bytes
+one_goal.json 307 bytes
+NOT_FOUND=/tmp/sq4_patrol_4p2.json
+NOT_FOUND=/tmp/sq4_patrol_nav.json
+NOT_FOUND=/tmp/sq4_plate_results.jsonl
+=== LIVE ROS ===
+/gazebo
+/gazebo_gui
+/robot_state_publisher
+/rosout
+/sq_traffic_light_4p2
+{
+  "sample_wall_s": 20, 
+  "messages": {
+    "/camera/rgb/image_raw": {
+      "count": 294, 
+      "data_bytes": 2764800, 
+      "first_wall": 1791458785.086353, 
+      "encoding": "rgb8", 
+      "received_hz_wall": 15.023, 
+      "last_stamp": 1628.12, 
+      "height": 720, 
+      "width": 1280, 
+      "first_stamp": 1614.409, 
+      "last_wall": 1791458804.633214, 
+      "sim_time_per_wall_time": 0.7027
+    }, 
+    "/task_camera/image_raw": {
+      "count": 111, 
+      "data_bytes": 2764800, 
+      "first_wall": 1791458784.610483, 
+      "encoding": "rgb8", 
+      "received_hz_wall": 5.519, 
+      "last_stamp": 1628.068, 
+      "height": 720, 
+      "width": 1280, 
+      "first_stamp": 1614.078, 
+      "last_wall": 1791458804.585743, 
+      "sim_time_per_wall_time": 0.7023
+    }, 
+    "/camera/depth/image_raw": {
+      "count": 294, 
+      "data_bytes": 3686400, 
+      "first_wall": 1791458785.012998, 
+      "encoding": "32FC1", 
+      "received_hz_wall": 14.972, 
+      "last_stamp": 1628.12, 
+      "height": 720, 
+      "width": 1280, 
+      "first_stamp": 1614.409, 
+      "last_wall": 1791458804.628065, 
+      "sim_time_per_wall_time": 0.7003
+    }, 
+    "/clock": {
+      "count": 12228, 
+      "first_wall": 1791458784.018282, 
+      "last_stamp": 1628.164, 
+      "received_hz_wall": 602.325, 
+      "first_stamp": 1614.077, 
+      "last_wall": 1791458804.648966, 
+      "sim_time_per_wall_time": 0.6845
+    }, 
+    "/odom": {
+      "count": 409, 
+      "first_wall": 1791458784.074639, 
+      "last_stamp": 1628.159, 
+      "received_hz_wall": 20.022, 
+      "first_stamp": 1614.116, 
+      "last_wall": 1791458804.643292, 
+      "y": 1.7999982297345465, 
+      "x": 1.800000000000507, 
+      "sim_time_per_wall_time": 0.6842
+    }, 
+    "/scan": {
+      "count": 70, 
+      "rays": 360, 
+      "first_wall": 1791458784.270953, 
+      "frame": "base_scan", 
+      "last_stamp": 1628.048, 
+      "received_hz_wall": 3.419, 
+      "first_stamp": 1614.24, 
+      "last_wall": 1791458804.486777, 
+      "sim_time_per_wall_time": 0.6842
+    }
+  }, 
+  "task_now.jpg": {
+    "mean_pixel": 122.71, 
+    "std_pixel": 57.86
+  }, 
+  "use_sim_time": true, 
+  "front_now.jpg": {
+    "mean_pixel": 93.51, 
+    "std_pixel": 68.33
+  }, 
+  "nodes": [
+    [
+      [
+        "/camera/rgb/image_raw/compressedDepth/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressed/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/theora/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq/traffic_light/state", 
+        [
+          "/sq_traffic_light_4p2"
+        ]
+      ], 
+      [
+        "/tf", 
+        [
+          "/robot_state_publisher", 
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq/traffic_light/time_left", 
+        [
+          "/sq_traffic_light_4p2"
+        ]
+      ], 
+      [
+        "/camera/depth/image_raw", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/scan", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressed", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressedDepth/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/depth/camera_info", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/camera_info", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressed", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressed/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/tf_static", 
+        [
+          "/robot_state_publisher"
+        ]
+      ], 
+      [
+        "/gazebo/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressedDepth/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressed/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressed/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/rosout", 
+        [
+          "/robot_state_publisher", 
+          "/gazebo", 
+          "/gazebo_gui", 
+          "/sq_traffic_light_4p2", 
+          "/sq_readonly_audit_3533_1791458783914"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressedDepth", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/rosout_agg", 
+        [
+          "/rosout"
+        ]
+      ], 
+      [
+        "/task_camera/camera_info", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/depth/points", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/theora", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressedDepth", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressedDepth/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/theora", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/link_states", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/theora/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/model_states", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/clock", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/odom", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/theora/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/theora/parameter_descriptions", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/parameter_updates", 
+        [
+          "/gazebo"
+        ]
+      ]
+    ], 
+    [
+      [
+        "/gazebo/set_model_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_link_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/joint_states", 
+        [
+          "/robot_state_publisher"
+        ]
+      ], 
+      [
+        "/rosout", 
+        [
+          "/rosout"
+        ]
+      ], 
+      [
+        "/clock", 
+        [
+          "/rosout", 
+          "/robot_state_publisher", 
+          "/gazebo", 
+          "/gazebo_gui", 
+          "/sq_traffic_light_4p2", 
+          "/sq_readonly_audit_3533_1791458783914"
+        ]
+      ], 
+      [
+        "/cmd_vel", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq/traffic_light/enable", 
+        [
+          "/sq_traffic_light_4p2"
+        ]
+      ]
+    ], 
+    [
+      [
+        "/gazebo/apply_joint_effort", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/robot_state_publisher/get_loggers", 
+        [
+          "/robot_state_publisher"
+        ]
+      ], 
+      [
+        "/gazebo/get_physics_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_link_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressed/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_joint_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_logger_level", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/reset_world", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressed/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_model_configuration", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_world_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/delete_light", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/pause_physics", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/robot_state_publisher/set_logger_level", 
+        [
+          "/robot_state_publisher"
+        ]
+      ], 
+      [
+        "/gazebo/spawn_sdf_model", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_model_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/unpause_physics", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo_gui/set_logger_level", 
+        [
+          "/gazebo_gui"
+        ]
+      ], 
+      [
+        "/sq_readonly_audit_3533_1791458783914/get_loggers", 
+        [
+          "/sq_readonly_audit_3533_1791458783914"
+        ]
+      ], 
+      [
+        "/camera/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_loggers", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_joint_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/rosout/set_logger_level", 
+        [
+          "/rosout"
+        ]
+      ], 
+      [
+        "/gazebo/get_light_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/clear_body_wrenches", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo_gui/get_loggers", 
+        [
+          "/gazebo_gui"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/theora/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_physics_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/set_light_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq_traffic_light_4p2/get_loggers", 
+        [
+          "/sq_traffic_light_4p2"
+        ]
+      ], 
+      [
+        "/gazebo/reset_simulation", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/delete_model", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/rgb/image_raw/compressedDepth/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/spawn_urdf_model", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/set_camera_info", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/theora/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq_readonly_audit_3533_1791458783914/set_logger_level", 
+        [
+          "/sq_readonly_audit_3533_1791458783914"
+        ]
+      ], 
+      [
+        "/gazebo/set_link_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/apply_body_wrench", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_link_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/task_camera/image_raw/compressedDepth/set_parameters", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/camera/set_camera_info", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/rosout/get_loggers", 
+        [
+          "/rosout"
+        ]
+      ], 
+      [
+        "/gazebo/get_model_properties", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_model_state", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/sq_traffic_light_4p2/set_logger_level", 
+        [
+          "/sq_traffic_light_4p2"
+        ]
+      ], 
+      [
+        "/gazebo/clear_joint_forces", 
+        [
+          "/gazebo"
+        ]
+      ], 
+      [
+        "/gazebo/get_link_properties", 
+        [
+          "/gazebo"
+        ]
+      ]
+    ]
+  ], 
+  "topics": [
+    [
+      "/camera/rgb/image_raw/compressedDepth/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/task_camera/image_raw/compressed/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/camera/rgb/image_raw", 
+      "sensor_msgs/Image"
+    ], 
+    [
+      "/task_camera/image_raw/theora/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/sq/traffic_light/state", 
+      "std_msgs/String"
+    ], 
+    [
+      "/tf", 
+      "tf2_msgs/TFMessage"
+    ], 
+    [
+      "/sq/traffic_light/time_left", 
+      "std_msgs/Float32"
+    ], 
+    [
+      "/camera/depth/image_raw", 
+      "sensor_msgs/Image"
+    ], 
+    [
+      "/scan", 
+      "sensor_msgs/LaserScan"
+    ], 
+    [
+      "/camera/rgb/image_raw/compressed", 
+      "sensor_msgs/CompressedImage"
+    ], 
+    [
+      "/task_camera/image_raw/compressedDepth/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/camera/depth/camera_info", 
+      "sensor_msgs/CameraInfo"
+    ], 
+    [
+      "/camera/rgb/camera_info", 
+      "sensor_msgs/CameraInfo"
+    ], 
+    [
+      "/task_camera/image_raw/compressed", 
+      "sensor_msgs/CompressedImage"
+    ], 
+    [
+      "/camera/rgb/image_raw/compressed/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/tf_static", 
+      "tf2_msgs/TFMessage"
+    ], 
+    [
+      "/gazebo/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/camera/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/task_camera/image_raw/compressedDepth/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/task_camera/image_raw/compressed/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/camera/rgb/image_raw/compressed/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/task_camera/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/task_camera/image_raw", 
+      "sensor_msgs/Image"
+    ], 
+    [
+      "/rosout", 
+      "rosgraph_msgs/Log"
+    ], 
+    [
+      "/task_camera/image_raw/compressedDepth", 
+      "sensor_msgs/CompressedImage"
+    ], 
+    [
+      "/rosout_agg", 
+      "rosgraph_msgs/Log"
+    ], 
+    [
+      "/task_camera/camera_info", 
+      "sensor_msgs/CameraInfo"
+    ], 
+    [
+      "/camera/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/camera/depth/points", 
+      "sensor_msgs/PointCloud2"
+    ], 
+    [
+      "/task_camera/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/task_camera/image_raw/theora", 
+      "theora_image_transport/Packet"
+    ], 
+    [
+      "/camera/rgb/image_raw/compressedDepth", 
+      "sensor_msgs/CompressedImage"
+    ], 
+    [
+      "/camera/rgb/image_raw/compressedDepth/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/camera/rgb/image_raw/theora", 
+      "theora_image_transport/Packet"
+    ], 
+    [
+      "/gazebo/link_states", 
+      "gazebo_msgs/LinkStates"
+    ], 
+    [
+      "/camera/rgb/image_raw/theora/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/gazebo/model_states", 
+      "gazebo_msgs/ModelStates"
+    ], 
+    [
+      "/clock", 
+      "rosgraph_msgs/Clock"
+    ], 
+    [
+      "/odom", 
+      "nav_msgs/Odometry"
+    ], 
+    [
+      "/task_camera/image_raw/theora/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ], 
+    [
+      "/camera/rgb/image_raw/theora/parameter_descriptions", 
+      "dynamic_reconfigure/ConfigDescription"
+    ], 
+    [
+      "/gazebo/parameter_updates", 
+      "dynamic_reconfigure/Config"
+    ]
+  ], 
+  "not_observed": [
+    "/map", 
+    "/sq/vision/traffic_light", 
+    "/sq/vision/plate", 
+    "/sq/patrol/observation", 
+    "/sq/patrol/result", 
+    "/sq/voice/last"
+  ]
+}
+=== OCR SERVICE PROBES ===
+http://127.0.0.1:8765/health <urlopen error [Errno 111] Connection refused>
+http://192.168.80.1:8765/health <urlopen error timed out>
+AUDIT_FINISHED

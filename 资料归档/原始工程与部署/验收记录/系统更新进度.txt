@@ -1,0 +1,26 @@
+2026-10-08T03:06:14-07:00
+   715      1    1281 unattended-upgr /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+=== RECENT PACKAGE CONFIGURATION ===
+2026-10-08 03:05:45 status installed man-db:amd64 2.8.3-2ubuntu0.1
+2026-10-08 03:05:45 trigproc ufw:all 0.36-0ubuntu0.18.04.1 <none>
+2026-10-08 03:05:45 status half-configured ufw:all 0.36-0ubuntu0.18.04.1
+2026-10-08 03:05:45 status installed ufw:all 0.36-0ubuntu0.18.04.1
+2026-10-08 03:05:45 trigproc ureadahead:amd64 0.100.0-21 <none>
+2026-10-08 03:05:45 status half-configured ureadahead:amd64 0.100.0-21
+2026-10-08 03:05:45 status installed ureadahead:amd64 0.100.0-21
+2026-10-08 03:05:45 trigproc libc-bin:amd64 2.27-3ubuntu1.5 <none>
+2026-10-08 03:05:45 status half-configured libc-bin:amd64 2.27-3ubuntu1.5
+2026-10-08 03:05:45 status installed libc-bin:amd64 2.27-3ubuntu1.5
+2026-10-08 03:05:51 startup archives unpack
+2026-10-08 03:05:51 install ros-melodic-dwa-local-planner:amd64 <none> 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 status half-installed ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 status unpacked ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 status unpacked ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 startup packages configure
+2026-10-08 03:05:51 configure ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229 <none>
+2026-10-08 03:05:51 status unpacked ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 status half-configured ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+2026-10-08 03:05:51 status installed ros-melodic-dwa-local-planner:amd64 1.16.7-1bionic.20221025.211229
+=== UNATTENDED UPDATE ===
+=== ROS PACKAGE SOURCES ===
+deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ bionic main

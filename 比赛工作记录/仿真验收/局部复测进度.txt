@@ -1,0 +1,19 @@
+PROCESS_EXIT=0
+FINISHED
+[INFO] [1791462130.692493, 4112.965000]: [sq4 patrol] 18 TL_LOW_WAIT error 0.024 m
+[INFO] [1791462147.265880, 4123.202000]: [sq4 patrol] 19 过路11 error 0.024 m
+[INFO] [1791462162.251744, 4132.699000]: [sq4 patrol] 20 BUILDING_C error 0.023 m
+[INFO] [1791462195.034959, 4153.305000]: [sq4 patrol] 21 过路12 error 0.023 m
+{
+  "successful": 4, 
+  "planned": 4, 
+  "success": true, 
+  "failed": [], 
+  "full_route_planned": 33, 
+  "scope": "local lower stop-line regression, route indices 18 through 21", 
+  "road_samples": 2561, 
+  "saved_images": 2, 
+  "recorded": 4, 
+  "outside_samples": 0
+}PROGRESS=4/33
+{"status": "success", "index": 21, "name": "过路12", "image": "", "elapsed_s": 32.8, "xy_error_m": 0.023, "odom": [0.0, -1.777, -3.09], "target": [0.0, -1.8, 3.14159]}

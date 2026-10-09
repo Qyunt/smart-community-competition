@@ -1,0 +1,80 @@
+{
+  "successful": 4, 
+  "scope": "first four goals of final 41-goal route; not a full-run claim", 
+  "outside_samples": 0, 
+  "success": true, 
+  "records": [
+    {
+      "status": "success", 
+      "index": 1, 
+      "name": "TL_UP_WAIT", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/01_TL_UP_WAIT.jpg", 
+      "elapsed_s": 44.7, 
+      "xy_error_m": 0.025, 
+      "odom": [
+        0.825, 
+        1.8, 
+        -3.142
+      ], 
+      "target": [
+        0.8, 
+        1.8, 
+        3.14159
+      ]
+    }, 
+    {
+      "status": "success", 
+      "index": 2, 
+      "name": "PEOPLE_A_TOP_R", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/02_PEOPLE_A_TOP_R.jpg", 
+      "elapsed_s": 23.4, 
+      "xy_error_m": 0.024, 
+      "odom": [
+        0.024, 
+        1.8, 
+        -2.164
+      ], 
+      "target": [
+        0.0, 
+        1.8, 
+        -2.11
+      ]
+    }, 
+    {
+      "status": "success", 
+      "index": 3, 
+      "name": "EBIKES_A", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/03_EBIKES_A.jpg", 
+      "elapsed_s": 30.2, 
+      "xy_error_m": 0.023, 
+      "odom": [
+        -0.377, 
+        1.8, 
+        -0.964
+      ], 
+      "target": [
+        -0.4, 
+        1.8, 
+        -0.911
+      ]
+    }, 
+    {
+      "status": "success", 
+      "index": 4, 
+      "name": "PEOPLE_A_TOP_L", 
+      "image": "/home/qyunt/sq_community_ws_20261008/acceptance/patrol_20261009_final_segment/frames/04_PEOPLE_A_TOP_L.jpg", 
+      "elapsed_s": 38.4, 
+      "xy_error_m": 0.024, 
+      "odom": [
+        -1.176, 
+        1.8, 
+        -1.623
+      ], 
+      "target": [
+        -1.2, 
+        1.8, 
+        -1.5708
+      ]
+    }
+  ]
+}

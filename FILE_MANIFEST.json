@@ -1,7 +1,7 @@
 {
   "date": "2026-10-10",
   "file_count": 1842,
-  "total_bytes": 429425022,
+  "total_bytes": 429425172,
   "files": [
     {
       "path": ".gitattributes",
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4672,
-      "sha256": "704967fff309567fdfad52f5063b9ca57d58d205ab64229e274057b2568d8433"
+      "bytes": 4746,
+      "sha256": "736be94ad39c0f8dcdf4be83bf7a9ab917afeade092e7468e72c14d6cca388ba"
     },
     {
       "path": "src/sq_community/CMakeLists.txt",
@@ -2810,8 +2810,8 @@
     },
     {
       "path": "比赛工作记录/package_github_share.py",
-      "bytes": 7988,
-      "sha256": "28a9c69fb66c5894bbf952c91e2477826bb3dcdf371042b3557b266be4f988da"
+      "bytes": 8064,
+      "sha256": "0e759cbeaeaf3b0d7b41811bca76b9328f00d0eec86446527ee52f0439590dc6"
     },
     {
       "path": "比赛工作记录/read_ros_doc.py",

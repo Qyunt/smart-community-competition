@@ -81,6 +81,7 @@ source /opt/ros/melodic/setup.bash
 catkin_make -j2 -l2
 source devel/setup.bash
 export TURTLEBOT3_MODEL=waffle
+find src -type f \\( -name '*.py' -o -name '*.sh' \\) -exec chmod +x {} \\;
 
 # 只看场景：
 roslaunch sq_community sq_community_4p2.launch

@@ -1,0 +1,99 @@
+{
+  "uploaded_on": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "repository": "https://github.com/Qyunt/smart-community-competition",
+  "release": "https://github.com/Qyunt/smart-community-competition/releases/tag/close-ai-submission-20261014",
+  "original_files_preserved": true,
+  "files": [
+    {
+      "category": "复赛提交材料",
+      "original_name": "【close_ai】-智慧社区复赛答辩展示.pptx",
+      "bytes": 6749987,
+      "sha256": "03a52b3582fa4b36af2a734dbe9711f2938a2baa242955f8ef07d5131b13d817",
+      "release_asset": "close_ai-defense-20261014.pptx",
+      "download_url": "https://github.com/Qyunt/smart-community-competition/releases/download/close-ai-submission-20261014/close_ai-defense-20261014.pptx",
+      "repository_path": "交付资料/复赛提交_20261014/【close_ai】-智慧社区复赛答辩展示.pptx",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E4%BA%A4%E4%BB%98%E8%B5%84%E6%96%99/%E5%A4%8D%E8%B5%9B%E6%8F%90%E4%BA%A4_20261014/%E3%80%90close_ai%E3%80%91-%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E5%A4%8D%E8%B5%9B%E7%AD%94%E8%BE%A9%E5%B1%95%E7%A4%BA.pptx"
+    },
+    {
+      "category": "复赛提交材料",
+      "original_name": "【close_ai】-智慧社区复赛工程代码.zip",
+      "bytes": 144910169,
+      "sha256": "6baf4998757c6959be7397956b226b4b9c66ba4a95f9aff458bbcc99a8c879e3",
+      "release_asset": "close_ai-source-20261014.zip",
+      "download_url": "https://github.com/Qyunt/smart-community-competition/releases/download/close-ai-submission-20261014/close_ai-source-20261014.zip"
+    },
+    {
+      "category": "复赛提交材料",
+      "original_name": "【close_ai】-智慧社区复赛技术方案.pdf",
+      "bytes": 956479,
+      "sha256": "456cac06d0846ddbb2f5dd60d396bfb165af85f403e0680bccc6fc4e63d4e2f3",
+      "release_asset": "close_ai-technical-plan-20261014.pdf",
+      "download_url": "https://github.com/Qyunt/smart-community-competition/releases/download/close-ai-submission-20261014/close_ai-technical-plan-20261014.pdf",
+      "repository_path": "交付资料/复赛提交_20261014/【close_ai】-智慧社区复赛技术方案.pdf",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E4%BA%A4%E4%BB%98%E8%B5%84%E6%96%99/%E5%A4%8D%E8%B5%9B%E6%8F%90%E4%BA%A4_20261014/%E3%80%90close_ai%E3%80%91-%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E5%A4%8D%E8%B5%9B%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88.pdf"
+    },
+    {
+      "category": "复赛提交材料",
+      "original_name": "【close_ai】-智慧社区复赛综合展示视频.mp4",
+      "bytes": 250414267,
+      "sha256": "0545e5aba6aabe06a0ef7b4adb7ebf360784df80eba394fd4ebe530259dd76a6",
+      "release_asset": "close_ai-demo-20261014.mp4",
+      "download_url": "https://github.com/Qyunt/smart-community-competition/releases/download/close-ai-submission-20261014/close_ai-demo-20261014.mp4"
+    },
+    {
+      "category": "官方赛事资料",
+      "original_name": "第八届全球校园人工智能算法精英大赛算法应用赛道-智慧社区规则.pdf",
+      "bytes": 549603,
+      "sha256": "daa8d3d7ef0e484fb68960aaf8bb55697624de1af9a997a2cb75f335269f54cf",
+      "repository_path": "资料归档/比赛规则与模板/第八届全球校园人工智能算法精英大赛算法应用赛道-智慧社区规则.pdf",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/%E7%AC%AC%E5%85%AB%E5%B1%8A%E5%85%A8%E7%90%83%E6%A0%A1%E5%9B%AD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E7%B2%BE%E8%8B%B1%E5%A4%A7%E8%B5%9B%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E8%B5%9B%E9%81%93-%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E8%A7%84%E5%88%99.pdf",
+      "already_present_before_upload": true
+    },
+    {
+      "category": "官方赛事资料",
+      "original_name": "第八届全球校园人工智能算法精英大赛算法应用赛“智慧社区”赛题复赛通知.pdf",
+      "bytes": 226785,
+      "sha256": "ecb1776ed2a9274c06120a89f74e1ba6b1474e86b2f96767fadf54bed7b47a1b",
+      "repository_path": "资料归档/比赛规则与模板/第八届全球校园人工智能算法精英大赛算法应用赛“智慧社区”赛题复赛通知.pdf",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/%E7%AC%AC%E5%85%AB%E5%B1%8A%E5%85%A8%E7%90%83%E6%A0%A1%E5%9B%AD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E7%B2%BE%E8%8B%B1%E5%A4%A7%E8%B5%9B%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E8%B5%9B%E2%80%9C%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E2%80%9D%E8%B5%9B%E9%A2%98%E5%A4%8D%E8%B5%9B%E9%80%9A%E7%9F%A5.pdf",
+      "already_present_before_upload": false
+    },
+    {
+      "category": "官方赛事资料",
+      "original_name": "2026智慧社区复赛技术报告模板.docx",
+      "bytes": 293372,
+      "sha256": "721c75982cf7ca09844b12e3d0f0e29f1b07321ec98b9b84ad0cbaca8a4c3a1c",
+      "repository_path": "资料归档/比赛规则与模板/2026智慧社区复赛技术报告模板.docx",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/2026%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E5%A4%8D%E8%B5%9B%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF.docx",
+      "already_present_before_upload": true
+    },
+    {
+      "category": "官方赛事资料",
+      "original_name": "智慧社区赛项.pdf",
+      "bytes": 3313099,
+      "sha256": "5a2a16ca8bc7fed616a8054b2d58e97992a9f3c2b108fe6f02714841af7ea24e",
+      "repository_path": "资料归档/比赛规则与模板/智慧社区赛项.pdf",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E8%B5%9B%E9%A1%B9.pdf",
+      "already_present_before_upload": true
+    },
+    {
+      "category": "官方赛事资料",
+      "original_name": "9.24智慧社区培训.pdf",
+      "bytes": 3893766,
+      "sha256": "c9649da162dd74a9379bbbf40141d04cca494de9f6a6ea69e985fd7748fa2832",
+      "repository_path": "资料归档/比赛规则与模板/9.24智慧社区培训.pdf",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/9.24%E6%99%BA%E6%85%A7%E7%A4%BE%E5%8C%BA%E5%9F%B9%E8%AE%AD.pdf",
+      "already_present_before_upload": false
+    },
+    {
+      "category": "原有配套资料",
+      "original_name": "ROS基础实验.docx",
+      "bytes": 1136053,
+      "sha256": "fa55132f32b4525e7858fa77527164945541974aa151d6b32ad898fe672c030d",
+      "repository_path": "资料归档/比赛规则与模板/ROS基础实验.docx",
+      "repository_url": "https://github.com/Qyunt/smart-community-competition/blob/main/%E8%B5%84%E6%96%99%E5%BD%92%E6%A1%A3/%E6%AF%94%E8%B5%9B%E8%A7%84%E5%88%99%E4%B8%8E%E6%A8%A1%E6%9D%BF/ROS%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C.docx",
+      "already_present_before_upload": true
+    }
+  ]
+}
